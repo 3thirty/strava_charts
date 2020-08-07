@@ -1,0 +1,6 @@
+junk/*
+test.py
+__pycache__
+cache.sqlite
+cert.crt
+private.key
