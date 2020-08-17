@@ -12,14 +12,29 @@ class Config:
             except yaml.YAMLError as e:
                 print("Failed to load config: %s" % e)
 
-        if (os.environ['STRAVA_CLIENT_ID']):
-            self.config['strava_client_id'] = os.environ['STRAVA_CLIENT_ID']
-
-        if (os.environ['STRAVA_CLIENT_SECRET']):
-            self.config['strava_client_secret'] = os.environ['STRAVA_CLIENT_SECRET']
+        self._getFromEnviron('strava_client_id')
+        self._getFromEnviron('strava_client_secret')
 
     def get(self, key):
         return self.config[key]
 
     def dump(self):
         return self.config
+
+    def _getFromEnviron(self, name: str) -> bool:
+        """
+        Read a config variable from the environment if set
+
+        :param name: The name of the environment variable to check for. This is
+                     expected to be in ALL CAPS for the environment variable,
+                     and will be recorded in this name in all lowercase within
+                     this class
+
+        :return True if an environment variable with the given name was found,
+                False otherwise
+        """
+        if (os.environ[name.upper()]):
+            self.config[name.lower()] = os.environ[name.upper()]
+            return True
+
+        return False
