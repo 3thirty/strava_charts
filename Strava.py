@@ -206,7 +206,9 @@ class Strava:
 
         return on
 
-    def __init__(self, token_storage, debug=False, force=False):
+    def __init__(
+            self, token_storage, debug: bool = False, force: bool = False):
+        self.force = force
         self.log = logging.getLogger('strava')
 
         if (debug):
@@ -220,24 +222,15 @@ class Strava:
 
         token = token_storage.get()
 
-        if (force):
-            self.oauth = OAuth2Session(
-                token=token,
-                auto_refresh_url='https://www.strava.com/oauth/token',
-                auto_refresh_kwargs={
-                    'client_id': self.config.get('strava_client_id'),
-                    'client_secret': self.config.get('strava_client_secret')
-                }
-            )
-        else:
-            self.oauth = OAuth2CachedSession(
-                token=token,
-                auto_refresh_url='https://www.strava.com/oauth/token',
-                auto_refresh_kwargs={
-                    'client_id': self.config.get('strava_client_id'),
-                    'client_secret': self.config.get('strava_client_secret')
-                }
-            )
+        self.oauth = OAuth2CachedSession(
+            token=token,
+            auto_refresh_url='https://www.strava.com/oauth/token',
+            auto_refresh_kwargs={
+                'client_id': self.config.get('strava_client_id'),
+                'client_secret': self.config.get('strava_client_secret')
+            },
+            expire_after=self.config.get('cache_ttl')
+        )
 
     def getActivities(self, num: int, offset: int = 0) -> ActivityList:
         if (num > self.MAX_PAGE_SIZE):
@@ -258,12 +251,7 @@ class Strava:
             base_url = 'https://www.strava.com/api/v3/athlete/activities'
             url = '%s?page=%d&per_page=%d' % (base_url, page, num)
 
-            res = None
-            try:
-                res = self.oauth.get(url=url)
-            except TokenUpdated as e:
-                self.token_storage.set(e.token)
-                res = self.oauth.get(url=url)
+            res = self.get(url)
 
             if (res.status_code != 200):
                 raise AuthenticationException("invalid auth token")
@@ -289,6 +277,29 @@ class Strava:
             num = self.MAX_PAGE_SIZE
 
         return out
+
+    def get(self, url: str):
+        """
+        Fetch strava data from the given url, with oauth credentials. This
+        handles expired tokens and cache clearing as required
+
+        return:
+        """
+        res = None
+
+        try:
+            res = self.oauth.get(url=url)
+        except TokenUpdated as e:
+            self.token_storage.set(e.token)
+            return self.get(url=url)
+
+        if (res.from_cache and self.force):
+            self.log.debug("clearing cache to prompt re-fetch for %s"
+                           % res.request)
+            self.oauth.clear(res.request)
+            return self.get(url=url)
+
+        return res
 
 
 class AuthenticationException(BaseException):
