@@ -1,13 +1,15 @@
+import enum
 import json
 import logging
 import math
 import sys
 
+from collections import OrderedDict
 from datetime import datetime
 from requests_oauthlib import OAuth2Session, TokenUpdated
 from oauthlib.oauth2.rfc6749.errors import MissingTokenError
-from Config import Config
 
+from Config import Config
 from OAuth2CachedSession import OAuth2CachedSession
 
 
@@ -48,8 +50,11 @@ class Authentication:
 
         :return: string the token for the user
         """
+        client_id = Authentication._config.get('strava_client_id')
+        secret = Authentication._config.get('strava_client_secret')
+
         oauth = OAuth2Session(
-            client_id=Authentication._config.get('strava_client_id'),
+            client_id=client_id,
             state=Authentication._getState(session),
         )
 
@@ -58,7 +63,7 @@ class Authentication:
                 'https://www.strava.com/oauth/token',
                 authorization_response=url,
                 include_client_id=True,
-                client_secret=Authentication._config.get('strava_client_secret'),
+                client_secret=secret,
             )
         except MissingTokenError:
             return None
@@ -89,11 +94,25 @@ class Authentication:
         return session.get('state')
 
 
+class AggregationPeriod(enum.Enum):
+    DAY = 1
+    WEEK = 2
+    MONTH = 3
+    YEAR = 4
+
+    def strToEnum(s: str):
+        try:
+            return getattr(AggregationPeriod, s.upper())
+        except AttributeError:
+            return AggregationPeriod.DAY
+
+
 class Activity:
     start_date = None
     average_watts = None
 
     def newFromDict(d):
+        # TODO: handle this more sensibly
         if ('average_watts' not in d):
             raise ValueError('average_watts is required')
 
@@ -103,6 +122,10 @@ class Activity:
         ret = Activity()
         ret.start_date = d['start_date']
         ret.average_watts = d['average_watts']
+        ret.average_speed = d['average_speed']
+        ret.distance = d['distance']
+        ret.moving_time = d['moving_time']
+        ret.total_elevation_gain = d['total_elevation_gain']
 
         return ret
 
@@ -130,6 +153,60 @@ class ActivityList(list):
 
     def getMaxDate(self):
         return self.sortByDate()[len(self) - 1].getDateTime()
+
+    def aggregateMetricByPeriod(
+            self, metric: str, period: AggregationPeriod) -> OrderedDict:
+        """
+        Average the requested metric for the activities in the list over the
+        given time format
+
+        :param metric: the metric to average
+        :param period: the time period to aggregate over
+
+        :return Dict of activies with activity keys set based on timef
+        """
+        grouped_by_time = {}
+
+        for activity in self:
+            time_key = self._getTimeKey(activity, period)
+
+            if ('time_key' not in grouped_by_time):
+                grouped_by_time[time_key] = []
+
+            grouped_by_time[time_key].append(activity)
+
+        ret = {}
+        for time in grouped_by_time:
+            out_value = 0
+            for activity in grouped_by_time[time]:
+                out_value += getattr(activity, metric)
+
+            ret[time] = (out_value / len(grouped_by_time[time]))
+
+        return OrderedDict(sorted(ret.items(), key=lambda item: item[0]))
+
+    def _getTimeKey(
+            self, activity: Activity,
+            period: AggregationPeriod) -> str:
+        """Determine the time key (i.e. the period start date) for an activity
+        and aggregation period
+
+        :param period:   the aggregation period
+        :param activity: the activity to deterime the time key for
+
+        :return string the time key in Y-m-d format
+        """
+        if period == AggregationPeriod.WEEK:
+            week = datetime.strftime(activity.getDateTime(), "%Y-%U-1")
+            return datetime.strptime(week, "%Y-%U-%w").strftime("%Y-%m-%d")
+
+        if period == AggregationPeriod.MONTH:
+            return datetime.strftime(activity.getDateTime(), "%Y-%m-01")
+
+        if period == AggregationPeriod.YEAR:
+            return datetime.strftime(activity.getDateTime(), "%Y")
+
+        return datetime.strftime(activity.getDateTime(), "%Y-%m-%d")
 
 
 class TokenStorage():
@@ -290,6 +367,7 @@ class Strava:
         try:
             res = self.oauth.get(url=url)
         except TokenUpdated as e:
+            self.log.debug("need to update token...")
             self.token_storage.set(e.token)
             return self.get(url=url)
 

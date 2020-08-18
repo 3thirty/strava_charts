@@ -1,5 +1,8 @@
-Strava:
+### General:
+  * [ ] write a readme
+  * [ ] cleanup comments
 
+### Strava:
   * [x] use a real callback
   * [x] cache data
   * [x] cache oauth credentials for multiple users properly; in a cookie?
@@ -10,12 +13,20 @@ Strava:
   * [x] allow user to force bypass cache 
   * [ ] aggregate by week/month/whatever?
   * [x] cleanup cookie token storage
-  * [ ] reduce cache time
+  * [x] reduce cache time
+  * [ ] add update option to skip cache for current page only
 
-Charts:
+### server
+  * [ ] clean up handling/parsing of activities
 
+### Charts:
   * [x] use complete time range for x axis
   * [x] order data correctly
   * [ ] start new series if more than X days are missed
   * [ ] moving average
   * [ ] trend line
+  * [ ] add UI for selecting aggregate time period and metric
+  * weekly aggregrates
+    * [x] sort
+    * [x] use week start date instead of week number
+    * [ ] update week data to use complete time range

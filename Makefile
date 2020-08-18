@@ -1,3 +1,5 @@
+.PHONY: install run creds clean open
+
 install:
 	pip3 install requests-oauthlib bottle requests-cache pyyaml gunicorn bottle-beaker
 
@@ -13,6 +15,7 @@ creds:
 
 clean:
 	rm -rf __pycache__
+	rm cache.sqlite
 
 open:
-	open "http://localhost:8080/chart"
+	open "https://localhost:8080/chart"

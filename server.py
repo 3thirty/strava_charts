@@ -7,7 +7,7 @@ from bottle.ext import beaker
 
 from Chart import Chart
 from Strava import Strava, Authentication, AuthenticationException, \
-                   TokenStorage, CookieTokenStorage
+                   CookieTokenStorage, AggregationPeriod
 
 session_opts = {
     'session.type': 'memory',
@@ -60,7 +60,8 @@ def verify():
 
 
 @route('/chart')
-def chart():
+@route('/chart/<metric>/<period>')
+def chart(metric: str = 'average_watts', period: str = 'week'):
     if (request.query.force):
         force = True
     else:
@@ -85,35 +86,25 @@ def chart():
 
     chart = Chart()
 
-    chart.labels.labels = []
-    chart.data.Power.data = []
+    chart_title = "%s by %s" % (metric, period)
+    chart.options.title.text = chart_title
 
-    out_activities = {}
+    chart.labels.labels = []
+    chart.data.Metric.data = []
 
     activities = strava.getActivities(100)
 
     log = logging.getLogger('strava')
 
-    for a in activities:
-        out_activities[a.getDateHumanReadable()] = a.average_watts
+    data = activities.aggregateMetricByPeriod(
+                metric=metric,
+                period=AggregationPeriod.strToEnum(period))
 
-    total_days = (activities.getMaxDate() - activities.getMinDate()).days + 2  # why 2?
-    min_date = datetime.date(activities.getMinDate())
+    log.debug(data)
 
-    print("chart params: maxdate=%s mindate=%s total_days=%s" %
-        (activities.getMaxDate(), activities.getMinDate(), total_days)
-    )
-
-    print("out_activities: %s", out_activities)
-
-    for i in range(0, total_days):
-        hr_date = datetime.strftime((min_date + timedelta(days=i)), "%x")
-        chart.labels.labels.append(hr_date)
-
-        if (hr_date in out_activities):
-            chart.data.Power.data.append(out_activities[hr_date])
-        else:
-            chart.data.Power.data.append(None)
+    for label in data:
+        chart.labels.labels.append(label)
+        chart.data.Metric.data.append(data[label])
 
     chartJSON = chart.get()
 

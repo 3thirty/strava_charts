@@ -8,10 +8,10 @@ class Chart(BaseChart):
         labels = []
 
     class data:
-        class Power:
+        class Metric:
             data = []
             _color = Color.JSLinearGradient('ctx', 0, 0, 1000, 0)
-            _color.addColorStop(0, Color.Green)
+            _color.addColorStop(0, Color.Cyan)
 
             borderColor = _color.returnGradient()
             fill = False
@@ -21,7 +21,7 @@ class Chart(BaseChart):
             lineTension = 0.2
 
     class options:
-        title = Options.Title(text="Power over time", fontSize=18)
+        title = Options.Title(text="", fontSize=18)
 
         _labels = Options.Legend_Labels(fontColor=Color.Gray, fullWidth=True)
         legend = Options.Legend(position='Bottom', labels=_labels)
@@ -31,7 +31,6 @@ class Chart(BaseChart):
                 ticks=Options.General(
                     beginAtZero=True,
                     padding=15,
-                    max=200
                 ),
             )
         ]
