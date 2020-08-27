@@ -25,7 +25,7 @@ def ping():
 
 @route('/')
 def main():
-    token_store = CookieTokenStorage(request, response)
+    token_store = CookieTokenStorage(bottle.request, response)
     strava = Strava(token_storage=token_store, debug=True)
 
     out = ''

@@ -15,6 +15,7 @@
   * [x] cleanup cookie token storage
   * [x] reduce cache time
   * [ ] add update option to skip cache for current page only
+  * [ ] don't use a hardcoded number of activities - keep going back till we get everything?
 
 ### server
   * [ ] clean up handling/parsing of activities
