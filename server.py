@@ -1,8 +1,8 @@
 import logging
-from datetime import datetime, timedelta
 
 import bottle
-from bottle import route, run, template, request, response, redirect
+from bottle import route, run, template, request, response, redirect, \
+                   static_file
 from bottle.ext import beaker
 
 from Chart import Chart
@@ -16,6 +16,11 @@ session_opts = {
 }
 
 app = beaker.middleware.SessionMiddleware(bottle.app(), session_opts)
+
+
+@route('/favico/<file:re:.*\.(ico|png|webmanifest)$>')
+def favico(file):
+    return static_file(file, root="favico/")
 
 
 @route('/ping')
