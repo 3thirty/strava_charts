@@ -4,3 +4,4 @@ __pycache__
 cache.sqlite
 cert.crt
 private.key
+.DS_Store

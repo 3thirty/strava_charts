@@ -1,4 +1,5 @@
 import logging
+import sys
 
 import bottle
 from bottle import route, run, template, request, response, redirect, \
@@ -15,10 +16,10 @@ session_opts = {
     'session.auto': True
 }
 
-app = beaker.middleware.SessionMiddleware(bottle.app(), session_opts)
+application = beaker.middleware.SessionMiddleware(bottle.app(), session_opts)
 
 
-@route('/favico/<file:re:.*\.(ico|png|webmanifest)$>')
+@route('/favico/<file:re:.*\\.(ico|png|webmanifest)$>')
 def favico(file):
     return static_file(file, root="favico/")
 
@@ -116,13 +117,14 @@ def chart(metric: str = 'average_watts', period: str = 'week'):
     return template('chart', chartJSON=chartJSON)
 
 
-run(
-    host='localhost',
-    port=8080,
-    debug=True,
-    reloader=True,
-    certfile='cert.crt',
-    keyfile='private.key',
-    server='gunicorn',
-    app=app
-)
+if ('dev' in sys.argv):
+    run(
+        app=application,
+        host='localhost',
+        port=8080,
+        debug=True,
+        reloader=True,
+        certfile='cert.crt',
+        keyfile='private.key',
+        server='gunicorn',
+    )
