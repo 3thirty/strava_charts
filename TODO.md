@@ -1,6 +1,7 @@
 ### General:
   * [ ] write a readme
   * [ ] cleanup comments
+  * [ ] loading state
 
 ### Strava:
   * [x] use a real callback
@@ -27,6 +28,7 @@
   * [ ] moving average
   * [ ] trend line
   * [ ] add UI for selecting aggregate time period and metric
+  * [ ] add option for charting against goal (distance/time/elevation)
   * weekly aggregrates
     * [x] sort
     * [x] use week start date instead of week number

@@ -143,6 +143,17 @@ class Activity:
 
         return(datetime.strftime(date, "%x"))
 
+    def dump(self):
+        out = {}
+        out['start_date'] = self.start_date
+        out['average_watts'] = self.average_watts
+        out['average_speed'] = self.average_speed
+        out['distance'] = self.distance
+        out['moving_time'] = self.moving_time
+        out['total_elevation_gain'] = self.total_elevation_gain
+
+        return out
+
 
 class ActivityList(list):
     def sortByDate(self):
@@ -207,6 +218,17 @@ class ActivityList(list):
             return datetime.strftime(activity.getDateTime(), "%Y")
 
         return datetime.strftime(activity.getDateTime(), "%Y-%m-%d")
+
+    def dump(self) -> str:
+        """
+        Dump out the entire activity list in json
+        """
+        out = []
+
+        for activity in self:
+            out.append(activity.dump())
+
+        return json.dumps(out)
 
 
 class TokenStorage():
@@ -319,29 +341,13 @@ class Strava:
         out = ActivityList()
         while (remaining >= 0):
             self.log.debug(
-                "pagination parameter are: num=%s offset=%s remaining=%s"
+                "pagination parameters are: num=%s offset=%s remaining=%s"
                 % (num, offset, remaining)
             )
 
             page = math.floor(offset / num) + 1
 
-            base_url = 'https://www.strava.com/api/v3/athlete/activities'
-            url = '%s?page=%d&per_page=%d' % (base_url, page, num)
-
-            res = self.get(url)
-
-            if (res.status_code != 200):
-                raise AuthenticationException("invalid auth token")
-
-            try:
-                if (res.from_cache):
-                    self.log.debug("read %s from cache" % url)
-                else:
-                    self.log.debug("read %s from network" % url)
-            except AttributeError:
-                self.log.debug("read %s from network" % url)
-
-            activities = json.loads(res.content)
+            activities = self._getActivitiesPage(page, num)
 
             for activity in activities:
                 try:
@@ -355,12 +361,71 @@ class Strava:
 
         return out
 
+    def getAllActivities(self) -> ActivityList:
+        """
+        Get all activities for the user, for all time. Keep walking back
+        page-by-page until it looks like we have everything
+
+        return: ActivityList
+        """
+        page = 1
+        done = False
+        out = ActivityList()
+
+        while (not done):
+            activities = self._getActivitiesPage(page, self.MAX_PAGE_SIZE)
+
+            for activity in activities:
+                try:
+                    out.append(Activity.newFromDict(activity))
+                except ValueError as e:
+                    self.log.warning("Activity missing required field: %s" % e)
+
+            page = page + 1
+
+            if (len(activities) < self.MAX_PAGE_SIZE):
+                self.log.debug(
+                    "Asked for %d got %d. Assuming all activities are fetched"
+                    % (self.MAX_PAGE_SIZE, len(activities))
+                )
+
+                done = True
+
+        return out
+
+    def _getActivitiesPage(self, page: int, perPage: int) -> dict:
+        """
+        Fetch a specific page of strava activities
+
+        :param: page the page number to fetch
+        :param: perPage the number of activities per page to fetch
+
+        return: dict
+        """
+        base_url = 'https://www.strava.com/api/v3/athlete/activities'
+        url = '%s?page=%d&per_page=%d' % (base_url, page, perPage)
+
+        res = self.get(url)
+
+        if (res.status_code != 200):
+            raise AuthenticationException("invalid auth token")
+
+        try:
+            if (res.from_cache):
+                self.log.debug("read %s from cache" % url)
+            else:
+                self.log.debug("read %s from network" % url)
+        except AttributeError:
+            self.log.debug("read %s from network" % url)
+
+        return json.loads(res.content)
+
     def get(self, url: str):
         """
         Fetch strava data from the given url, with oauth credentials. This
         handles expired tokens and cache clearing as required
 
-        return:
+        return: Requests response
         """
         res = None
 
