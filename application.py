@@ -29,20 +29,20 @@ def ping():
     return 'pong'
 
 
-@route('/')
+@route('/dump')
 def main():
     token_store = CookieTokenStorage(bottle.request, response)
     strava = Strava(token_storage=token_store, debug=True)
 
-    out = ''
-    activities = strava.getActivities(300)
+    if (request.query.count):
+        count = int(request.query.count)
+    else:
+        count = 100
 
-    for a in activities:
-        out += "%s\n" % (
-            a.average_watts
-        )
+    activities = strava.getActivities(count)
 
-    return out
+    response.set_header('Content-Type', 'application/json')
+    return activities.dump()
 
 
 @route('/verify')
@@ -99,6 +99,7 @@ def chart(metric: str = 'average_watts', period: str = 'week'):
     chart.data.Metric.data = []
 
     activities = strava.getActivities(100)
+#    activities = strava.getAllActivities()
 
     log = logging.getLogger('strava')
 
