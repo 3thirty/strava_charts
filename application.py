@@ -133,8 +133,9 @@ def preload():
 
 
 @route('/chart')
-@route('/chart/<metric>/<period>')
-def chart(metric: str = 'average_watts', period: str = 'week'):
+@route('/chart/<type>/<metric>/<period>')
+def chart(type: str = 'average', metric: str = 'average_watts',
+          period: str = 'week'):
     if (request.query.force):
         force = True
     else:
@@ -165,13 +166,18 @@ def chart(metric: str = 'average_watts', period: str = 'week'):
     chart.labels.labels = []
     chart.data.Metric.data = []
 
-    activities = strava.getActivities(100)
+    activities = strava.getAllActivities()
 
     log = logging.getLogger('strava')
 
-    data = activities.aggregateMetricByPeriod(
-                metric=metric,
-                period=AggregationPeriod.strToEnum(period))
+    if (type == 'total'):
+        data = activities.aggregateTotalMetricByPeriod(
+                    metric=metric,
+                    period=AggregationPeriod.strToEnum(period))
+    else:
+        data = activities.aggregateAverageMetricByPeriod(
+                    metric=metric,
+                    period=AggregationPeriod.strToEnum(period))
 
     log.debug("chart data: %s" % data)
 
