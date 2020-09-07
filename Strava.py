@@ -295,11 +295,13 @@ class Strava:
         log = logging.getLogger('requests_oauthlib')
 
         if (on):
-            log.addHandler(logging.StreamHandler(sys.stdout))
-            log.setLevel(logging.DEBUG)
+            if (not log.hasHandlers()):
+                log.addHandler(logging.StreamHandler(sys.stdout))
+                log.setLevel(logging.DEBUG)
 
-            self.log.addHandler(logging.StreamHandler(sys.stdout))
-            self.log.setLevel(logging.DEBUG)
+            if (not self.log.hasHandlers()):
+                self.log.addHandler(logging.StreamHandler(sys.stdout))
+                self.log.setLevel(logging.DEBUG)
         else:
             log.addHandler(logging.StreamHandler(logging.NullHandler()))
 
@@ -347,7 +349,7 @@ class Strava:
 
             page = math.floor(offset / num) + 1
 
-            activities = self._getActivitiesPage(page, num)
+            activities = self.getActivitiesPage(page, num)
 
             for activity in activities:
                 try:
@@ -373,7 +375,7 @@ class Strava:
         out = ActivityList()
 
         while (not done):
-            activities = self._getActivitiesPage(page, self.MAX_PAGE_SIZE)
+            activities = self.getActivitiesPage(page, self.MAX_PAGE_SIZE)
 
             for activity in activities:
                 try:
@@ -393,7 +395,7 @@ class Strava:
 
         return out
 
-    def _getActivitiesPage(self, page: int, perPage: int) -> dict:
+    def getActivitiesPage(self, page: int, perPage: int) -> dict:
         """
         Fetch a specific page of strava activities
 
@@ -428,6 +430,8 @@ class Strava:
         return: Requests response
         """
         res = None
+
+        self.log.debug("fetching %s" % url)
 
         try:
             res = self.oauth.get(url=url)
