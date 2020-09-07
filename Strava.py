@@ -165,7 +165,7 @@ class ActivityList(list):
     def getMaxDate(self):
         return self.sortByDate()[len(self) - 1].getDateTime()
 
-    def aggregateMetricByPeriod(
+    def aggregateAverageMetricByPeriod(
             self, metric: str, period: AggregationPeriod) -> OrderedDict:
         """
         Average the requested metric for the activities in the list over the
@@ -190,9 +190,42 @@ class ActivityList(list):
         for time in grouped_by_time:
             out_value = 0
             for activity in grouped_by_time[time]:
-                out_value += getattr(activity, metric)
+                try:
+                    out_value += getattr(activity, metric)
+                except KeyError:
+                    pass
 
             ret[time] = (out_value / len(grouped_by_time[time]))
+
+        return OrderedDict(sorted(ret.items(), key=lambda item: item[0]))
+
+    def aggregateTotalMetricByPeriod(
+            self, metric: str, period: AggregationPeriod) -> OrderedDict:
+        """
+        Total the requested metric for the activities in the list over the
+        given time format
+
+        :param metric: the metric to average
+        :param period: the time period to aggregate over
+
+        :return Dict of activies with activity keys set based on timef
+        """
+        grouped_by_time = {}
+
+        for activity in self:
+            time_key = self._getTimeKey(activity, period)
+
+            if ('time_key' not in grouped_by_time):
+                grouped_by_time[time_key] = []
+
+            grouped_by_time[time_key].append(activity)
+
+        ret = {}
+        for time in grouped_by_time:
+            ret[time] = 0
+
+            for activity in grouped_by_time[time]:
+                ret[time] += getattr(activity, metric, 0)
 
         return OrderedDict(sorted(ret.items(), key=lambda item: item[0]))
 
