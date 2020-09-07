@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import enum
 import json
 import logging
@@ -109,23 +111,29 @@ class AggregationPeriod(enum.Enum):
 
 class Activity:
     start_date = None
-    average_watts = None
 
     def newFromDict(d):
-        # TODO: handle this more sensibly
-        if ('average_watts' not in d):
-            raise ValueError('average_watts is required')
-
-        if ('weighted_average_watts' not in d):
-            raise ValueError('weighted_average_watts is required')
-
         ret = Activity()
-        ret.start_date = d['start_date']
-        ret.average_watts = d['average_watts']
-        ret.average_speed = d['average_speed']
-        ret.distance = d['distance']
-        ret.moving_time = d['moving_time']
-        ret.total_elevation_gain = d['total_elevation_gain']
+        if ('start_date' in d):
+            ret.start_date = d['start_date']
+
+        if ('average_watts' in d):
+            ret.average_watts = d['average_watts']
+
+        if ('weighted_average_watts' in d):
+            ret.weighted_average_watts = d['weighted_average_watts']
+
+        if ('average_speed' in d):
+            ret.average_speed = d['average_speed']
+
+        if ('distance' in d):
+            ret.distance = d['distance']
+
+        if ('moving_time' in d):
+            ret.moving_time = d['moving_time']
+
+        if ('total_elevation_gain' in d):
+            ret.total_elevation_gain = d['total_elevation_gain']
 
         return ret
 
@@ -156,8 +164,12 @@ class Activity:
 
 
 class ActivityList(list):
-    def sortByDate(self):
-        return sorted(self, key=lambda self: self.getDateTimestamp())
+    def sortByDate(self, reverse: bool = False):
+        return sorted(
+            self,
+            reverse=reverse,
+            key=lambda self: self.getDateTimestamp()
+        )
 
     def getMinDate(self):
         return self.sortByDate()[0].getDateTime()
@@ -181,21 +193,27 @@ class ActivityList(list):
         for activity in self:
             time_key = self._getTimeKey(activity, period)
 
-            if ('time_key' not in grouped_by_time):
+            if (time_key not in grouped_by_time):
                 grouped_by_time[time_key] = []
 
             grouped_by_time[time_key].append(activity)
 
         ret = {}
         for time in grouped_by_time:
-            out_value = 0
+            out_total = 0
+            out_count = 0
             for activity in grouped_by_time[time]:
                 try:
-                    out_value += getattr(activity, metric)
-                except KeyError:
+                    value = getattr(activity, metric)
+
+                    if (value > 0):
+                        out_total += value
+                        out_count += 1
+                except AttributeError:
                     pass
 
-            ret[time] = (out_value / len(grouped_by_time[time]))
+            if (out_count > 0):
+                ret[time] = (out_total / out_count)
 
         return OrderedDict(sorted(ret.items(), key=lambda item: item[0]))
 
@@ -215,17 +233,24 @@ class ActivityList(list):
         for activity in self:
             time_key = self._getTimeKey(activity, period)
 
-            if ('time_key' not in grouped_by_time):
+            if (time_key not in grouped_by_time):
                 grouped_by_time[time_key] = []
 
             grouped_by_time[time_key].append(activity)
 
         ret = {}
-        for time in grouped_by_time:
-            ret[time] = 0
 
+        for time in grouped_by_time:
             for activity in grouped_by_time[time]:
-                ret[time] += getattr(activity, metric, 0)
+                value = getattr(activity, metric, 0)
+
+                if (value == 0):
+                    continue
+
+                if (time in ret):
+                    ret[time] += value
+                else:
+                    ret[time] = value
 
         return OrderedDict(sorted(ret.items(), key=lambda item: item[0]))
 
@@ -262,6 +287,48 @@ class ActivityList(list):
             out.append(activity.dump())
 
         return json.dumps(out)
+
+    def slice(activities: ActivityList, start: int, end: int) -> ActivityList:
+        """
+        Return a slice of a given activity list
+
+        :param activities: the input activity list to slice
+        :param start:      the starting index of the slice
+        :param end:        the ending index of the slice. If greater than the
+                           size of the ActivityList, we will return up to the
+                           end of the list
+
+        :return ActivityList
+        """
+        out = ActivityList()
+        i = start
+
+        if (end > len(activities)):
+            end = len(activities)
+
+        while (i < end):
+            out.append(activities[i])
+            i += 1
+
+        return out
+
+    def trimBeforeDate(activities: ActivityList, date: datetime):
+        """
+        Remove all activities before the given date
+
+        :param date: the starting date. Any activities earlier than this will
+                     be removed
+
+        :return ActivityList trimmed to the given date
+        """
+        date_ts = date.timestamp()
+        out = ActivityList()
+
+        for activity in activities:
+            if (activity.getDateTimestamp() > date_ts):
+                out.append(activity)
+
+        return out
 
 
 class TokenStorage():
@@ -367,6 +434,8 @@ class Strava:
         )
 
     def getActivities(self, num: int, offset: int = 0) -> ActivityList:
+        orig_num = num
+
         if (num > self.MAX_PAGE_SIZE):
             remaining = num - self.MAX_PAGE_SIZE
             num = self.MAX_PAGE_SIZE
@@ -390,9 +459,14 @@ class Strava:
                 except ValueError as e:
                     self.log.warning("Activity missing required field: %s" % e)
 
-            remaining = remaining - num
             offset += num
+            remaining = orig_num - offset
             num = self.MAX_PAGE_SIZE
+
+        out = out.sortByDate(True)
+
+        if (len(out) > orig_num):
+            return ActivityList.slice(out, 0, orig_num)
 
         return out
 
