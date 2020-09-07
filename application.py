@@ -1,5 +1,7 @@
+import json
 import logging
 import sys
+import time
 
 import bottle
 from bottle import route, run, template, request, response, redirect, \
@@ -20,6 +22,7 @@ application = beaker.middleware.SessionMiddleware(bottle.app(), session_opts)
 
 
 @route('/favico/<file:re:.*\\.(ico|png|webmanifest)$>')
+@route('/<file:re:favicon.ico$>')
 def favico(file):
     return static_file(file, root="favico/")
 
@@ -31,8 +34,13 @@ def ping():
 
 @route('/dump')
 def main():
-    token_store = CookieTokenStorage(bottle.request, response)
-    strava = Strava(token_storage=token_store, debug=True)
+    try:
+        token_store = CookieTokenStorage(bottle.request, response)
+        strava = Strava(token_storage=token_store, debug=True)
+    except AuthenticationException:
+        response.status = 401
+
+        return "Not Authorized"
 
     if (request.query.count):
         count = int(request.query.count)
@@ -63,6 +71,65 @@ def verify():
     else:
         response.status = 400
         return "Authentication failure"
+
+
+@route('/preload')
+def preload():
+    """
+    Load all strava data for the loggedin user into the requests cache. Right
+    now, this is done synchronously and will likely time out for users with
+    many activities. In future, we should make these requests offline and use
+    this endpoint to trigger a fetch and query current status
+
+    If this returns a 502, the client should immediately retry to continue
+    fetching data, until a 200 is received
+    """
+    MAX_EXEC_TIME = 25
+    STATUS_IN_PROGRESS = 'in_progress'
+    STATUS_DONE = 'done'
+
+    force = False
+    token_store = CookieTokenStorage(request, response)
+    start = time.perf_counter()
+
+    try:
+        strava = Strava(
+            token_storage=token_store,
+            debug=True,
+            force=force
+        )
+    except AuthenticationException:
+        response.status = 401
+
+        return "Not Authorized"
+
+    page = 1
+    done = False
+    ret = {}
+    while (not done):
+        if (time.perf_counter() - start > MAX_EXEC_TIME):
+            response.status = 502
+
+            return json.dumps(ret)
+
+        activities = strava.getActivitiesPage(page, strava.MAX_PAGE_SIZE)
+
+        page = page + 1
+        ret['status'] = STATUS_IN_PROGRESS
+        ret['page'] = page
+
+        if (len(activities) < strava.MAX_PAGE_SIZE):
+            strava.log.debug(
+                "Asked for %d got %d. Assuming all activities are fetched"
+                % (strava.MAX_PAGE_SIZE, len(activities))
+            )
+
+            ret['status'] = STATUS_DONE
+            response.status = 200
+
+            return json.dumps(ret)
+
+    return json.dumps(ret)
 
 
 @route('/chart')
@@ -99,7 +166,6 @@ def chart(metric: str = 'average_watts', period: str = 'week'):
     chart.data.Metric.data = []
 
     activities = strava.getActivities(100)
-#    activities = strava.getAllActivities()
 
     log = logging.getLogger('strava')
 
@@ -107,7 +173,7 @@ def chart(metric: str = 'average_watts', period: str = 'week'):
                 metric=metric,
                 period=AggregationPeriod.strToEnum(period))
 
-    log.debug(data)
+    log.debug("chart data: %s" % data)
 
     for label in data:
         chart.labels.labels.append(label)
