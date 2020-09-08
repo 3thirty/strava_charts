@@ -68,8 +68,7 @@ def verify():
     )
 
     if (token):
-        # todo: redirect should be a param?
-        redirect('/chart')
+        redirect('/preload')
     else:
         response.status = 400
         return "Authentication failure"
@@ -83,14 +82,12 @@ def preload():
     many activities. In future, we should make these requests offline and use
     this endpoint to trigger a fetch and query current status
 
-    If this returns a 502, the client should immediately retry to continue
-    fetching data, until a 200 is received
+    The current behaviour is to keep redirecting this endpoint until all data
+    is loaded in a timely manner, at which point we redirect to /chart
     """
     MAX_EXEC_TIME = 25
-    STATUS_IN_PROGRESS = 'in_progress'
-    STATUS_DONE = 'done'
 
-    force = False
+    force = bool(request.query.force)
     token_store = CookieTokenStorage(request, response)
     start = time.perf_counter()
 
@@ -107,31 +104,25 @@ def preload():
 
     page = 1
     done = False
-    ret = {}
     while (not done):
-        if (time.perf_counter() - start > MAX_EXEC_TIME):
-            response.status = 502
-
-            return json.dumps(ret)
+        if ((time.perf_counter() - start) > MAX_EXEC_TIME):
+            break
 
         activities = strava.getActivitiesPage(page, strava.MAX_PAGE_SIZE)
 
         page = page + 1
-        ret['status'] = STATUS_IN_PROGRESS
-        ret['page'] = page
-
         if (len(activities) < strava.MAX_PAGE_SIZE):
             strava.log.debug(
                 "Asked for %d got %d. Assuming all activities are fetched"
                 % (strava.MAX_PAGE_SIZE, len(activities))
             )
 
-            ret['status'] = STATUS_DONE
-            response.status = 200
+            done = True
 
-            return json.dumps(ret)
-
-    return json.dumps(ret)
+    if (done):
+        redirect('/chart')
+    else:
+        redirect('/preload')
 
 
 @route('/chart')

@@ -23,5 +23,4 @@ open:
 
 build: clean
 	-mkdir build
-#	zip -r build/strava_charts.zip ./* --exclude \*.crt --exclude \*.key --exclude junk
 	zip -r build/strava_charts.zip ./* --exclude @.gitignore
