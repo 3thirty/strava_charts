@@ -1,3 +1,4 @@
+from datetime import datetime
 import json
 import logging
 import sys
@@ -9,8 +10,9 @@ from bottle import route, run, template, request, response, redirect, \
 from bottle.ext import beaker
 
 from Chart import Chart
-from Strava import Strava, Authentication, AuthenticationException, \
-                   CookieTokenStorage, AggregationPeriod
+from Strava import Strava, ActivityList, Authentication, \
+                   AuthenticationException, CookieTokenStorage, \
+                   AggregationPeriod
 
 session_opts = {
     'session.type': 'memory',
@@ -136,6 +138,16 @@ def preload():
 @route('/chart/<type>/<metric>/<period>')
 def chart(type: str = 'average', metric: str = 'average_watts',
           period: str = 'week'):
+    """
+    Produce a page with a chart
+
+    Accepted arguments:
+        limit: Maximum number of activities to chart
+        after: Only chart events with a start date after this (expected to be
+               a date in format YYYY-mm-dd)
+    """
+    log = logging.getLogger('strava')
+
     if (request.query.force):
         force = True
     else:
@@ -166,9 +178,17 @@ def chart(type: str = 'average', metric: str = 'average_watts',
     chart.labels.labels = []
     chart.data.Metric.data = []
 
-    activities = strava.getAllActivities()
+    if (request.query.limit):
+        activities = strava.getActivities(int(request.query.limit))
+    else:
+        activities = strava.getAllActivities()
 
-    log = logging.getLogger('strava')
+    if (request.query.after):
+        try:
+            after_date = datetime.fromisoformat(request.query.after)
+            activities = ActivityList.trimBeforeDate(activities, after_date)
+        except ValueError:
+            pass
 
     if (type == 'total'):
         data = activities.aggregateTotalMetricByPeriod(
