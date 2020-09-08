@@ -1,5 +1,4 @@
 from datetime import datetime
-import json
 import logging
 import sys
 import time
@@ -9,10 +8,10 @@ from bottle import route, run, template, request, response, redirect, \
                    static_file
 from bottle.ext import beaker
 
+from Activity import ActivityList, AggregationPeriod
 from Chart import Chart
-from Strava import Strava, ActivityList, Authentication, \
-                   AuthenticationException, CookieTokenStorage, \
-                   AggregationPeriod
+from Strava import Strava, Authentication, AuthenticationException, \
+                   CookieTokenStorage
 
 session_opts = {
     'session.type': 'memory',
