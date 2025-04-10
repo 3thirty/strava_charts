@@ -203,7 +203,7 @@ def chart(type: str = 'average', metric: str = 'average_watts',
 if ('dev' in sys.argv):
     run(
         app=application,
-        host='localhost',
+        host='0.0.0.0',
         port=8080,
         debug=True,
         reloader=True,

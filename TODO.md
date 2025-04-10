@@ -1,10 +1,13 @@
 ### General:
-  * [ ] write a readme
+  * [x] write a readme
   * [ ] cleanup comments
   * [ ] loading state
+  * [ ] docker build: cache pip packages so we don't have to download every time
+  * [ ] investigate GHA or CDK or something to publish to AWS lambda
 
 ### Strava:
   * [ ] fetch older data asynchronously
+  * [ ] allow filtering of activity types
 
 ### server
   * [ ] clean up handling/parsing of activities

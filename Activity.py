@@ -63,14 +63,14 @@ class Activity:
         return(datetime.strftime(date, "%x"))
 
     def dump(self):
-        out = {}
-        out['start_date'] = self.start_date
-        out['average_watts'] = self.average_watts
-        out['average_speed'] = self.average_speed
-        out['distance'] = self.distance
-        out['moving_time'] = self.moving_time
-        out['total_elevation_gain'] = self.total_elevation_gain
-
+        out = {
+            'start_date': getattr(self, 'start_date', None),
+            'average_watts': getattr(self, 'average_watts', None),
+            'average_speed': getattr(self, 'average_speed', None),
+            'distance': getattr(self, 'distance', None),
+            'moving_time': getattr(self, 'moving_time', None),
+            'total_elevation_gain': getattr(self, 'total_elevation_gain', None),
+        }
         return out
 
 
