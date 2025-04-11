@@ -1,7 +1,9 @@
-FROM python:3.9.22-alpine3.21
-RUN apk add --update make openssl
+FROM public.ecr.aws/lambda/python:3.12
+RUN dnf install -y make
 
-COPY . /app
-RUN make -C /app install
+# can use LAMBDA_TASK_ROOT in AWS
+COPY . /var/task
+RUN make -C /var/task install
 
-CMD make -C /app dev
+# for lambda
+CMD ["application.lambda_handler"]
