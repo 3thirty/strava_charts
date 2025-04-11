@@ -5,4 +5,5 @@ COPY . /app
 RUN make -C /app install
 
 # for lambda
+WORKDIR /app
 CMD ["application.lambda_handler"]
