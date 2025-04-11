@@ -3,6 +3,8 @@ import logging
 import sys
 import time
 
+import aws_lambda_wsgi
+
 import bottle
 from bottle import route, run, template, request, response, redirect, \
                    static_file
@@ -211,3 +213,6 @@ if ('dev' in sys.argv):
         keyfile='private.key',
         server='gunicorn',
     )
+
+def lambda_handler(event, context):
+    return aws_lambda_wsgi.response(application, event, context)

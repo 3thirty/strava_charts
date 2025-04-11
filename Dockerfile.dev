@@ -4,8 +4,4 @@ RUN apk add --update make openssl
 COPY . /app
 RUN make -C /app install
 
-# for dev
-#CMD make -C /app dev
-
-# for lambda
-CMD ["application.lambda_handler"]
+CMD make -C /app dev
