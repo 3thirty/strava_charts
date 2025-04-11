@@ -26,10 +26,10 @@ jobs:
 
     - name: Build, tag, and push Docker image to ECR
       run: |
-        IMAGE_TAG=latest
+        IMAGE_URI=${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPOSITORY}
 
-        docker tag strava_charts $IMAGE_URI
-        docker push $IMAGE_URI:${IMAGE_TAG}
+        docker tag strava_charts $IMAGE_URI:live
+        docker push $IMAGE_URI:live
 
         echo "IMAGE_URI=$IMAGE_URI" >> $GITHUB_ENV
 
@@ -37,7 +37,7 @@ jobs:
       run: |
         sam deploy \
             --image-repository ${IMAGE_URI} \
-            --parameter-overrides EcrImageUri=${IMAGE_URI}:${IMAGE_TAG} \
+            --parameter-overrides EcrImageUri=${IMAGE_URI}:live \
             --stack-name strava-charts-stack \
             --region ${AWS_REGION} \
             --capabilities CAPABILITY_IAM \
