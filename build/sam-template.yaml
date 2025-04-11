@@ -1,0 +1,20 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Python Lambda using container image
+
+Parameters:
+  EcrImageUri:
+    Type: String
+
+Resources:
+  StravaCharts:
+    Type: AWS::Serverless::Function
+    Properties:
+      PackageType: Image
+      ImageUri: !Ref EcrImageUri
+      Events:
+        Api:
+          Type: Api
+          Properties:
+            Path: /ping
+            Method: GET
