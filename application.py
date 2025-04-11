@@ -3,7 +3,7 @@ import logging
 import sys
 import time
 
-import aws_lambda_wsgi
+from magnum import Magnum
 
 import bottle
 from bottle import route, run, template, request, response, redirect, \
@@ -214,5 +214,4 @@ if ('dev' in sys.argv):
         server='gunicorn',
     )
 
-def lambda_handler(event, context):
-    return aws_lambda_wsgi.response(application, event, context)
+lambda_handler = Mangum(application)
