@@ -34,7 +34,6 @@ jobs:
         echo "IMAGE_URI=$IMAGE_URI" >> $GITHUB_ENV
 
     - name: Deploy to AWS via sam
-      env:
       run: |
         sam deploy \
             --image-repository ${IMAGE_URI} \
