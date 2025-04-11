@@ -25,7 +25,6 @@ jobs:
       uses: aws-actions/amazon-ecr-login@v2
 
     - name: Build, tag, and push Docker image to ECR
-      env:
       run: |
         IMAGE_TAG=latest
 
@@ -36,7 +35,7 @@ jobs:
 
     - name: Deploy to AWS via sam
       env:
-      run: make sam-deploy
+      run: |
         sam deploy \
             --image-repository ${IMAGE_URI} \
             --parameter-overrides EcrImageUri=${IMAGE_URI}:${IMAGE_TAG} \
