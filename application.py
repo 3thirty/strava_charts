@@ -3,8 +3,6 @@ import logging
 import sys
 import time
 
-from magnum import Magnum
-
 import bottle
 from bottle import route, run, template, request, response, redirect, \
                    static_file
@@ -14,6 +12,7 @@ from Activity import ActivityList, AggregationPeriod
 from Chart import Chart
 from Strava import Strava, Authentication, AuthenticationException, \
                    CookieTokenStorage
+from Lambda import Lambda
 
 session_opts = {
     'session.type': 'memory',
@@ -214,4 +213,15 @@ if ('dev' in sys.argv):
         server='gunicorn',
     )
 
-lambda_handler = Mangum(application)
+
+def lambda_handler(event, context):
+    """
+    Handle a lambda event
+
+    This (application.lambda_handler) is expected to be defined as the
+    entrypoint for the container when running on lambda
+    """
+    lambdaRequest = Lambda(event)
+    lambdaRequest.handleRequest(application)
+
+    return lambdaRequest.getResponse()

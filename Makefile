@@ -1,7 +1,7 @@
 .PHONY: install run creds clean open zip docker-build docker-run docker-kill
 
 install:
-	pip3 install requests-oauthlib bottle requests-cache pyyaml gunicorn bottle-beaker pychart.js magnum
+	pip3 install requests-oauthlib bottle requests-cache pyyaml gunicorn bottle-beaker pychart.js
 
 dev: creds
 	test -e cert.crt && test -e private.key || openssl req -new -x509 -days 1095 -nodes -newkey rsa:2048 -out cert.crt -keyout private.key -subj '/CN=localhost'
