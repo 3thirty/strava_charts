@@ -6,7 +6,9 @@ class Config:
     config = {}
 
     def __init__(self):
-        with open("config.yaml", 'r') as config_file:
+        cwd = os.path.dirname(os.path.abspath(__file__))
+
+        with open(cwd + "/config.yaml", 'r') as config_file:
             try:
                 self.config = yaml.safe_load(config_file)
             except yaml.YAMLError as e:
