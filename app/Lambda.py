@@ -24,8 +24,10 @@ class Lambda:
         event_body = event.get("body", "")
         if event.get("isBase64Encoded", False):
             body = base64.b64decode(event_body)
-        else:
+        elif event_body:
             body = event_body.encode("utf-8")
+        else:
+            body = ""
 
         # Build request for WSGI
         request = {
