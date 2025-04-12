@@ -27,13 +27,25 @@ class Lambda:
         elif event_body:
             body = event_body.encode("utf-8")
         else:
-            body = ""
+            body = b""
+
+        if "version" in event and event["version"] == "2.0":
+            method = event["requestContext"]["http"]["method"]
+            path = event.get("rawPath", "/")
+            query_string = event.get("rawQueryString", "")
+        else:
+            method = event.get("httpMethod", "GET")
+            path = event.get("path", "/")
+            # Reconstruct query string from parameters
+            query_string = (event.get("multiValueQueryStringParameters")
+                            or event.get("queryStringParameters")
+                            or {})
 
         # Build request for WSGI
         request = {
-            "REQUEST_METHOD": event["requestContext"]["http"]["method"],
-            "PATH_INFO": event.get("rawPath", "/"),
-            "QUERY_STRING": event.get("rawQueryString", ""),
+            "REQUEST_METHOD": method,
+            "PATH_INFO": path,
+            "QUERY_STRING": query_string,
             "SERVER_NAME": headers.get("host", "lambda"),
             "SERVER_PORT": "80",
             "wsgi.version": (1, 0),
