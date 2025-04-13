@@ -34,7 +34,6 @@ class Lambda:
             method = event["requestContext"]["http"]["method"]
             path = event.get("rawPath", "/")
             query_string = event.get("rawQueryString", "")
-            query_string = event.get("rawQueryString", "")
         else:
             method = event.get("httpMethod", "GET")
             path = event.get("path", "/")
