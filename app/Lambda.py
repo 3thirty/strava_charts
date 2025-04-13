@@ -8,7 +8,9 @@ class Lambda:
 
     response = {
         "statusCode": 500,
-        "headers": {},
+        "headers": {
+            "Content-Type": "application/json"
+        },
         "body": ""
     }
 
@@ -73,4 +75,4 @@ class Lambda:
 
     def _buildResponse(self, status_line, headers, exc_info=None):
         self.response["statusCode"] = int(status_line.split()[0])
-        self.response["headers"] = dict(headers)
+        self.response["headers"].update(headers)

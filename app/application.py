@@ -228,4 +228,7 @@ def lambda_handler(event, context):
     lambdaRequest = Lambda(event)
     lambdaRequest.handleRequest(application)
 
+    import json
+    print("Returning response:", json.dumps(lambdaRequest.getResponse()))
+
     return lambdaRequest.getResponse()
