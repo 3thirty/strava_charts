@@ -15,6 +15,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       PackageType: Image
+      ImageUri: !Ref EcrImageUri
       Environment:
         Variables:
           STRAVA_CLIENT_ID: !Ref StravaClientId
