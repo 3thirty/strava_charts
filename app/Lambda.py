@@ -1,12 +1,13 @@
 import base64
 import io
+from urllib.parse import urlencode
 
 
 class Lambda:
     request = {}
 
     response = {
-        "status": 500,
+        "statusCode": 500,
         "headers": {},
         "body": ""
     }
@@ -33,13 +34,12 @@ class Lambda:
             method = event["requestContext"]["http"]["method"]
             path = event.get("rawPath", "/")
             query_string = event.get("rawQueryString", "")
+            query_string = event.get("rawQueryString", "")
         else:
             method = event.get("httpMethod", "GET")
             path = event.get("path", "/")
-            # Reconstruct query string from parameters
-            query_string = (event.get("multiValueQueryStringParameters")
-                            or event.get("queryStringParameters")
-                            or {})
+            query_params = event.get("queryStringParameters", {}) or {}
+            query_string = urlencode(query_params)
 
         # Build request for WSGI
         request = {
@@ -64,7 +64,8 @@ class Lambda:
         return request
 
     def handleRequest(self, application) -> bool:
-        self.response["body"] = application(self.request, self._buildResponse)
+        body = application(self.request, self._buildResponse)
+        self.response["body"] = bytes.join(b'', body).decode("utf-8")
 
         return True
 
@@ -72,5 +73,5 @@ class Lambda:
         return self.response
 
     def _buildResponse(self, status_line, headers, exc_info=None):
-        self.response["status"] = int(status_line.split()[0])
+        self.response["statusCode"] = int(status_line.split()[0])
         self.response["headers"] = dict(headers)

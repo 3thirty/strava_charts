@@ -1,5 +1,6 @@
 from datetime import datetime
 import logging
+import os
 import sys
 import time
 
@@ -19,6 +20,9 @@ session_opts = {
     'session.cookie_expires': 300,
     'session.auto': True
 }
+
+if (os.environ.get('DEBUG')):
+    bottle.debug(True)
 
 application = beaker.middleware.SessionMiddleware(bottle.app(), session_opts)
 

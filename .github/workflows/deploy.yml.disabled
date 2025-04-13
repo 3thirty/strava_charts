@@ -41,4 +41,5 @@ jobs:
             --stack-name strava-charts-stack \
             --region ${AWS_REGION} \
             --capabilities CAPABILITY_IAM \
+            --parameter-overrides StravaClientId=${STRAVA_CLIENT_ID},StravaClientSecret=${STRAVA_CLIENT_SECRET}
             --template-file build/sam-template.yaml
