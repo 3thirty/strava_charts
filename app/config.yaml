@@ -1,2 +1,2 @@
-strava_redirect_uri: 'https://localhost:8080/verify'
+strava_redirect_uri: 'https://stravacharts.3thirty.space/verify'
 cache_ttl: 86400
