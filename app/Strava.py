@@ -185,13 +185,19 @@ class Strava:
         token = token_storage.get()
 
         self.oauth = OAuth2CachedSession(
-            token=token,
-            auto_refresh_url='https://www.strava.com/oauth/token',
-            auto_refresh_kwargs={
-                'client_id': self.config.get('strava_client_id'),
-                'client_secret': self.config.get('strava_client_secret')
+            oauth_kwargs={
+                'token': token,
+                'auto_refresh_url': 'https://www.strava.com/oauth/token',
+                'auto_refresh_kwargs': {
+                    'client_id': self.config.get('strava_client_id'),
+                    'client_secret': self.config.get('strava_client_secret')
+                },
+                'expire_after': self.config.get('cache_ttl')
             },
-            expire_after=self.config.get('cache_ttl')
+            cache_kwargs={
+                'backend': self.config.get('cache_backend', 'sqlite'),
+                'name':  self.config.get('cache_data_dir', '.') + '/cache'
+            }
         )
 
     def getActivities(self, num: int, offset: int = 0) -> ActivityList:

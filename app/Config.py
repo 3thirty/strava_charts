@@ -17,8 +17,8 @@ class Config:
         self._getFromEnviron('strava_client_id')
         self._getFromEnviron('strava_client_secret')
 
-    def get(self, key):
-        return self.config[key]
+    def get(self, key, default=None):
+        return self.config.get(key, default)
 
     def dump(self):
         return self.config

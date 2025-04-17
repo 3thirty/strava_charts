@@ -1,2 +1,4 @@
 strava_redirect_uri: 'https://stravacharts.3thirty.space/verify'
 cache_ttl: 86400
+cache_data_dir: '/tmp'
+cache_backend: 'sqlite'
