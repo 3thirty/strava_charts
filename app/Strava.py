@@ -196,7 +196,8 @@ class Strava:
             },
             cache_kwargs={
                 'backend': self.config.get('cache_backend', 'sqlite'),
-                'name':  self.config.get('cache_data_dir', '.') + '/cache'
+                'cache_name': self.config.get('cache_data_dir', '/app/')
+                + '/cache'
             }
         )
 

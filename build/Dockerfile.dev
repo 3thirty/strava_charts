@@ -7,5 +7,7 @@ RUN pip3 install -r /tmp/requirements.txt
 COPY Makefile /tmp/
 
 COPY app /app
+COPY app/config/dev.yaml /app/config.yaml
+ENV DEBUG=1
 
 CMD ["make", "-f", "/tmp/Makefile", "-C", "/app", "dev"]
