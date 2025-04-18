@@ -24,6 +24,7 @@ Resources:
     Properties:
       PackageType: Image
       ImageUri: !Ref EcrImageUri
+      Timeout: 60
       Environment:
         Variables:
           STRAVA_CLIENT_ID: !Ref StravaClientId
