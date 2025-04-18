@@ -2,12 +2,15 @@
   * [x] write a readme
   * [ ] cleanup comments
   * [ ] loading state
-  * [ ] docker build: cache pip packages so we don't have to download every time
-  * [ ] investigate GHA or CDK or something to publish to AWS lambda
+  * [x] docker build: cache pip packages so we don't have to download every time
+  * Update GHA workflow to use cached docker layers
+  * [x] investigate GHA or CDK or something to publish to AWS lambda
+  * Better handling of dev/prod config
 
 ### Strava:
   * [ ] fetch older data asynchronously
   * [ ] allow filtering of activity types
+  * [ ] switch caching to redis (or other distributed store). without it, we can't have concurrency
 
 ### server
   * [ ] clean up handling/parsing of activities

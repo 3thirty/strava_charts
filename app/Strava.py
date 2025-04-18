@@ -2,6 +2,7 @@ import json
 import logging
 import math
 import sys
+import time
 
 from requests_oauthlib import OAuth2Session, TokenUpdated
 from oauthlib.oauth2.rfc6749.errors import MissingTokenError
@@ -150,7 +151,7 @@ class CookieTokenStorage(TokenStorage):
 
 
 class Strava:
-    MAX_PAGE_SIZE = 100
+    max_page_size = 100
 
     def debug(self, on=False):
         log = logging.getLogger('requests_oauthlib')
@@ -178,6 +179,7 @@ class Strava:
             self.log.debug("Debug enabled")
 
         self.config = Config()
+        self.max_page_size = self.config.get('max_page_size', 100)
         self.log.debug("Config loaded: %s" % self.config.dump())
 
         self.token_storage = token_storage
@@ -185,21 +187,28 @@ class Strava:
         token = token_storage.get()
 
         self.oauth = OAuth2CachedSession(
-            token=token,
-            auto_refresh_url='https://www.strava.com/oauth/token',
-            auto_refresh_kwargs={
-                'client_id': self.config.get('strava_client_id'),
-                'client_secret': self.config.get('strava_client_secret')
+            oauth_kwargs={
+                'token': token,
+                'auto_refresh_url': 'https://www.strava.com/oauth/token',
+                'auto_refresh_kwargs': {
+                    'client_id': self.config.get('strava_client_id'),
+                    'client_secret': self.config.get('strava_client_secret')
+                },
             },
-            expire_after=self.config.get('cache_ttl')
+            cache_kwargs={
+                'backend': self.config.get('cache_backend', 'sqlite'),
+                'cache_name': self.config.get('cache_data_dir', '/app')
+                + '/strava_charts.sqlite',
+                'expire_after': self.config.get('cache_ttl')
+            }
         )
 
     def getActivities(self, num: int, offset: int = 0) -> ActivityList:
         orig_num = num
 
-        if (num > self.MAX_PAGE_SIZE):
-            remaining = num - self.MAX_PAGE_SIZE
-            num = self.MAX_PAGE_SIZE
+        if (num > self.max_page_size):
+            remaining = num - self.max_page_size
+            num = self.max_page_size
         else:
             remaining = 0
 
@@ -222,7 +231,7 @@ class Strava:
 
             offset += num
             remaining = orig_num - offset
-            num = self.MAX_PAGE_SIZE
+            num = self.max_page_size
 
         out = out.sortByDate(True)
 
@@ -243,7 +252,7 @@ class Strava:
         out = ActivityList()
 
         while (not done):
-            activities = self.getActivitiesPage(page, self.MAX_PAGE_SIZE)
+            activities = self.getActivitiesPage(page, self.max_page_size)
 
             for activity in activities:
                 try:
@@ -253,10 +262,10 @@ class Strava:
 
             page = page + 1
 
-            if (len(activities) < self.MAX_PAGE_SIZE):
+            if (len(activities) < self.max_page_size):
                 self.log.debug(
                     "Asked for %d got %d. Assuming all activities are fetched"
-                    % (self.MAX_PAGE_SIZE, len(activities))
+                    % (self.max_page_size, len(activities))
                 )
 
                 done = True
@@ -272,6 +281,8 @@ class Strava:
 
         return: dict
         """
+        start_time = time.perf_counter()
+
         base_url = 'https://www.strava.com/api/v3/athlete/activities'
         url = '%s?page=%d&per_page=%d' % (base_url, page, perPage)
 
@@ -281,10 +292,9 @@ class Strava:
             raise AuthenticationException("invalid auth token")
 
         try:
-            if (res.from_cache):
-                self.log.debug("read %s from cache" % url)
-            else:
-                self.log.debug("read %s from network" % url)
+            self.log.debug("read %s from %s in %0.3f"
+                           % (url, "cache" if res.from_cache else "network",
+                              time.perf_counter() - start_time))
         except AttributeError:
             self.log.debug("read %s from network" % url)
 

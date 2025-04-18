@@ -1,5 +1,6 @@
 from datetime import datetime
 import logging
+import os
 import sys
 import time
 
@@ -10,6 +11,7 @@ from bottle.ext import beaker
 
 from Activity import ActivityList, AggregationPeriod
 from Chart import Chart
+from Config import Config
 from Strava import Strava, Authentication, AuthenticationException, \
                    CookieTokenStorage
 from Lambda import Lambda
@@ -19,6 +21,9 @@ session_opts = {
     'session.cookie_expires': 300,
     'session.auto': True
 }
+
+if (os.environ.get('DEBUG')):
+    bottle.debug(True)
 
 application = beaker.middleware.SessionMiddleware(bottle.app(), session_opts)
 
@@ -53,6 +58,24 @@ def main():
 
     response.set_header('Content-Type', 'application/json')
     return activities.dump()
+
+
+@route('/debug')
+def debug():
+    if (not os.environ.get('DEBUG')):
+        bottle.abort(404, "Not Found")
+
+    config = Config()
+
+    config_out = {}
+
+    for key, value in config.dump().items():
+        if "secret" in key:
+            value = "***"
+
+        config_out[key] = value
+
+    return config_out
 
 
 @route('/verify')
@@ -108,13 +131,13 @@ def preload():
         if ((time.perf_counter() - start) > MAX_EXEC_TIME):
             break
 
-        activities = strava.getActivitiesPage(page, strava.MAX_PAGE_SIZE)
+        activities = strava.getActivitiesPage(page, strava.max_page_size)
 
         page = page + 1
-        if (len(activities) < strava.MAX_PAGE_SIZE):
+        if (len(activities) < strava.max_page_size):
             strava.log.debug(
                 "Asked for %d got %d. Assuming all activities are fetched"
-                % (strava.MAX_PAGE_SIZE, len(activities))
+                % (strava.max_page_size, len(activities))
             )
 
             done = True

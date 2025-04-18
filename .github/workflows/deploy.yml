@@ -3,8 +3,6 @@ name: Docker Image CI
 on:
   push:
     branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
 
 jobs:
   build:
@@ -15,7 +13,8 @@ jobs:
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
       ECR_REPOSITORY: ${{ secrets.ECR_REPOSITORY }}
-
+      STRAVA_CLIENT_ID: ${{ secrets.STRAVA_CLIENT_ID }}
+      STRAVA_CLIENT_SECRET: ${{ secrets.STRAVA_CLIENT_SECRET }}
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
@@ -26,19 +25,24 @@ jobs:
 
     - name: Build, tag, and push Docker image to ECR
       run: |
+        IMAGE_TAG=${GITHUB_SHA::7}
         IMAGE_URI=${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPOSITORY}
 
-        docker tag strava_charts $IMAGE_URI:live
-        docker push $IMAGE_URI:live
+        docker tag strava_charts $IMAGE_URI:$IMAGE_TAG
+        docker push $IMAGE_URI:$IMAGE_TAG
 
         echo "IMAGE_URI=$IMAGE_URI" >> $GITHUB_ENV
+        echo "IMAGE_TAG=$IMAGE_TAG" >> $GITHUB_ENV
 
     - name: Deploy to AWS via sam
       run: |
         sam deploy \
             --image-repository ${IMAGE_URI} \
-            --parameter-overrides EcrImageUri=${IMAGE_URI}:live \
             --stack-name strava-charts-stack \
             --region ${AWS_REGION} \
             --capabilities CAPABILITY_IAM \
+            --parameter-overrides \
+                StravaClientId=${STRAVA_CLIENT_ID} \
+                StravaClientSecret=${STRAVA_CLIENT_SECRET} \
+                EcrImageUri=${IMAGE_URI}:${IMAGE_TAG} \
             --template-file build/sam-template.yaml

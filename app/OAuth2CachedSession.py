@@ -1,11 +1,15 @@
-import requests_cache
-import requests_oauthlib
+from requests_cache.session import CacheMixin
+from requests_oauthlib import OAuth2Session
 
 
 class OAuth2CachedSession(
-    requests_oauthlib.OAuth2Session,
-    requests_cache.CachedSession
+    CacheMixin,
+    OAuth2Session
 ):
+    def __init__(self, *, oauth_kwargs: dict, cache_kwargs: dict):
+        CacheMixin.__init__(self, **cache_kwargs)
+        OAuth2Session.__init__(self, **oauth_kwargs)
+
     def getCacheKey(self, request) -> str:
         """
         Get the cache key that requests_cache uses for the given request

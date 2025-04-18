@@ -1,7 +1,4 @@
-.PHONY: install run creds clean open zip docker-build docker-run docker-kill
-
-install:
-	pip3 install requests-oauthlib bottle requests-cache pyyaml gunicorn bottle-beaker pychart.js
+.PHONY: run creds clean open zip docker-build docker-run docker-kill
 
 dev: creds
 	test -e cert.crt && test -e private.key || openssl req -new -x509 -days 1095 -nodes -newkey rsa:2048 -out cert.crt -keyout private.key -subj '/CN=localhost'
@@ -26,10 +23,10 @@ zip: clean
 	zip -r build/strava_charts.zip ./* --exclude @.gitignore
 
 docker-build:
-	docker build . -t strava_charts
+	docker build -f build/Dockerfile . -t strava_charts
 
 docker-build-dev:
-	docker build -f Dockerfile.dev . -t strava_charts
+	docker build -f build/Dockerfile.dev . -t strava_charts
 
 docker-run: docker-kill
 	docker run --rm --name strava_charts --env-file .env -p 8080:8080 strava_charts
