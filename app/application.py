@@ -11,6 +11,7 @@ from bottle.ext import beaker
 
 from Activity import ActivityList, AggregationPeriod
 from Chart import Chart
+from Config import Config
 from Strava import Strava, Authentication, AuthenticationException, \
                    CookieTokenStorage
 from Lambda import Lambda
@@ -57,6 +58,16 @@ def main():
 
     response.set_header('Content-Type', 'application/json')
     return activities.dump()
+
+
+@route('/config')
+def config():
+    if (not os.environ.get('DEBUG')):
+        bottle.abort(404, "Not Found")
+
+    config = Config()
+
+    return config.dump()
 
 
 @route('/verify')
