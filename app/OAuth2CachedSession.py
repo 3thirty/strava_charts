@@ -1,13 +1,13 @@
-from requests_cache import CachedSession
+from requests_cache.session import CacheMixin
 from requests_oauthlib import OAuth2Session
 
 
 class OAuth2CachedSession(
-    OAuth2Session,
-    CachedSession
+    CacheMixin,
+    OAuth2Session
 ):
     def __init__(self, *, oauth_kwargs: dict, cache_kwargs: dict):
-        CachedSession.__init__(self, **cache_kwargs)
+        CacheMixin.__init__(self, **cache_kwargs)
         OAuth2Session.__init__(self, **oauth_kwargs)
 
     def getCacheKey(self, request) -> str:

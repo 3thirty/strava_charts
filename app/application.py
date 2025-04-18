@@ -60,14 +60,22 @@ def main():
     return activities.dump()
 
 
-@route('/config')
-def config():
+@route('/debug')
+def debug():
     if (not os.environ.get('DEBUG')):
         bottle.abort(404, "Not Found")
 
     config = Config()
 
-    return config.dump()
+    config_out = {}
+
+    for key, value in config.dump().items():
+        if "secret" in key:
+            value = "***"
+
+        config_out[key] = value
+
+    return config_out
 
 
 @route('/verify')
@@ -123,13 +131,13 @@ def preload():
         if ((time.perf_counter() - start) > MAX_EXEC_TIME):
             break
 
-        activities = strava.getActivitiesPage(page, strava.MAX_PAGE_SIZE)
+        activities = strava.getActivitiesPage(page, strava.max_page_size)
 
         page = page + 1
-        if (len(activities) < strava.MAX_PAGE_SIZE):
+        if (len(activities) < strava.max_page_size):
             strava.log.debug(
                 "Asked for %d got %d. Assuming all activities are fetched"
-                % (strava.MAX_PAGE_SIZE, len(activities))
+                % (strava.max_page_size, len(activities))
             )
 
             done = True
