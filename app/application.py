@@ -34,9 +34,19 @@ def favico(file):
     return static_file(file, root="favico/")
 
 
+@route('/')
+def landing_page():
+    return template('landing')
+
+
 @route('/ping')
 def ping():
     return 'pong'
+
+
+@route('/marco')
+def marco():
+    return 'polo'
 
 
 @route('/dump')
