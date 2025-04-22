@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3thirty Charts for Strava</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        font-family: 'Quicksand', sans-serif;
+        background-color: #fcf4e4;
+        display: flex;
+        flex-direction: column;
+      }
+
+      body {
+        margin: 0;
+        font-family: 'Quicksand', sans-serif;
+        background-color: #fcf4e4;
+        color: #333;
+      }
+
+      main.container {
+        flex: 1;
+        padding: 60px 20px 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 20px 100px;
+        max-width: 1200px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+      }
+
+      .hero-img {
+        max-width: 400px;
+        width: 100%;
+      }
+
+      .text-content {
+        max-width: 600px;
+        padding: 20px;
+        text-align: left;
+      }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: #e87722; /* Warmer bolder orange tone */
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+      }
+
+      .buttons {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .buttons button {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: 600;
+      }
+
+      .buttons .demo-btn {
+        background-color: #ccc;
+        color: #333;
+        height: 48px; /* Match image height */
+        padding: 0 24px;
+        font-size: 1rem;
+        border-radius: 8px;
+        border: none;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .demo-btn:hover {
+        background-color: #bbb;
+      }
+
+      footer {
+        background-color: #f1e9d3;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        font-size: 0.875rem;
+        font-weight: bold;
+      }
+
+      footer a {
+        text-decoration: none;
+        color: #777;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+      .footer-icon {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+        vertical-align: middle;
+        display: inline-block;
+        margin-right: 6px;
+        transform: translateY(-1px);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <img
+        src="spacekitty.png"
+        alt="Cat astronaut on a bike"
+        class="hero-img"
+      />
+      <div class="text-content">
+        <h1>3thirty Charts for Strava</h1>
+        <h2>View, aggregate and analyze your performance over time</h2>
+        <p>
+          3thirty charts connects to your strava account and provides you with a
+          new way to view your strava data. You can see your data over various
+          timeframes and explore how your performance metrics have evolved.
+        </p>
+        <div class="buttons">
+          <button class="demo-btn" onclick="alert('Coming soon')">Try a Demo</button>
+          <a href="/chart">
+            <img alt="Connect With Strava" src="connect_with_strava.png" height="48" style="vertical-align: middle;" />
+          </a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <a href="https://www.3thirty.net">
+        <img src="clock.jpg" alt="clock icon" class="footer-icon">3thirty
+      </a>
+      <a href="https://www.github.com/3thirty/strava_charts">
+        <img src="github.png" alt="clock icon" class="footer-icon">GitHub
+      </a>
+      <a href="mailto:ethan@3thirty.net">✉️ Contact</a>
+    </footer>
+  </body>
+</html>
