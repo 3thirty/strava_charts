@@ -35,7 +35,7 @@ def favico(file):
 
 
 @route('/')
-def landingPage():
+def landing_page():
     return template('landing')
 
 
