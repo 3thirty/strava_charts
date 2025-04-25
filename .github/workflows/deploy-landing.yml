@@ -1,0 +1,35 @@
+name: Deploy Landing Page
+
+on:
+  # trigger if landing page is updated in master
+  push:
+#    branches:
+#	  - "master"
+    paths:
+      - 'landing/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      AWS_REGION: ${{ secrets.AWS_REGION }}
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
+    
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Deploy Landing Page to S3
+      run: |
+        # Fetch the bucket name from CloudFormation stack output
+        LANDING_BUCKET=$(aws cloudformation describe-stacks --stack-name strava-charts-stack --query "Stacks[0].Outputs[?OutputKey=='LandingPageBucketName'].OutputValue" --output text)
+        
+        # Upload landing page content to the S3 bucket
+        aws s3 sync ./landing s3://$LANDING_BUCKET/
+
+    - name: Configure API Gateway for Landing Page
+      run: |
+        API_ID=$(aws cloudformation describe-stacks --stack-name strava-charts-stack --query "Stacks[0].Outputs[?OutputKey=='HttpApiId'].OutputValue" --output text)
+        
+        aws apigatewayv2 update-route --api-id $API_ID --route-key 'GET /' --target !Sub integrations/http://${LANDING_BUCKET}.s3-website-${AWS_REGION}.amazonaws.com/

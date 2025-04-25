@@ -2,14 +2,6 @@ AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: Python Lambda using container image
 
-Globals:
-  Api:
-    Domain:
-      DomainName: stravacharts.3thirty.space
-      CertificateArn: arn:aws:acm:us-east-1:474427206130:certificate/90856c0d-d884-44e4-b8c6-5026a5bb8a5f
-      Route53:
-        HostedZoneName: 3thirty.space.
-
 Parameters:
   EcrImageUri:
     Type: String
@@ -30,11 +22,20 @@ Resources:
           STRAVA_CLIENT_ID: !Ref StravaClientId
           STRAVA_CLIENT_SECRET: !Ref StravaClientSecret
       Events:
-        Api:
-          Type: Api
+        HttpApiEvent:
+          Type: HttpApi
           Properties:
-            Path: /{proxy+}
-            Method: GET
+            Path: $default
+            Method: ANY
+            ApiId: !Ref HttpApi
     Metadata:
       Dockerfile: build/Dockerfile
       DockerContext: ../
+  HttpApi:
+    Type: AWS::Serverless::HttpApi
+    Properties:
+      Domain:
+        DomainName: stravacharts.3thirty.space
+        CertificateArn: arn:aws:acm:us-east-1:474427206130:certificate/90856c0d-d884-44e4-b8c6-5026a5bb8a5f
+        Route53:
+          HostedZoneName: 3thirty.space.
