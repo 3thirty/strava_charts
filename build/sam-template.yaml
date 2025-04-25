@@ -39,3 +39,24 @@ Resources:
         CertificateArn: arn:aws:acm:us-east-1:474427206130:certificate/90856c0d-d884-44e4-b8c6-5026a5bb8a5f
         Route53:
           HostedZoneName: 3thirty.space.
+
+  # Create an S3 bucket for serving the landing page
+  LandingPageBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      WebsiteConfiguration:
+        IndexDocument: index.html
+        ErrorDocument: error.html
+
+  # Upload the `landing` directory to the S3 bucket (make sure you run this part manually or use a build step)
+  LandingPageBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref LandingPageBucket
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Action: s3:GetObject
+            Resource: !Sub 'arn:aws:s3:::${LandingPageBucket}/*'
+            Principal: "*"
