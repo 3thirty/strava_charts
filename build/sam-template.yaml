@@ -39,7 +39,7 @@ Resources:
         DomainName: stravacharts.3thirty.space
         CertificateArn: arn:aws:acm:us-east-1:474427206130:certificate/90856c0d-d884-44e4-b8c6-5026a5bb8a5f
         Route53:
-          HostedZoneName: 3thirty.space.
+          HostedZoneName: 3thirty.space
 
   LandingPageBucket:
     Type: AWS::S3::Bucket
