@@ -32,14 +32,26 @@ Resources:
     Metadata:
       Dockerfile: build/Dockerfile
       DockerContext: ../
+
   HttpApi:
     Type: AWS::Serverless::HttpApi
+
+  HttpApiDomain:
+    Type: AWS::ApiGatewayV2::DomainName
     Properties:
-      Domain:
-        DomainName: stravacharts.3thirty.space
-        CertificateArn: arn:aws:acm:us-east-1:474427206130:certificate/90856c0d-d884-44e4-b8c6-5026a5bb8a5f
-        Route53:
-          HostedZoneName: 3thirty.space
+      DomainName: stravacharts.3thirty.space
+      DomainNameConfigurations:
+        - CertificateArn: arn:aws:acm:us-east-1:474427206130:certificate/90856c0d-d884-44e4-b8c6-5026a5bb8a5f
+          EndpointType: REGIONAL
+      Route53:
+        HostedZoneName: 3thirty.space
+
+  HttpApiMapping:
+    Type: AWS::ApiGatewayV2::ApiMapping
+    Properties:
+      ApiId: !Ref HttpApi
+      DomainName: !Ref HttpApiDomain
+      Stage: '$default'
 
   LandingPageBucket:
     Type: AWS::S3::Bucket
