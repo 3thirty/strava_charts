@@ -107,3 +107,6 @@ Outputs:
   ApiUrl:
     Description: "API Gateway endpoint URL"
     Value: !Sub "https://${HttpApi}.execute-api.${AWS::Region}.amazonaws.com/"
+  LandingPageBucketName:
+    Description: "Landing page s3 bucket"
+    Value: !Ref LandingPageBucket
