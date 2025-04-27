@@ -35,3 +35,6 @@ docker-kill:
 	-docker kill strava_charts
 	-docker rm strava_charts
 	sleep 1
+
+sam-local-run:
+	sam build --template-file build/sam-template.yaml && sam local start-api --template-file .aws-sam/build/template.yaml --parameter-overrides StravaClientId=$(STRAVA_CLIENT_ID),StravaClientSecret=$(STRAVA_CLIENT_SECRET),Debug=1

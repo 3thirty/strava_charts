@@ -71,12 +71,16 @@ def debug():
         bottle.abort(404, "Not Found")
 
     config = Config()
-    token_store = CookieTokenStorage(request, response)
+    try:
+        token_store = CookieTokenStorage(request, response)
+        parsed_token = token_store.get()
+    except AuthenticationException:
+        parsed_token = None
 
     out = {
         'config': {},
         'token_cookie': request.get_cookie('token'),
-        'token_parsed': token_store.get()
+        'token_parsed': parsed_token
     }
 
     for key, value in config.dump().items():

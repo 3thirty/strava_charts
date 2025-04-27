@@ -9,6 +9,9 @@ Parameters:
     Type: String
   StravaClientSecret:
     Type: String
+  Debug:
+    Type: String
+    Default: 0
 
 Resources:
   StravaCharts:
@@ -21,6 +24,7 @@ Resources:
         Variables:
           STRAVA_CLIENT_ID: !Ref StravaClientId
           STRAVA_CLIENT_SECRET: !Ref StravaClientSecret
+          DEBUG: !Ref Debug
       Events:
         HttpApiEvent:
           Type: HttpApi
