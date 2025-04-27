@@ -46,7 +46,7 @@ Resources:
       DefinitionBody:
         openapi: "3.0.1"
         info:
-          title: "strava-test-2"
+          title: "strava-charts-stack"
           version: "2025-04-25 20:13:13UTC"
         servers:
         - url: "https://stravacharts.3thirty.space/{basePath}"
