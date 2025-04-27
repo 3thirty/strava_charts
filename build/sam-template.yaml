@@ -72,7 +72,7 @@ Resources:
                 payloadFormatVersion: "1.0"
                 type: "http_proxy"
                 httpMethod: "GET"
-                uri: "https://www.3thirty.space/"
+                uri: !Sub "http://${LandingPageBucket}.s3-website-${AWS::Region}.amazonaws.com/"
                 connectionType: "INTERNET"
         x-amazon-apigateway-importexport-version: "1.0"
 
