@@ -129,7 +129,12 @@ class TokenStorage():
         if (not token):
             return None
 
-        return json.loads(token)
+        try:
+            ret = json.loads(token)
+        except json.decoder.JSONDecodeError:
+            raise AuthenticationException
+
+        return ret
 
 
 class CookieTokenStorage(TokenStorage):
