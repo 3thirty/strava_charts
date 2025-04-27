@@ -34,5 +34,8 @@ Examples:
 #### `/dump`
 Dumps all json data for the requesting user
 
-#### `/ping`
-Just for testing
+#### `/debug`
+Outputs configuration info and request cookie data. Only available if `DEBUG` env var is set
+
+#### `/ping` and `/marco`
+Test endpoints to make sure app is responding
