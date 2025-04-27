@@ -1,7 +1,6 @@
-# SAM template
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
-Description: Python Lambda using container image
+Description: Lambda + API Gateway + Route53 setup
 
 Parameters:
   EcrImageUri:
@@ -35,23 +34,47 @@ Resources:
 
   HttpApi:
     Type: AWS::Serverless::HttpApi
-
-  HttpApiDomain:
-    Type: AWS::ApiGatewayV2::DomainName
     Properties:
-      DomainName: stravacharts.3thirty.space
-      DomainNameConfigurations:
-        - CertificateArn: arn:aws:acm:us-east-1:474427206130:certificate/90856c0d-d884-44e4-b8c6-5026a5bb8a5f
-          EndpointType: REGIONAL
-      Route53:
-        HostedZoneName: 3thirty.space
-
-  HttpApiMapping:
-    Type: AWS::ApiGatewayV2::ApiMapping
-    Properties:
-      ApiId: !Ref HttpApi
-      DomainName: !Ref HttpApiDomain
-      Stage: '$default'
+      StageName: "$default"
+      Domain:
+        DomainName: stravacharts.3thirty.space
+        CertificateArn: arn:aws:acm:us-east-1:474427206130:certificate/90856c0d-d884-44e4-b8c6-5026a5bb8a5f
+        Route53:
+          HostedZoneId: Z006216215GRAV7GOXJLF
+          RecordSetName: stravacharts.3thirty.space
+          RecordType: A
+      DefinitionBody:
+        openapi: "3.0.1"
+        info:
+          title: "strava-test-2"
+          version: "2025-04-25 20:13:13UTC"
+        servers:
+        - url: "https://stravacharts.3thirty.space/{basePath}"
+          variables:
+            basePath:
+              default: ""
+        paths:
+          /$default:
+            x-amazon-apigateway-any-method:
+              isDefaultRoute: true
+              x-amazon-apigateway-integration:
+                payloadFormatVersion: "2.0"
+                type: "aws_proxy"
+                httpMethod: "POST"
+                uri: !Sub "arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${StravaCharts.Arn}/invocations"
+                connectionType: "INTERNET"
+          /:
+            x-amazon-apigateway-any-method:
+              responses:
+                default:
+                  description: "Default response for ANY /"
+              x-amazon-apigateway-integration:
+                payloadFormatVersion: "1.0"
+                type: "http_proxy"
+                httpMethod: "GET"
+                uri: "https://www.3thirty.space/"
+                connectionType: "INTERNET"
+        x-amazon-apigateway-importexport-version: "1.0"
 
   LandingPageBucket:
     Type: AWS::S3::Bucket
@@ -78,4 +101,9 @@ Resources:
           - Effect: Allow
             Principal: "*"
             Action: "s3:GetObject"
-            Resource: !Sub "${LandingPageBucket.Arn}/*"
+            Resource: !Sub "arn:aws:s3:::${LandingPageBucket}/*"
+
+Outputs:
+  ApiUrl:
+    Description: "API Gateway endpoint URL"
+    Value: !Sub "https://${HttpApi}.execute-api.${AWS::Region}.amazonaws.com/"
