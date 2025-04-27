@@ -71,16 +71,21 @@ def debug():
         bottle.abort(404, "Not Found")
 
     config = Config()
+    token_store = CookieTokenStorage(request, response)
 
-    config_out = {}
+    out = {
+        'config': {},
+        'token_cookie': request.get_cookie('token'),
+        'token_parsed': token_store.get()
+    }
 
     for key, value in config.dump().items():
         if "secret" in key:
             value = "***"
 
-        config_out[key] = value
+        out['config'][key] = value
 
-    return config_out
+    return out
 
 
 @route('/verify')
