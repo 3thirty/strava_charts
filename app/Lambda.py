@@ -33,11 +33,15 @@ class Lambda:
             body = b""
 
         if "version" in event and event["version"] == "2.0":
-            method = event["requestContext"]["http"]["method"]
+            request_data = event["requestContext"].get("http", {})
+
+            method = request_data.get("method", "GET")
+            cookies = request_data.get("headers", {}).get("cookie", "")
             path = event.get("rawPath", "/")
             query_string = event.get("rawQueryString", "")
         else:
             method = event.get("httpMethod", "GET")
+            cookies = event["headers"].get("cookie", "")
             path = event.get("path", "/")
             query_params = event.get("queryStringParameters", {}) or {}
             query_string = urlencode(query_params)
@@ -61,6 +65,8 @@ class Lambda:
         for key, value in headers.items():
             header_key = "HTTP_" + key.upper().replace("-", "_")
             request[header_key] = value
+
+        request['HTTP_COOKIE'] = cookies
 
         return request
 
