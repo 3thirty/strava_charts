@@ -74,6 +74,24 @@ Resources:
                 httpMethod: "GET"
                 uri: !Sub "http://${LandingPageBucket}.s3-website-${AWS::Region}.amazonaws.com/"
                 connectionType: "INTERNET"
+          /assets/{proxy+}:
+            get:
+              responses:
+                default:
+                  description: "Default response for GET /assets/{proxy+}"
+              x-amazon-apigateway-integration:
+                payloadFormatVersion: "1.0"
+                type: "http_proxy"
+                httpMethod: "GET"
+                uri: !Sub "http://${LandingPageBucket}.s3-website-${AWS::Region}.amazonaws.com/assets/{proxy}"
+                connectionType: "INTERNET"
+            parameters:
+            - name: "proxy+"
+              in: "path"
+              description: "Generated path parameter for proxy+"
+              required: true
+              schema:
+                type: "string"
         x-amazon-apigateway-importexport-version: "1.0"
 
   LandingPageBucket:

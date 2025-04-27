@@ -3,8 +3,8 @@ name: Deploy Landing Page
 on:
   # trigger if landing page is updated in master
   push:
-#    branches:
-#	  - "master"
+    branches:
+	  - "master"
     paths:
       - 'landing/**'
 
