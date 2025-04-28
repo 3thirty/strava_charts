@@ -40,7 +40,7 @@ class Lambda:
 
             for cookie_header in event.get("cookies", {}):
                 (cookie_name, cookie_value) = cookie_header.split('=')
-                cookies[cookie_name] = cookie_value
+                cookies[cookie_name] = cookie_value.replace('\\', '')
         else:
             method = event.get("httpMethod", "GET")
             cookies = event["headers"].get("cookie", "")
