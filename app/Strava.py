@@ -151,7 +151,7 @@ class CookieTokenStorage(TokenStorage):
         self.response.set_cookie('token', cookie_token)
 
     def get(self):
-        cookie_data = self.request.get_cookie('token')
+        cookie_data = self.request.get_cookie('token', "")
         cookie_token = base64.urlsafe_b64decode(cookie_data).decode('utf-8')
         self.token = self._decode(cookie_token)
         self.log.debug('Loaded token from cookie: %s' % cookie_token)
