@@ -1,3 +1,4 @@
+import base64
 import json
 import logging
 import math
@@ -144,12 +145,14 @@ class CookieTokenStorage(TokenStorage):
 
     def set(self, token):
         super().set(token)
-        cookie_token = self._encode(token)
+        encoded_token = self._encode(token).encode('utf-8')
+        cookie_token = base64.urlsafe_b64encode(encoded_token).decode('ascii')
         self.log.debug('Set token in cookie: %s' % cookie_token)
         self.response.set_cookie('token', cookie_token)
 
     def get(self):
-        cookie_token = self.request.get_cookie('token')
+        cookie_data = self.request.get_cookie('token')
+        cookie_token = base64.urlsafe_b64decode(cookie_data).decode('utf-8')
         self.token = self._decode(cookie_token)
         self.log.debug('Loaded token from cookie: %s' % cookie_token)
         return super().get()
