@@ -39,7 +39,7 @@ class Lambda:
             query_string = event.get("rawQueryString", "")
 
             for cookie_header in event.get("cookies", {}):
-                (cookie_name, cookie_value) = cookie_header.split('=')
+                (cookie_name, cookie_value) = cookie_header.split('=', 1)
                 cookies[cookie_name] = cookie_value.replace('\\', '')
         else:
             method = event.get("httpMethod", "GET")
