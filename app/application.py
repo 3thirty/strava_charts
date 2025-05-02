@@ -12,8 +12,8 @@ from bottle.ext import beaker
 from Activity import ActivityList, AggregationPeriod
 from Chart import Chart
 from Config import Config
-from Strava import Strava, Authentication, AuthenticationException, \
-                   CookieTokenStorage
+from Strava import Strava, StravaDemo, Authentication, \
+         AuthenticationException, CookieTokenStorage
 from Lambda import Lambda
 
 session_opts = {
@@ -174,8 +174,6 @@ def chart(type: str = 'average', metric: str = 'average_watts',
         after: Only chart events with a start date after this (expected to be
                a date in format YYYY-mm-dd)
     """
-    log = logging.getLogger('strava')
-
     if (request.query.force):
         force = True
     else:
@@ -198,18 +196,46 @@ def chart(type: str = 'average', metric: str = 'average_watts',
 
         redirect(url)
 
-    chart = Chart()
+    if (request.query.limit):
+        activities = strava.getActivities(int(request.query.limit))
+    else:
+        activities = strava.getAllActivities()
 
-    chart_title = "%s by %s" % (metric, period)
-    chart.options.title.text = chart_title
+    return _renderChart(type, metric, period, activities)
 
-    chart.labels.labels = []
-    chart.data.Metric.data = []
+
+@route('/demo')
+@route('/demo/<type>/<metric>/<period>')
+def demo(type: str = 'average', metric: str = 'average_watts',
+         period: str = 'week'):
+    """
+    Produce a page with a chart with demo data
+
+    Accepted arguments:
+        limit: Maximum number of activities to chart
+        after: Only chart events with a start date after this (expected to be
+               a date in format YYYY-mm-dd)
+    """
+    strava = StravaDemo()
 
     if (request.query.limit):
         activities = strava.getActivities(int(request.query.limit))
     else:
         activities = strava.getAllActivities()
+
+    return _renderChart(type, metric, period, activities)
+
+
+def _renderChart(type: str, metric: str, period: str,
+                 activities: ActivityList):
+    log = logging.getLogger('strava')
+    chart = Chart()
+
+    chart_title = "%s by %s" % (metric.replace("_", " ").title(), period)
+    chart.options.title.text = chart_title
+
+    chart.labels.labels = []
+    chart.data.Metric.data = []
 
     if (request.query.after):
         try:
@@ -231,7 +257,7 @@ def chart(type: str = 'average', metric: str = 'average_watts',
 
     for label in data:
         chart.labels.labels.append(label)
-        chart.data.Metric.data.append(data[label])
+        chart.data.Metric.data.append("%0.2f" % data[label])
 
     chartJSON = chart.get()
 

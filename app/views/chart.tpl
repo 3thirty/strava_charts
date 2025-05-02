@@ -154,22 +154,31 @@
 
     footer {
       background-color: #f1e9d3;
-      padding: 15px 20px;
+      padding: 10px 20px;
       display: flex;
       justify-content: center;
-      gap: 2rem;
-      font-size: 0.9rem;
-      font-weight: 600;
-      margin-top: auto;
+      gap: 1.5rem;
+      font-size: 0.875rem;
+      font-weight: bold;
     }
 
     footer a {
       text-decoration: none;
-      color: #555;
+      color: #777;
     }
 
     footer a:hover {
       text-decoration: underline;
+    }
+
+    .footer-icon {
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+      vertical-align: middle;
+      display: inline-block;
+      margin-right: 6px;
+      transform: translateY(-1px);
     }
 
     .stravabadge {
@@ -192,7 +201,6 @@
     <select id="type">
       <option value="average">Average</option>
       <option value="total">Total</option>
-      <option value="max">Max</option>
     </select>
   </div>
   <div class="filter-group">
@@ -200,7 +208,7 @@
     <select id="metric">
       <option value="average_watts">Average Watts</option>
       <option value="distance">Distance</option>
-      <option value="elevation_gain">Elevation Gain</option>
+      <option value="total_elevation_gain">Elevation Gain</option>
     </select>
   </div>
   <div class="filter-group">
@@ -215,12 +223,22 @@
   <button class="button" id="updateBtn">Update</button>
 
   <script>
+    // set HTML elements to match the current path
+    const [currentType, currentMetric, currentPeriod] = window.location.pathname.split('/').slice(2)
+    document.getElementById("type").value = currentType;
+    document.getElementById("metric").value = currentMetric;
+    document.getElementById("period").value = currentPeriod;
+
+
+    // change the view when the button is clicked
     document.getElementById("updateBtn").addEventListener("click", () => {
       const type = document.getElementById("type").value;
       const metric = document.getElementById("metric").value;
       const period = document.getElementById("period").value;
+
+      const basePath = window.location.pathname.split('/').slice(0, 2).join('/');
   
-      const path = `/chart/${type}/${metric}/${period}`;
+      const path = `${basePath}/${type}/${metric}/${period}`;
       window.location.href = path;
     });
   </script>
@@ -231,7 +249,7 @@
         <canvas id="chart"></canvas>
     </div>
 
-    <button class="button">Log out</button>
+   <!-- <button class="button">Log out</button> -->
   </main>
 
   <footer>
@@ -243,7 +261,7 @@
     </a>
     <a href="mailto:ethan@3thirty.net">✉️ Contact</a>
 
-    <a href="https://www.strava.com"><img class="stravabadge" src="file:///Users/ethan/Downloads/1.2-Strava-API-Logos/Powered%20by%20Strava/pwrdBy_strava_black/api_logo_pwrdBy_strava_stack_black.png" alt="Powered by Strava"></a>
+    <a href="https://www.strava.com"><img class="stravabadge" src="/assets/powered_by_strava.png" alt="Powered by Strava"></a>
   </footer>
 
 <script>

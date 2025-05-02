@@ -11,14 +11,13 @@ class Chart(BaseChart):
         class Metric:
             data = []
             _color = Color.JSLinearGradient('ctx', 0, 0, 1000, 0)
-            _color.addColorStop(0, '#E19A40')
-            _color.addColorStop(1, '#e87722')
-            backgroundColor = '#ffffff'
+            _color.addColorStop(0, '#E87722')
+            backgroundColor = '#FFFFFF'
 
             borderColor = _color.returnGradient()
             fill = False
-            pointBorderWidth = 10
-            pointRadius = 3
+            pointBorderWidth = 7
+            pointRadius = 1
             spanGaps = True
             lineTension = 0.2
 

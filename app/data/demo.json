@@ -1,0 +1,7330 @@
+[
+  {
+    "start_date": "2020-04-28T12:34:53Z",
+    "average_watts": 138.3,
+    "average_speed": 3.252,
+    "distance": 4578.2,
+    "moving_time": 1408,
+    "total_elevation_gain": 37.4
+  },
+  {
+    "start_date": "2020-05-01T12:42:31Z",
+    "average_watts": 163.7,
+    "average_speed": 6.507,
+    "distance": 30051.4,
+    "moving_time": 4618,
+    "total_elevation_gain": 283.0
+  },
+  {
+    "start_date": "2020-05-02T13:22:39Z",
+    "average_watts": 153.9,
+    "average_speed": 9.435,
+    "distance": 17105.8,
+    "moving_time": 1813,
+    "total_elevation_gain": 175.3
+  },
+  {
+    "start_date": "2020-05-03T10:40:51Z",
+    "average_watts": 136.2,
+    "average_speed": 5.798,
+    "distance": 84008.5,
+    "moving_time": 14489,
+    "total_elevation_gain": 803.0
+  },
+  {
+    "start_date": "2020-05-05T11:20:31Z",
+    "average_watts": 153.5,
+    "average_speed": 5.516,
+    "distance": 95843.6,
+    "moving_time": 17374,
+    "total_elevation_gain": 1167.9
+  },
+  {
+    "start_date": "2020-05-08T06:20:07Z",
+    "average_watts": 138.5,
+    "average_speed": 6.556,
+    "distance": 71636.3,
+    "moving_time": 10927,
+    "total_elevation_gain": 407.2
+  },
+  {
+    "start_date": "2020-05-09T12:45:55Z",
+    "average_watts": 163.0,
+    "average_speed": 7.899,
+    "distance": 12093.7,
+    "moving_time": 1531,
+    "total_elevation_gain": 97.4
+  },
+  {
+    "start_date": "2020-05-11T14:29:24Z",
+    "average_watts": 139.2,
+    "average_speed": 6.57,
+    "distance": 50907.6,
+    "moving_time": 7748,
+    "total_elevation_gain": 642.6
+  },
+  {
+    "start_date": "2020-05-13T18:40:06Z",
+    "average_watts": 137.1,
+    "average_speed": 3.218,
+    "distance": 5657.3,
+    "moving_time": 1758,
+    "total_elevation_gain": 79.2
+  },
+  {
+    "start_date": "2020-05-19T10:36:02Z",
+    "average_watts": 137.9,
+    "average_speed": 3.298,
+    "distance": 4521.7,
+    "moving_time": 1371,
+    "total_elevation_gain": 67.8
+  },
+  {
+    "start_date": "2020-05-21T10:10:17Z",
+    "average_watts": 138.7,
+    "average_speed": 6.841,
+    "distance": 51514.6,
+    "moving_time": 7530,
+    "total_elevation_gain": 744.6
+  },
+  {
+    "start_date": "2020-05-22T14:34:53Z",
+    "average_watts": 169.9,
+    "average_speed": 7.213,
+    "distance": 20824.7,
+    "moving_time": 2887,
+    "total_elevation_gain": 223.3
+  },
+  {
+    "start_date": "2020-05-23T09:30:43Z",
+    "average_watts": 134.6,
+    "average_speed": 5.107,
+    "distance": 34297.0,
+    "moving_time": 6716,
+    "total_elevation_gain": 425.7
+  },
+  {
+    "start_date": "2020-05-25T13:10:08Z",
+    "average_watts": 133.7,
+    "average_speed": 7.798,
+    "distance": 14894.1,
+    "moving_time": 1910,
+    "total_elevation_gain": 150.6
+  },
+  {
+    "start_date": "2020-05-26T09:05:21Z",
+    "average_watts": 151.3,
+    "average_speed": 6.679,
+    "distance": 90230.3,
+    "moving_time": 13510,
+    "total_elevation_gain": 1082.7
+  },
+  {
+    "start_date": "2020-05-27T13:11:00Z",
+    "average_watts": 143.0,
+    "average_speed": 4.734,
+    "distance": 3588.2,
+    "moving_time": 758,
+    "total_elevation_gain": 52.7
+  },
+  {
+    "start_date": "2020-05-30T15:44:55Z",
+    "average_watts": 167.4,
+    "average_speed": 7.044,
+    "distance": 23077.4,
+    "moving_time": 3276,
+    "total_elevation_gain": 274.3
+  },
+  {
+    "start_date": "2020-05-31T16:07:35Z",
+    "average_watts": 149.4,
+    "average_speed": 6.222,
+    "distance": 51937.6,
+    "moving_time": 8348,
+    "total_elevation_gain": 319.0
+  },
+  {
+    "start_date": "2020-06-02T06:50:42Z",
+    "average_watts": 153.8,
+    "average_speed": 9.929,
+    "distance": 14516.7,
+    "moving_time": 1462,
+    "total_elevation_gain": 185.5
+  },
+  {
+    "start_date": "2020-06-04T17:21:36Z",
+    "average_watts": 162.9,
+    "average_speed": 9.864,
+    "distance": 18405.4,
+    "moving_time": 1866,
+    "total_elevation_gain": 215.1
+  },
+  {
+    "start_date": "2020-06-07T14:21:03Z",
+    "average_watts": 160.6,
+    "average_speed": 8.169,
+    "distance": 16011.9,
+    "moving_time": 1960,
+    "total_elevation_gain": 123.1
+  },
+  {
+    "start_date": "2020-06-08T18:05:40Z",
+    "average_watts": 162.6,
+    "average_speed": 5.864,
+    "distance": 58497.0,
+    "moving_time": 9975,
+    "total_elevation_gain": 427.4
+  },
+  {
+    "start_date": "2020-06-11T19:20:59Z",
+    "average_watts": 161.2,
+    "average_speed": 5.519,
+    "distance": 68230.7,
+    "moving_time": 12362,
+    "total_elevation_gain": 808.4
+  },
+  {
+    "start_date": "2020-06-12T10:34:31Z",
+    "average_watts": 143.4,
+    "average_speed": 7.841,
+    "distance": 29685.1,
+    "moving_time": 3786,
+    "total_elevation_gain": 176.4
+  },
+  {
+    "start_date": "2020-06-13T19:03:23Z",
+    "average_watts": 153.7,
+    "average_speed": 6.665,
+    "distance": 89088.2,
+    "moving_time": 13366,
+    "total_elevation_gain": 998.7
+  },
+  {
+    "start_date": "2020-06-18T09:34:26Z",
+    "average_watts": 144.0,
+    "average_speed": 4.583,
+    "distance": 6109.6,
+    "moving_time": 1333,
+    "total_elevation_gain": 76.5
+  },
+  {
+    "start_date": "2020-06-19T06:56:57Z",
+    "average_watts": 154.4,
+    "average_speed": 5.106,
+    "distance": 94220.3,
+    "moving_time": 18454,
+    "total_elevation_gain": 590.0
+  },
+  {
+    "start_date": "2020-06-20T18:13:47Z",
+    "average_watts": 136.1,
+    "average_speed": 5.711,
+    "distance": 5802.0,
+    "moving_time": 1016,
+    "total_elevation_gain": 71.1
+  },
+  {
+    "start_date": "2020-06-21T09:33:56Z",
+    "average_watts": 157.1,
+    "average_speed": 5.618,
+    "distance": 4325.7,
+    "moving_time": 770,
+    "total_elevation_gain": 34.8
+  },
+  {
+    "start_date": "2020-06-23T11:10:24Z",
+    "average_watts": 160.5,
+    "average_speed": 8.049,
+    "distance": 24379.6,
+    "moving_time": 3029,
+    "total_elevation_gain": 206.6
+  },
+  {
+    "start_date": "2020-06-24T19:20:54Z",
+    "average_watts": 149.2,
+    "average_speed": 7.026,
+    "distance": 15660.8,
+    "moving_time": 2229,
+    "total_elevation_gain": 109.3
+  },
+  {
+    "start_date": "2020-06-27T06:55:07Z",
+    "average_watts": 167.4,
+    "average_speed": 5.486,
+    "distance": 3834.9,
+    "moving_time": 699,
+    "total_elevation_gain": 39.4
+  },
+  {
+    "start_date": "2020-07-09T06:14:03Z",
+    "average_watts": 164.8,
+    "average_speed": 4.305,
+    "distance": 7715.1,
+    "moving_time": 1792,
+    "total_elevation_gain": 53.7
+  },
+  {
+    "start_date": "2020-07-12T19:16:17Z",
+    "average_watts": 136.0,
+    "average_speed": 9.924,
+    "distance": 24442.8,
+    "moving_time": 2463,
+    "total_elevation_gain": 224.2
+  },
+  {
+    "start_date": "2020-07-18T12:43:00Z",
+    "average_watts": 152.4,
+    "average_speed": 5.512,
+    "distance": 56706.1,
+    "moving_time": 10287,
+    "total_elevation_gain": 712.4
+  },
+  {
+    "start_date": "2020-07-20T10:42:54Z",
+    "average_watts": 138.6,
+    "average_speed": 5.792,
+    "distance": 38793.6,
+    "moving_time": 6698,
+    "total_elevation_gain": 256.1
+  },
+  {
+    "start_date": "2020-07-21T09:05:49Z",
+    "average_watts": 137.0,
+    "average_speed": 6.282,
+    "distance": 83944.7,
+    "moving_time": 13363,
+    "total_elevation_gain": 868.6
+  },
+  {
+    "start_date": "2020-07-24T18:21:14Z",
+    "average_watts": 155.5,
+    "average_speed": 5.253,
+    "distance": 7264.9,
+    "moving_time": 1383,
+    "total_elevation_gain": 106.7
+  },
+  {
+    "start_date": "2020-07-25T08:33:32Z",
+    "average_watts": 161.7,
+    "average_speed": 6.965,
+    "distance": 58663.4,
+    "moving_time": 8423,
+    "total_elevation_gain": 496.3
+  },
+  {
+    "start_date": "2020-07-27T17:40:12Z",
+    "average_watts": 140.8,
+    "average_speed": 5.466,
+    "distance": 91088.2,
+    "moving_time": 16663,
+    "total_elevation_gain": 867.9
+  },
+  {
+    "start_date": "2020-07-28T19:46:27Z",
+    "average_watts": 140.7,
+    "average_speed": 3.306,
+    "distance": 5507.0,
+    "moving_time": 1666,
+    "total_elevation_gain": 57.2
+  },
+  {
+    "start_date": "2020-07-31T18:26:29Z",
+    "average_watts": 167.1,
+    "average_speed": 3.864,
+    "distance": 5012.2,
+    "moving_time": 1297,
+    "total_elevation_gain": 41.3
+  },
+  {
+    "start_date": "2020-08-03T10:04:26Z",
+    "average_watts": 171.3,
+    "average_speed": 8.262,
+    "distance": 16490.9,
+    "moving_time": 1996,
+    "total_elevation_gain": 117.7
+  },
+  {
+    "start_date": "2020-08-04T13:13:37Z",
+    "average_watts": 135.9,
+    "average_speed": 8.839,
+    "distance": 14673.0,
+    "moving_time": 1660,
+    "total_elevation_gain": 163.8
+  },
+  {
+    "start_date": "2020-08-09T18:20:15Z",
+    "average_watts": 170.8,
+    "average_speed": 5.257,
+    "distance": 4052.8,
+    "moving_time": 771,
+    "total_elevation_gain": 23.8
+  },
+  {
+    "start_date": "2020-08-10T08:52:14Z",
+    "average_watts": 135.4,
+    "average_speed": 5.345,
+    "distance": 27932.1,
+    "moving_time": 5226,
+    "total_elevation_gain": 158.7
+  },
+  {
+    "start_date": "2020-08-12T13:31:07Z",
+    "average_watts": 146.7,
+    "average_speed": 5.759,
+    "distance": 35907.5,
+    "moving_time": 6235,
+    "total_elevation_gain": 201.4
+  },
+  {
+    "start_date": "2020-08-13T19:25:47Z",
+    "average_watts": 150.4,
+    "average_speed": 7.936,
+    "distance": 34626.8,
+    "moving_time": 4363,
+    "total_elevation_gain": 218.6
+  },
+  {
+    "start_date": "2020-08-15T13:43:36Z",
+    "average_watts": 141.0,
+    "average_speed": 5.789,
+    "distance": 7357.4,
+    "moving_time": 1271,
+    "total_elevation_gain": 98.1
+  },
+  {
+    "start_date": "2020-08-16T19:40:59Z",
+    "average_watts": 168.0,
+    "average_speed": 5.497,
+    "distance": 78084.0,
+    "moving_time": 14206,
+    "total_elevation_gain": 988.4
+  },
+  {
+    "start_date": "2020-08-17T16:37:14Z",
+    "average_watts": 135.5,
+    "average_speed": 5.427,
+    "distance": 3614.5,
+    "moving_time": 666,
+    "total_elevation_gain": 37.2
+  },
+  {
+    "start_date": "2020-08-18T13:18:51Z",
+    "average_watts": 160.1,
+    "average_speed": 7.06,
+    "distance": 29432.7,
+    "moving_time": 4169,
+    "total_elevation_gain": 202.6
+  },
+  {
+    "start_date": "2020-08-22T16:57:14Z",
+    "average_watts": 160.6,
+    "average_speed": 5.209,
+    "distance": 96069.9,
+    "moving_time": 18443,
+    "total_elevation_gain": 1002.5
+  },
+  {
+    "start_date": "2020-08-23T07:07:53Z",
+    "average_watts": 150.1,
+    "average_speed": 9.217,
+    "distance": 10313.4,
+    "moving_time": 1119,
+    "total_elevation_gain": 139.3
+  },
+  {
+    "start_date": "2020-08-24T13:48:08Z",
+    "average_watts": 145.7,
+    "average_speed": 6.431,
+    "distance": 59992.2,
+    "moving_time": 9329,
+    "total_elevation_gain": 786.4
+  },
+  {
+    "start_date": "2020-08-26T18:13:33Z",
+    "average_watts": 160.5,
+    "average_speed": 7.277,
+    "distance": 24900.3,
+    "moving_time": 3422,
+    "total_elevation_gain": 347.5
+  },
+  {
+    "start_date": "2020-08-27T14:09:27Z",
+    "average_watts": 135.6,
+    "average_speed": 7.92,
+    "distance": 23388.0,
+    "moving_time": 2953,
+    "total_elevation_gain": 311.0
+  },
+  {
+    "start_date": "2020-08-28T16:12:12Z",
+    "average_watts": 151.7,
+    "average_speed": 6.892,
+    "distance": 80613.5,
+    "moving_time": 11696,
+    "total_elevation_gain": 732.1
+  },
+  {
+    "start_date": "2020-09-01T13:05:17Z",
+    "average_watts": 164.3,
+    "average_speed": 4.839,
+    "distance": 5748.6,
+    "moving_time": 1188,
+    "total_elevation_gain": 55.4
+  },
+  {
+    "start_date": "2020-09-02T09:08:47Z",
+    "average_watts": 134.6,
+    "average_speed": 5.081,
+    "distance": 34655.7,
+    "moving_time": 6821,
+    "total_elevation_gain": 379.7
+  },
+  {
+    "start_date": "2020-09-04T18:35:55Z",
+    "average_watts": 144.1,
+    "average_speed": 4.7,
+    "distance": 6336.2,
+    "moving_time": 1348,
+    "total_elevation_gain": 52.3
+  },
+  {
+    "start_date": "2020-09-07T09:56:02Z",
+    "average_watts": 165.4,
+    "average_speed": 7.647,
+    "distance": 17793.5,
+    "moving_time": 2327,
+    "total_elevation_gain": 199.3
+  },
+  {
+    "start_date": "2020-09-09T17:48:48Z",
+    "average_watts": 153.5,
+    "average_speed": 5.566,
+    "distance": 5437.8,
+    "moving_time": 977,
+    "total_elevation_gain": 40.7
+  },
+  {
+    "start_date": "2020-09-10T16:57:50Z",
+    "average_watts": 165.8,
+    "average_speed": 9.923,
+    "distance": 16838.7,
+    "moving_time": 1697,
+    "total_elevation_gain": 214.9
+  },
+  {
+    "start_date": "2020-09-16T16:07:37Z",
+    "average_watts": 146.6,
+    "average_speed": 4.799,
+    "distance": 6680.1,
+    "moving_time": 1392,
+    "total_elevation_gain": 40.0
+  },
+  {
+    "start_date": "2020-09-17T09:23:36Z",
+    "average_watts": 138.9,
+    "average_speed": 7.838,
+    "distance": 21469.2,
+    "moving_time": 2739,
+    "total_elevation_gain": 165.9
+  },
+  {
+    "start_date": "2020-09-20T06:13:24Z",
+    "average_watts": 157.1,
+    "average_speed": 6.206,
+    "distance": 97623.1,
+    "moving_time": 15730,
+    "total_elevation_gain": 1014.2
+  },
+  {
+    "start_date": "2020-09-24T12:45:22Z",
+    "average_watts": 133.9,
+    "average_speed": 6.231,
+    "distance": 24439.4,
+    "moving_time": 3922,
+    "total_elevation_gain": 206.7
+  },
+  {
+    "start_date": "2020-09-25T18:59:12Z",
+    "average_watts": 171.2,
+    "average_speed": 4.456,
+    "distance": 6144.3,
+    "moving_time": 1379,
+    "total_elevation_gain": 66.0
+  },
+  {
+    "start_date": "2020-09-26T19:05:22Z",
+    "average_watts": 156.4,
+    "average_speed": 3.446,
+    "distance": 3814.6,
+    "moving_time": 1107,
+    "total_elevation_gain": 25.0
+  },
+  {
+    "start_date": "2020-09-27T13:39:50Z",
+    "average_watts": 136.4,
+    "average_speed": 7.439,
+    "distance": 13449.5,
+    "moving_time": 1808,
+    "total_elevation_gain": 171.2
+  },
+  {
+    "start_date": "2020-09-28T07:57:40Z",
+    "average_watts": 170.0,
+    "average_speed": 5.213,
+    "distance": 7563.9,
+    "moving_time": 1451,
+    "total_elevation_gain": 67.5
+  },
+  {
+    "start_date": "2020-09-30T11:42:00Z",
+    "average_watts": 145.5,
+    "average_speed": 9.352,
+    "distance": 21864.6,
+    "moving_time": 2338,
+    "total_elevation_gain": 290.2
+  },
+  {
+    "start_date": "2020-10-02T10:10:36Z",
+    "average_watts": 170.0,
+    "average_speed": 8.31,
+    "distance": 21199.1,
+    "moving_time": 2551,
+    "total_elevation_gain": 215.6
+  },
+  {
+    "start_date": "2020-10-05T17:11:08Z",
+    "average_watts": 143.1,
+    "average_speed": 7.731,
+    "distance": 30468.1,
+    "moving_time": 3941,
+    "total_elevation_gain": 327.2
+  },
+  {
+    "start_date": "2020-10-06T09:46:49Z",
+    "average_watts": 152.7,
+    "average_speed": 5.306,
+    "distance": 24008.1,
+    "moving_time": 4525,
+    "total_elevation_gain": 279.0
+  },
+  {
+    "start_date": "2020-10-07T19:38:19Z",
+    "average_watts": 136.1,
+    "average_speed": 6.548,
+    "distance": 90113.0,
+    "moving_time": 13761,
+    "total_elevation_gain": 600.7
+  },
+  {
+    "start_date": "2020-10-08T19:04:40Z",
+    "average_watts": 138.0,
+    "average_speed": 6.318,
+    "distance": 38128.5,
+    "moving_time": 6035,
+    "total_elevation_gain": 566.3
+  },
+  {
+    "start_date": "2020-10-09T13:39:33Z",
+    "average_watts": 156.0,
+    "average_speed": 5.018,
+    "distance": 96165.6,
+    "moving_time": 19165,
+    "total_elevation_gain": 921.8
+  },
+  {
+    "start_date": "2020-10-10T13:45:48Z",
+    "average_watts": 149.6,
+    "average_speed": 4.35,
+    "distance": 5254.3,
+    "moving_time": 1208,
+    "total_elevation_gain": 70.0
+  },
+  {
+    "start_date": "2020-10-13T10:24:15Z",
+    "average_watts": 146.1,
+    "average_speed": 5.96,
+    "distance": 89186.9,
+    "moving_time": 14963,
+    "total_elevation_gain": 782.2
+  },
+  {
+    "start_date": "2020-10-14T12:53:26Z",
+    "average_watts": 143.2,
+    "average_speed": 4.683,
+    "distance": 6658.5,
+    "moving_time": 1422,
+    "total_elevation_gain": 57.7
+  },
+  {
+    "start_date": "2020-10-16T16:43:13Z",
+    "average_watts": 136.9,
+    "average_speed": 8.819,
+    "distance": 21007.4,
+    "moving_time": 2382,
+    "total_elevation_gain": 192.6
+  },
+  {
+    "start_date": "2020-10-17T12:57:30Z",
+    "average_watts": 145.0,
+    "average_speed": 9.769,
+    "distance": 10960.9,
+    "moving_time": 1122,
+    "total_elevation_gain": 84.6
+  },
+  {
+    "start_date": "2020-10-20T16:31:47Z",
+    "average_watts": 136.9,
+    "average_speed": 3.874,
+    "distance": 5400.9,
+    "moving_time": 1394,
+    "total_elevation_gain": 47.6
+  },
+  {
+    "start_date": "2020-10-22T12:41:06Z",
+    "average_watts": 166.9,
+    "average_speed": 5.474,
+    "distance": 88682.6,
+    "moving_time": 16202,
+    "total_elevation_gain": 1230.7
+  },
+  {
+    "start_date": "2020-10-23T09:00:30Z",
+    "average_watts": 163.5,
+    "average_speed": 7.639,
+    "distance": 36911.9,
+    "moving_time": 4832,
+    "total_elevation_gain": 312.1
+  },
+  {
+    "start_date": "2020-10-24T17:01:23Z",
+    "average_watts": 156.8,
+    "average_speed": 8.884,
+    "distance": 23899.0,
+    "moving_time": 2690,
+    "total_elevation_gain": 242.0
+  },
+  {
+    "start_date": "2020-10-26T14:49:23Z",
+    "average_watts": 133.4,
+    "average_speed": 9.449,
+    "distance": 21316.5,
+    "moving_time": 2256,
+    "total_elevation_gain": 145.6
+  },
+  {
+    "start_date": "2020-10-28T06:20:20Z",
+    "average_watts": 163.0,
+    "average_speed": 9.493,
+    "distance": 17628.8,
+    "moving_time": 1857,
+    "total_elevation_gain": 244.3
+  },
+  {
+    "start_date": "2020-10-29T08:40:23Z",
+    "average_watts": 162.8,
+    "average_speed": 7.133,
+    "distance": 14408.3,
+    "moving_time": 2020,
+    "total_elevation_gain": 200.6
+  },
+  {
+    "start_date": "2020-10-31T19:58:43Z",
+    "average_watts": 150.1,
+    "average_speed": 5.318,
+    "distance": 4870.9,
+    "moving_time": 916,
+    "total_elevation_gain": 27.7
+  },
+  {
+    "start_date": "2020-11-01T19:41:21Z",
+    "average_watts": 155.6,
+    "average_speed": 7.698,
+    "distance": 39769.9,
+    "moving_time": 5166,
+    "total_elevation_gain": 423.9
+  },
+  {
+    "start_date": "2020-11-02T15:12:34Z",
+    "average_watts": 151.5,
+    "average_speed": 5.113,
+    "distance": 73182.8,
+    "moving_time": 14314,
+    "total_elevation_gain": 540.2
+  },
+  {
+    "start_date": "2020-11-04T16:44:44Z",
+    "average_watts": 140.0,
+    "average_speed": 8.731,
+    "distance": 24944.2,
+    "moving_time": 2857,
+    "total_elevation_gain": 347.8
+  },
+  {
+    "start_date": "2020-11-06T16:06:44Z",
+    "average_watts": 165.5,
+    "average_speed": 5.96,
+    "distance": 5435.9,
+    "moving_time": 912,
+    "total_elevation_gain": 63.4
+  },
+  {
+    "start_date": "2020-11-08T17:07:41Z",
+    "average_watts": 162.9,
+    "average_speed": 5.531,
+    "distance": 57990.0,
+    "moving_time": 10484,
+    "total_elevation_gain": 815.7
+  },
+  {
+    "start_date": "2020-11-09T10:31:43Z",
+    "average_watts": 166.0,
+    "average_speed": 4.544,
+    "distance": 3003.8,
+    "moving_time": 661,
+    "total_elevation_gain": 16.5
+  },
+  {
+    "start_date": "2020-11-10T09:14:39Z",
+    "average_watts": 138.7,
+    "average_speed": 3.522,
+    "distance": 6173.3,
+    "moving_time": 1753,
+    "total_elevation_gain": 49.1
+  },
+  {
+    "start_date": "2020-11-12T08:19:48Z",
+    "average_watts": 163.6,
+    "average_speed": 5.078,
+    "distance": 38352.1,
+    "moving_time": 7553,
+    "total_elevation_gain": 381.8
+  },
+  {
+    "start_date": "2020-11-15T17:14:32Z",
+    "average_watts": 152.9,
+    "average_speed": 5.251,
+    "distance": 23729.2,
+    "moving_time": 4519,
+    "total_elevation_gain": 166.1
+  },
+  {
+    "start_date": "2020-11-20T17:57:40Z",
+    "average_watts": 145.0,
+    "average_speed": 7.413,
+    "distance": 19853.2,
+    "moving_time": 2678,
+    "total_elevation_gain": 136.6
+  },
+  {
+    "start_date": "2020-11-21T10:54:55Z",
+    "average_watts": 168.0,
+    "average_speed": 5.605,
+    "distance": 61214.8,
+    "moving_time": 10922,
+    "total_elevation_gain": 616.7
+  },
+  {
+    "start_date": "2020-11-24T18:23:10Z",
+    "average_watts": 142.7,
+    "average_speed": 5.175,
+    "distance": 83576.7,
+    "moving_time": 16149,
+    "total_elevation_gain": 573.8
+  },
+  {
+    "start_date": "2020-11-25T06:02:57Z",
+    "average_watts": 165.0,
+    "average_speed": 8.708,
+    "distance": 17459.3,
+    "moving_time": 2005,
+    "total_elevation_gain": 231.0
+  },
+  {
+    "start_date": "2020-11-27T07:02:50Z",
+    "average_watts": 161.5,
+    "average_speed": 7.249,
+    "distance": 18832.5,
+    "moving_time": 2598,
+    "total_elevation_gain": 165.7
+  },
+  {
+    "start_date": "2020-11-28T18:37:30Z",
+    "average_watts": 162.1,
+    "average_speed": 9.557,
+    "distance": 14489.1,
+    "moving_time": 1516,
+    "total_elevation_gain": 169.0
+  },
+  {
+    "start_date": "2020-11-29T11:47:22Z",
+    "average_watts": 157.8,
+    "average_speed": 6.811,
+    "distance": 38116.6,
+    "moving_time": 5596,
+    "total_elevation_gain": 369.0
+  },
+  {
+    "start_date": "2020-12-01T15:25:12Z",
+    "average_watts": 156.5,
+    "average_speed": 6.995,
+    "distance": 84280.3,
+    "moving_time": 12049,
+    "total_elevation_gain": 845.9
+  },
+  {
+    "start_date": "2020-12-08T06:58:35Z",
+    "average_watts": 137.4,
+    "average_speed": 4.032,
+    "distance": 4278.2,
+    "moving_time": 1061,
+    "total_elevation_gain": 54.9
+  },
+  {
+    "start_date": "2020-12-11T10:49:54Z",
+    "average_watts": 144.2,
+    "average_speed": 4.748,
+    "distance": 3574.9,
+    "moving_time": 753,
+    "total_elevation_gain": 29.5
+  },
+  {
+    "start_date": "2020-12-13T14:54:44Z",
+    "average_watts": 163.6,
+    "average_speed": 5.178,
+    "distance": 73965.5,
+    "moving_time": 14285,
+    "total_elevation_gain": 815.9
+  },
+  {
+    "start_date": "2020-12-15T15:37:26Z",
+    "average_watts": 150.3,
+    "average_speed": 6.144,
+    "distance": 99000.8,
+    "moving_time": 16114,
+    "total_elevation_gain": 678.9
+  },
+  {
+    "start_date": "2020-12-18T06:09:56Z",
+    "average_watts": 152.8,
+    "average_speed": 6.225,
+    "distance": 69946.2,
+    "moving_time": 11237,
+    "total_elevation_gain": 955.0
+  },
+  {
+    "start_date": "2020-12-21T06:16:19Z",
+    "average_watts": 155.9,
+    "average_speed": 4.915,
+    "distance": 4698.8,
+    "moving_time": 956,
+    "total_elevation_gain": 68.5
+  },
+  {
+    "start_date": "2020-12-23T17:01:42Z",
+    "average_watts": 155.7,
+    "average_speed": 7.843,
+    "distance": 15239.2,
+    "moving_time": 1943,
+    "total_elevation_gain": 161.0
+  },
+  {
+    "start_date": "2020-12-27T09:57:57Z",
+    "average_watts": 156.6,
+    "average_speed": 8.177,
+    "distance": 14815.9,
+    "moving_time": 1812,
+    "total_elevation_gain": 191.4
+  },
+  {
+    "start_date": "2020-12-30T16:42:29Z",
+    "average_watts": 157.8,
+    "average_speed": 5.252,
+    "distance": 75532.2,
+    "moving_time": 14382,
+    "total_elevation_gain": 814.6
+  },
+  {
+    "start_date": "2020-12-31T18:03:57Z",
+    "average_watts": 161.4,
+    "average_speed": 7.746,
+    "distance": 22896.7,
+    "moving_time": 2956,
+    "total_elevation_gain": 196.7
+  },
+  {
+    "start_date": "2021-01-01T17:58:28Z",
+    "average_watts": 137.6,
+    "average_speed": 3.695,
+    "distance": 3107.7,
+    "moving_time": 841,
+    "total_elevation_gain": 26.6
+  },
+  {
+    "start_date": "2021-01-02T14:19:10Z",
+    "average_watts": 166.8,
+    "average_speed": 5.039,
+    "distance": 34267.2,
+    "moving_time": 6801,
+    "total_elevation_gain": 343.7
+  },
+  {
+    "start_date": "2021-01-05T09:16:03Z",
+    "average_watts": 161.9,
+    "average_speed": 3.656,
+    "distance": 3345.4,
+    "moving_time": 915,
+    "total_elevation_gain": 36.9
+  },
+  {
+    "start_date": "2021-01-08T09:06:55Z",
+    "average_watts": 165.2,
+    "average_speed": 3.493,
+    "distance": 5518.7,
+    "moving_time": 1580,
+    "total_elevation_gain": 42.2
+  },
+  {
+    "start_date": "2021-01-10T08:34:30Z",
+    "average_watts": 145.8,
+    "average_speed": 3.356,
+    "distance": 5443.1,
+    "moving_time": 1622,
+    "total_elevation_gain": 56.4
+  },
+  {
+    "start_date": "2021-01-12T15:47:43Z",
+    "average_watts": 137.9,
+    "average_speed": 7.019,
+    "distance": 19169.7,
+    "moving_time": 2731,
+    "total_elevation_gain": 173.7
+  },
+  {
+    "start_date": "2021-01-16T16:06:45Z",
+    "average_watts": 150.0,
+    "average_speed": 8.97,
+    "distance": 24937.2,
+    "moving_time": 2780,
+    "total_elevation_gain": 243.2
+  },
+  {
+    "start_date": "2021-01-18T14:33:42Z",
+    "average_watts": 138.2,
+    "average_speed": 4.934,
+    "distance": 5847.1,
+    "moving_time": 1185,
+    "total_elevation_gain": 57.4
+  },
+  {
+    "start_date": "2021-01-19T08:26:13Z",
+    "average_watts": 155.1,
+    "average_speed": 6.738,
+    "distance": 85612.1,
+    "moving_time": 12706,
+    "total_elevation_gain": 653.2
+  },
+  {
+    "start_date": "2021-01-21T14:30:51Z",
+    "average_watts": 142.4,
+    "average_speed": 6.504,
+    "distance": 94279.3,
+    "moving_time": 14495,
+    "total_elevation_gain": 1036.9
+  },
+  {
+    "start_date": "2021-01-22T18:00:30Z",
+    "average_watts": 164.3,
+    "average_speed": 6.225,
+    "distance": 84537.5,
+    "moving_time": 13581,
+    "total_elevation_gain": 1071.9
+  },
+  {
+    "start_date": "2021-01-23T06:32:32Z",
+    "average_watts": 149.8,
+    "average_speed": 7.096,
+    "distance": 15370.5,
+    "moving_time": 2166,
+    "total_elevation_gain": 205.4
+  },
+  {
+    "start_date": "2021-01-24T15:34:21Z",
+    "average_watts": 163.1,
+    "average_speed": 6.524,
+    "distance": 53626.3,
+    "moving_time": 8220,
+    "total_elevation_gain": 466.2
+  },
+  {
+    "start_date": "2021-01-25T16:11:26Z",
+    "average_watts": 154.3,
+    "average_speed": 4.969,
+    "distance": 3513.4,
+    "moving_time": 707,
+    "total_elevation_gain": 42.7
+  },
+  {
+    "start_date": "2021-01-27T09:48:27Z",
+    "average_watts": 136.1,
+    "average_speed": 5.948,
+    "distance": 65387.1,
+    "moving_time": 10994,
+    "total_elevation_gain": 820.1
+  },
+  {
+    "start_date": "2021-01-28T08:19:18Z",
+    "average_watts": 143.7,
+    "average_speed": 9.002,
+    "distance": 20362.6,
+    "moving_time": 2262,
+    "total_elevation_gain": 108.2
+  },
+  {
+    "start_date": "2021-01-30T12:53:23Z",
+    "average_watts": 171.4,
+    "average_speed": 5.178,
+    "distance": 90940.4,
+    "moving_time": 17562,
+    "total_elevation_gain": 801.5
+  },
+  {
+    "start_date": "2021-02-02T18:02:44Z",
+    "average_watts": 164.3,
+    "average_speed": 4.683,
+    "distance": 6083.7,
+    "moving_time": 1299,
+    "total_elevation_gain": 67.2
+  },
+  {
+    "start_date": "2021-02-03T06:15:54Z",
+    "average_watts": 157.0,
+    "average_speed": 7.96,
+    "distance": 12512.4,
+    "moving_time": 1572,
+    "total_elevation_gain": 134.5
+  },
+  {
+    "start_date": "2021-02-04T10:33:37Z",
+    "average_watts": 154.4,
+    "average_speed": 5.53,
+    "distance": 99877.5,
+    "moving_time": 18060,
+    "total_elevation_gain": 1272.8
+  },
+  {
+    "start_date": "2021-02-09T10:52:30Z",
+    "average_watts": 156.3,
+    "average_speed": 6.783,
+    "distance": 88226.1,
+    "moving_time": 13006,
+    "total_elevation_gain": 793.6
+  },
+  {
+    "start_date": "2021-02-11T10:23:31Z",
+    "average_watts": 157.3,
+    "average_speed": 6.114,
+    "distance": 30736.3,
+    "moving_time": 5027,
+    "total_elevation_gain": 432.7
+  },
+  {
+    "start_date": "2021-02-16T18:15:42Z",
+    "average_watts": 142.2,
+    "average_speed": 6.494,
+    "distance": 37412.4,
+    "moving_time": 5761,
+    "total_elevation_gain": 322.4
+  },
+  {
+    "start_date": "2021-02-18T11:25:53Z",
+    "average_watts": 170.5,
+    "average_speed": 5.513,
+    "distance": 85170.7,
+    "moving_time": 15449,
+    "total_elevation_gain": 892.3
+  },
+  {
+    "start_date": "2021-02-19T19:27:42Z",
+    "average_watts": 157.6,
+    "average_speed": 5.884,
+    "distance": 84739.0,
+    "moving_time": 14402,
+    "total_elevation_gain": 495.1
+  },
+  {
+    "start_date": "2021-02-20T19:57:57Z",
+    "average_watts": 141.8,
+    "average_speed": 7.418,
+    "distance": 12558.9,
+    "moving_time": 1693,
+    "total_elevation_gain": 188.1
+  },
+  {
+    "start_date": "2021-02-23T07:05:07Z",
+    "average_watts": 139.2,
+    "average_speed": 6.3,
+    "distance": 25176.0,
+    "moving_time": 3996,
+    "total_elevation_gain": 359.4
+  },
+  {
+    "start_date": "2021-02-24T10:36:01Z",
+    "average_watts": 143.8,
+    "average_speed": 6.668,
+    "distance": 61702.0,
+    "moving_time": 9253,
+    "total_elevation_gain": 599.5
+  },
+  {
+    "start_date": "2021-02-25T19:10:23Z",
+    "average_watts": 145.1,
+    "average_speed": 8.323,
+    "distance": 10928.3,
+    "moving_time": 1313,
+    "total_elevation_gain": 142.9
+  },
+  {
+    "start_date": "2021-02-26T19:51:46Z",
+    "average_watts": 161.6,
+    "average_speed": 9.917,
+    "distance": 12783.4,
+    "moving_time": 1289,
+    "total_elevation_gain": 101.7
+  },
+  {
+    "start_date": "2021-02-28T11:39:31Z",
+    "average_watts": 152.5,
+    "average_speed": 5.038,
+    "distance": 72306.4,
+    "moving_time": 14352,
+    "total_elevation_gain": 695.1
+  },
+  {
+    "start_date": "2021-03-01T07:17:48Z",
+    "average_watts": 136.0,
+    "average_speed": 6.757,
+    "distance": 71113.3,
+    "moving_time": 10524,
+    "total_elevation_gain": 642.0
+  },
+  {
+    "start_date": "2021-03-03T16:54:50Z",
+    "average_watts": 142.0,
+    "average_speed": 5.877,
+    "distance": 37169.1,
+    "moving_time": 6325,
+    "total_elevation_gain": 275.9
+  },
+  {
+    "start_date": "2021-03-04T09:26:15Z",
+    "average_watts": 158.2,
+    "average_speed": 8.205,
+    "distance": 17149.3,
+    "moving_time": 2090,
+    "total_elevation_gain": 183.6
+  },
+  {
+    "start_date": "2021-03-05T06:11:48Z",
+    "average_watts": 153.6,
+    "average_speed": 6.596,
+    "distance": 89378.9,
+    "moving_time": 13550,
+    "total_elevation_gain": 1040.4
+  },
+  {
+    "start_date": "2021-03-06T06:25:41Z",
+    "average_watts": 136.0,
+    "average_speed": 5.063,
+    "distance": 35615.5,
+    "moving_time": 7035,
+    "total_elevation_gain": 280.8
+  },
+  {
+    "start_date": "2021-03-07T14:53:56Z",
+    "average_watts": 157.5,
+    "average_speed": 5.29,
+    "distance": 76994.4,
+    "moving_time": 14554,
+    "total_elevation_gain": 483.1
+  },
+  {
+    "start_date": "2021-03-09T07:09:36Z",
+    "average_watts": 148.8,
+    "average_speed": 7.829,
+    "distance": 33882.2,
+    "moving_time": 4328,
+    "total_elevation_gain": 228.3
+  },
+  {
+    "start_date": "2021-03-13T09:41:14Z",
+    "average_watts": 160.6,
+    "average_speed": 4.3,
+    "distance": 6385.0,
+    "moving_time": 1485,
+    "total_elevation_gain": 63.0
+  },
+  {
+    "start_date": "2021-03-14T08:17:42Z",
+    "average_watts": 141.0,
+    "average_speed": 4.29,
+    "distance": 3239.3,
+    "moving_time": 755,
+    "total_elevation_gain": 26.0
+  },
+  {
+    "start_date": "2021-03-15T15:15:38Z",
+    "average_watts": 150.8,
+    "average_speed": 5.525,
+    "distance": 6458.5,
+    "moving_time": 1169,
+    "total_elevation_gain": 90.2
+  },
+  {
+    "start_date": "2021-03-16T07:42:55Z",
+    "average_watts": 155.0,
+    "average_speed": 6.006,
+    "distance": 87492.4,
+    "moving_time": 14568,
+    "total_elevation_gain": 1257.8
+  },
+  {
+    "start_date": "2021-03-18T14:59:01Z",
+    "average_watts": 146.9,
+    "average_speed": 6.65,
+    "distance": 75295.5,
+    "moving_time": 11322,
+    "total_elevation_gain": 540.7
+  },
+  {
+    "start_date": "2021-03-21T16:46:25Z",
+    "average_watts": 134.9,
+    "average_speed": 5.059,
+    "distance": 64039.7,
+    "moving_time": 12658,
+    "total_elevation_gain": 405.6
+  },
+  {
+    "start_date": "2021-03-22T14:28:58Z",
+    "average_watts": 160.5,
+    "average_speed": 6.682,
+    "distance": 77163.6,
+    "moving_time": 11548,
+    "total_elevation_gain": 497.7
+  },
+  {
+    "start_date": "2021-03-23T18:55:47Z",
+    "average_watts": 154.8,
+    "average_speed": 6.315,
+    "distance": 21086.6,
+    "moving_time": 3339,
+    "total_elevation_gain": 218.7
+  },
+  {
+    "start_date": "2021-03-25T16:03:15Z",
+    "average_watts": 145.0,
+    "average_speed": 5.473,
+    "distance": 32432.0,
+    "moving_time": 5926,
+    "total_elevation_gain": 305.0
+  },
+  {
+    "start_date": "2021-03-26T14:34:12Z",
+    "average_watts": 153.2,
+    "average_speed": 8.06,
+    "distance": 17660.0,
+    "moving_time": 2191,
+    "total_elevation_gain": 234.4
+  },
+  {
+    "start_date": "2021-03-27T15:47:21Z",
+    "average_watts": 140.9,
+    "average_speed": 9.87,
+    "distance": 16324.2,
+    "moving_time": 1654,
+    "total_elevation_gain": 90.8
+  },
+  {
+    "start_date": "2021-03-28T06:30:41Z",
+    "average_watts": 167.0,
+    "average_speed": 7.019,
+    "distance": 17681.3,
+    "moving_time": 2519,
+    "total_elevation_gain": 249.5
+  },
+  {
+    "start_date": "2021-03-29T10:58:26Z",
+    "average_watts": 140.5,
+    "average_speed": 8.871,
+    "distance": 18265.3,
+    "moving_time": 2059,
+    "total_elevation_gain": 175.7
+  },
+  {
+    "start_date": "2021-03-30T17:24:21Z",
+    "average_watts": 152.9,
+    "average_speed": 5.336,
+    "distance": 4221.1,
+    "moving_time": 791,
+    "total_elevation_gain": 33.0
+  },
+  {
+    "start_date": "2021-04-02T06:36:02Z",
+    "average_watts": 173.3,
+    "average_speed": 5.547,
+    "distance": 80730.2,
+    "moving_time": 14553,
+    "total_elevation_gain": 1040.9
+  },
+  {
+    "start_date": "2021-04-03T19:14:16Z",
+    "average_watts": 157.9,
+    "average_speed": 4.964,
+    "distance": 5738.0,
+    "moving_time": 1156,
+    "total_elevation_gain": 55.6
+  },
+  {
+    "start_date": "2021-04-04T08:12:26Z",
+    "average_watts": 169.6,
+    "average_speed": 3.337,
+    "distance": 4625.7,
+    "moving_time": 1386,
+    "total_elevation_gain": 67.2
+  },
+  {
+    "start_date": "2021-04-08T17:25:14Z",
+    "average_watts": 171.5,
+    "average_speed": 6.814,
+    "distance": 77030.8,
+    "moving_time": 11305,
+    "total_elevation_gain": 865.3
+  },
+  {
+    "start_date": "2021-04-09T10:56:19Z",
+    "average_watts": 139.0,
+    "average_speed": 7.306,
+    "distance": 16197.7,
+    "moving_time": 2217,
+    "total_elevation_gain": 176.7
+  },
+  {
+    "start_date": "2021-04-10T07:00:22Z",
+    "average_watts": 138.0,
+    "average_speed": 9.8,
+    "distance": 18709.1,
+    "moving_time": 1909,
+    "total_elevation_gain": 123.5
+  },
+  {
+    "start_date": "2021-04-11T18:57:38Z",
+    "average_watts": 165.5,
+    "average_speed": 7.847,
+    "distance": 21703.7,
+    "moving_time": 2766,
+    "total_elevation_gain": 247.3
+  },
+  {
+    "start_date": "2021-04-12T07:52:37Z",
+    "average_watts": 174.3,
+    "average_speed": 6.903,
+    "distance": 37543.8,
+    "moving_time": 5439,
+    "total_elevation_gain": 307.3
+  },
+  {
+    "start_date": "2021-04-14T18:39:17Z",
+    "average_watts": 174.5,
+    "average_speed": 5.303,
+    "distance": 4661.7,
+    "moving_time": 879,
+    "total_elevation_gain": 47.9
+  },
+  {
+    "start_date": "2021-04-15T11:09:44Z",
+    "average_watts": 167.5,
+    "average_speed": 6.722,
+    "distance": 67443.8,
+    "moving_time": 10034,
+    "total_elevation_gain": 604.2
+  },
+  {
+    "start_date": "2021-04-18T15:00:16Z",
+    "average_watts": 150.4,
+    "average_speed": 7.518,
+    "distance": 30688.1,
+    "moving_time": 4082,
+    "total_elevation_gain": 326.6
+  },
+  {
+    "start_date": "2021-04-22T06:29:18Z",
+    "average_watts": 137.9,
+    "average_speed": 5.587,
+    "distance": 85147.5,
+    "moving_time": 15241,
+    "total_elevation_gain": 985.3
+  },
+  {
+    "start_date": "2021-04-23T13:46:46Z",
+    "average_watts": 137.8,
+    "average_speed": 3.934,
+    "distance": 4811.2,
+    "moving_time": 1223,
+    "total_elevation_gain": 33.6
+  },
+  {
+    "start_date": "2021-04-25T14:20:35Z",
+    "average_watts": 140.9,
+    "average_speed": 8.535,
+    "distance": 24922.2,
+    "moving_time": 2920,
+    "total_elevation_gain": 357.0
+  },
+  {
+    "start_date": "2021-04-26T17:43:49Z",
+    "average_watts": 159.8,
+    "average_speed": 7.842,
+    "distance": 31375.0,
+    "moving_time": 4001,
+    "total_elevation_gain": 246.0
+  },
+  {
+    "start_date": "2021-04-28T17:08:13Z",
+    "average_watts": 137.0,
+    "average_speed": 4.376,
+    "distance": 5746.0,
+    "moving_time": 1313,
+    "total_elevation_gain": 68.3
+  },
+  {
+    "start_date": "2021-04-30T12:57:59Z",
+    "average_watts": 147.4,
+    "average_speed": 4.631,
+    "distance": 6164.2,
+    "moving_time": 1331,
+    "total_elevation_gain": 74.8
+  },
+  {
+    "start_date": "2021-05-03T15:46:20Z",
+    "average_watts": 143.1,
+    "average_speed": 8.502,
+    "distance": 21756.4,
+    "moving_time": 2559,
+    "total_elevation_gain": 294.1
+  },
+  {
+    "start_date": "2021-05-04T10:57:22Z",
+    "average_watts": 171.3,
+    "average_speed": 5.293,
+    "distance": 91026.1,
+    "moving_time": 17196,
+    "total_elevation_gain": 1015.6
+  },
+  {
+    "start_date": "2021-05-05T08:57:17Z",
+    "average_watts": 150.3,
+    "average_speed": 7.143,
+    "distance": 23287.0,
+    "moving_time": 3260,
+    "total_elevation_gain": 296.1
+  },
+  {
+    "start_date": "2021-05-08T08:05:18Z",
+    "average_watts": 163.6,
+    "average_speed": 8.57,
+    "distance": 16917.0,
+    "moving_time": 1974,
+    "total_elevation_gain": 245.2
+  },
+  {
+    "start_date": "2021-05-10T07:17:36Z",
+    "average_watts": 159.4,
+    "average_speed": 8.479,
+    "distance": 22055.0,
+    "moving_time": 2601,
+    "total_elevation_gain": 299.6
+  },
+  {
+    "start_date": "2021-05-11T12:03:24Z",
+    "average_watts": 140.7,
+    "average_speed": 8.515,
+    "distance": 20835.8,
+    "moving_time": 2447,
+    "total_elevation_gain": 239.2
+  },
+  {
+    "start_date": "2021-05-13T07:21:05Z",
+    "average_watts": 152.2,
+    "average_speed": 7.994,
+    "distance": 20640.4,
+    "moving_time": 2582,
+    "total_elevation_gain": 260.7
+  },
+  {
+    "start_date": "2021-05-14T06:16:23Z",
+    "average_watts": 137.8,
+    "average_speed": 7.519,
+    "distance": 25308.3,
+    "moving_time": 3366,
+    "total_elevation_gain": 373.8
+  },
+  {
+    "start_date": "2021-05-15T12:19:37Z",
+    "average_watts": 160.1,
+    "average_speed": 3.538,
+    "distance": 3389.0,
+    "moving_time": 958,
+    "total_elevation_gain": 36.3
+  },
+  {
+    "start_date": "2021-05-16T10:59:37Z",
+    "average_watts": 174.5,
+    "average_speed": 4.845,
+    "distance": 6225.9,
+    "moving_time": 1285,
+    "total_elevation_gain": 86.4
+  },
+  {
+    "start_date": "2021-05-17T15:53:43Z",
+    "average_watts": 139.6,
+    "average_speed": 5.996,
+    "distance": 90909.1,
+    "moving_time": 15161,
+    "total_elevation_gain": 799.9
+  },
+  {
+    "start_date": "2021-05-20T10:48:23Z",
+    "average_watts": 164.1,
+    "average_speed": 7.177,
+    "distance": 22385.8,
+    "moving_time": 3119,
+    "total_elevation_gain": 258.4
+  },
+  {
+    "start_date": "2021-05-21T14:30:58Z",
+    "average_watts": 146.2,
+    "average_speed": 5.545,
+    "distance": 4302.7,
+    "moving_time": 776,
+    "total_elevation_gain": 35.1
+  },
+  {
+    "start_date": "2021-05-22T11:48:49Z",
+    "average_watts": 170.3,
+    "average_speed": 6.147,
+    "distance": 64795.4,
+    "moving_time": 10541,
+    "total_elevation_gain": 873.3
+  },
+  {
+    "start_date": "2021-05-23T09:02:34Z",
+    "average_watts": 137.4,
+    "average_speed": 5.018,
+    "distance": 83841.0,
+    "moving_time": 16708,
+    "total_elevation_gain": 1093.2
+  },
+  {
+    "start_date": "2021-05-25T14:00:28Z",
+    "average_watts": 166.3,
+    "average_speed": 5.266,
+    "distance": 80452.4,
+    "moving_time": 15278,
+    "total_elevation_gain": 1170.8
+  },
+  {
+    "start_date": "2021-05-26T06:18:21Z",
+    "average_watts": 162.6,
+    "average_speed": 6.417,
+    "distance": 33874.5,
+    "moving_time": 5279,
+    "total_elevation_gain": 206.4
+  },
+  {
+    "start_date": "2021-05-30T13:56:47Z",
+    "average_watts": 163.3,
+    "average_speed": 5.469,
+    "distance": 4955.2,
+    "moving_time": 906,
+    "total_elevation_gain": 56.1
+  },
+  {
+    "start_date": "2021-05-31T09:14:38Z",
+    "average_watts": 135.9,
+    "average_speed": 5.603,
+    "distance": 3367.6,
+    "moving_time": 601,
+    "total_elevation_gain": 21.6
+  },
+  {
+    "start_date": "2021-06-01T13:10:31Z",
+    "average_watts": 142.9,
+    "average_speed": 9.607,
+    "distance": 12661.7,
+    "moving_time": 1318,
+    "total_elevation_gain": 135.1
+  },
+  {
+    "start_date": "2021-06-03T14:28:18Z",
+    "average_watts": 163.7,
+    "average_speed": 5.198,
+    "distance": 3103.0,
+    "moving_time": 597,
+    "total_elevation_gain": 39.1
+  },
+  {
+    "start_date": "2021-06-04T17:59:28Z",
+    "average_watts": 163.0,
+    "average_speed": 9.482,
+    "distance": 15560.6,
+    "moving_time": 1641,
+    "total_elevation_gain": 88.7
+  },
+  {
+    "start_date": "2021-06-05T12:08:43Z",
+    "average_watts": 155.6,
+    "average_speed": 5.682,
+    "distance": 53311.7,
+    "moving_time": 9383,
+    "total_elevation_gain": 764.6
+  },
+  {
+    "start_date": "2021-06-07T12:49:18Z",
+    "average_watts": 142.7,
+    "average_speed": 7.904,
+    "distance": 14258.8,
+    "moving_time": 1804,
+    "total_elevation_gain": 92.6
+  },
+  {
+    "start_date": "2021-06-11T09:38:24Z",
+    "average_watts": 157.2,
+    "average_speed": 8.888,
+    "distance": 22370.9,
+    "moving_time": 2517,
+    "total_elevation_gain": 192.4
+  },
+  {
+    "start_date": "2021-06-13T12:09:16Z",
+    "average_watts": 158.4,
+    "average_speed": 6.285,
+    "distance": 75277.5,
+    "moving_time": 11978,
+    "total_elevation_gain": 538.5
+  },
+  {
+    "start_date": "2021-06-16T17:50:19Z",
+    "average_watts": 174.7,
+    "average_speed": 5.952,
+    "distance": 34667.7,
+    "moving_time": 5825,
+    "total_elevation_gain": 265.1
+  },
+  {
+    "start_date": "2021-06-17T11:09:53Z",
+    "average_watts": 139.8,
+    "average_speed": 5.672,
+    "distance": 38714.4,
+    "moving_time": 6826,
+    "total_elevation_gain": 250.1
+  },
+  {
+    "start_date": "2021-06-18T19:40:08Z",
+    "average_watts": 146.7,
+    "average_speed": 6.608,
+    "distance": 50614.2,
+    "moving_time": 7660,
+    "total_elevation_gain": 285.3
+  },
+  {
+    "start_date": "2021-06-20T12:07:15Z",
+    "average_watts": 160.5,
+    "average_speed": 5.474,
+    "distance": 6021.6,
+    "moving_time": 1100,
+    "total_elevation_gain": 53.6
+  },
+  {
+    "start_date": "2021-06-21T07:22:24Z",
+    "average_watts": 166.0,
+    "average_speed": 6.686,
+    "distance": 97294.4,
+    "moving_time": 14551,
+    "total_elevation_gain": 941.6
+  },
+  {
+    "start_date": "2021-06-23T14:46:22Z",
+    "average_watts": 163.2,
+    "average_speed": 6.957,
+    "distance": 36168.9,
+    "moving_time": 5199,
+    "total_elevation_gain": 465.9
+  },
+  {
+    "start_date": "2021-06-24T07:52:09Z",
+    "average_watts": 154.9,
+    "average_speed": 6.134,
+    "distance": 94222.6,
+    "moving_time": 15360,
+    "total_elevation_gain": 1043.4
+  },
+  {
+    "start_date": "2021-06-25T14:09:28Z",
+    "average_watts": 145.7,
+    "average_speed": 6.289,
+    "distance": 88629.1,
+    "moving_time": 14092,
+    "total_elevation_gain": 1169.4
+  },
+  {
+    "start_date": "2021-06-27T08:22:08Z",
+    "average_watts": 155.7,
+    "average_speed": 6.946,
+    "distance": 85476.6,
+    "moving_time": 12305,
+    "total_elevation_gain": 761.3
+  },
+  {
+    "start_date": "2021-06-28T15:20:41Z",
+    "average_watts": 142.6,
+    "average_speed": 4.788,
+    "distance": 4701.6,
+    "moving_time": 982,
+    "total_elevation_gain": 60.8
+  },
+  {
+    "start_date": "2021-06-29T09:53:57Z",
+    "average_watts": 152.4,
+    "average_speed": 7.722,
+    "distance": 17497.9,
+    "moving_time": 2266,
+    "total_elevation_gain": 96.6
+  },
+  {
+    "start_date": "2021-06-30T14:42:54Z",
+    "average_watts": 143.0,
+    "average_speed": 8.421,
+    "distance": 17187.3,
+    "moving_time": 2041,
+    "total_elevation_gain": 95.0
+  },
+  {
+    "start_date": "2021-07-02T15:34:41Z",
+    "average_watts": 169.5,
+    "average_speed": 3.789,
+    "distance": 5479.1,
+    "moving_time": 1446,
+    "total_elevation_gain": 58.8
+  },
+  {
+    "start_date": "2021-07-05T10:22:36Z",
+    "average_watts": 169.8,
+    "average_speed": 6.068,
+    "distance": 77670.3,
+    "moving_time": 12800,
+    "total_elevation_gain": 390.4
+  },
+  {
+    "start_date": "2021-07-08T08:10:46Z",
+    "average_watts": 175.4,
+    "average_speed": 9.006,
+    "distance": 21335.8,
+    "moving_time": 2369,
+    "total_elevation_gain": 111.7
+  },
+  {
+    "start_date": "2021-07-09T15:48:46Z",
+    "average_watts": 159.1,
+    "average_speed": 5.293,
+    "distance": 3048.5,
+    "moving_time": 576,
+    "total_elevation_gain": 26.9
+  },
+  {
+    "start_date": "2021-07-12T07:20:52Z",
+    "average_watts": 154.5,
+    "average_speed": 4.335,
+    "distance": 7408.4,
+    "moving_time": 1709,
+    "total_elevation_gain": 52.8
+  },
+  {
+    "start_date": "2021-07-15T09:14:05Z",
+    "average_watts": 149.7,
+    "average_speed": 9.062,
+    "distance": 21584.8,
+    "moving_time": 2382,
+    "total_elevation_gain": 212.4
+  },
+  {
+    "start_date": "2021-07-19T10:24:45Z",
+    "average_watts": 159.4,
+    "average_speed": 7.595,
+    "distance": 16754.5,
+    "moving_time": 2206,
+    "total_elevation_gain": 91.9
+  },
+  {
+    "start_date": "2021-07-21T12:34:48Z",
+    "average_watts": 170.4,
+    "average_speed": 8.84,
+    "distance": 11651.2,
+    "moving_time": 1318,
+    "total_elevation_gain": 174.5
+  },
+  {
+    "start_date": "2021-07-26T07:28:22Z",
+    "average_watts": 148.3,
+    "average_speed": 6.112,
+    "distance": 33321.4,
+    "moving_time": 5452,
+    "total_elevation_gain": 310.3
+  },
+  {
+    "start_date": "2021-07-29T15:59:58Z",
+    "average_watts": 172.9,
+    "average_speed": 8.515,
+    "distance": 14671.1,
+    "moving_time": 1723,
+    "total_elevation_gain": 185.9
+  },
+  {
+    "start_date": "2021-08-01T17:30:26Z",
+    "average_watts": 142.9,
+    "average_speed": 7.378,
+    "distance": 37879.0,
+    "moving_time": 5134,
+    "total_elevation_gain": 341.6
+  },
+  {
+    "start_date": "2021-08-03T11:09:01Z",
+    "average_watts": 163.6,
+    "average_speed": 7.073,
+    "distance": 20291.9,
+    "moving_time": 2869,
+    "total_elevation_gain": 150.1
+  },
+  {
+    "start_date": "2021-08-04T06:47:51Z",
+    "average_watts": 149.3,
+    "average_speed": 6.957,
+    "distance": 96452.1,
+    "moving_time": 13864,
+    "total_elevation_gain": 955.0
+  },
+  {
+    "start_date": "2021-08-05T07:29:57Z",
+    "average_watts": 151.9,
+    "average_speed": 4.414,
+    "distance": 5937.3,
+    "moving_time": 1345,
+    "total_elevation_gain": 66.9
+  },
+  {
+    "start_date": "2021-08-07T14:41:19Z",
+    "average_watts": 163.1,
+    "average_speed": 5.692,
+    "distance": 80021.0,
+    "moving_time": 14059,
+    "total_elevation_gain": 1139.6
+  },
+  {
+    "start_date": "2021-08-10T08:13:18Z",
+    "average_watts": 142.0,
+    "average_speed": 5.283,
+    "distance": 27734.3,
+    "moving_time": 5250,
+    "total_elevation_gain": 290.7
+  },
+  {
+    "start_date": "2021-08-12T17:09:08Z",
+    "average_watts": 155.1,
+    "average_speed": 5.5,
+    "distance": 51489.3,
+    "moving_time": 9361,
+    "total_elevation_gain": 665.3
+  },
+  {
+    "start_date": "2021-08-13T13:18:19Z",
+    "average_watts": 152.1,
+    "average_speed": 6.852,
+    "distance": 20322.6,
+    "moving_time": 2966,
+    "total_elevation_gain": 214.6
+  },
+  {
+    "start_date": "2021-08-16T14:55:13Z",
+    "average_watts": 157.2,
+    "average_speed": 4.18,
+    "distance": 3377.1,
+    "moving_time": 808,
+    "total_elevation_gain": 32.2
+  },
+  {
+    "start_date": "2021-08-18T08:28:40Z",
+    "average_watts": 141.9,
+    "average_speed": 7.823,
+    "distance": 24664.6,
+    "moving_time": 3153,
+    "total_elevation_gain": 336.8
+  },
+  {
+    "start_date": "2021-08-19T06:14:36Z",
+    "average_watts": 160.5,
+    "average_speed": 3.959,
+    "distance": 3238.7,
+    "moving_time": 818,
+    "total_elevation_gain": 40.7
+  },
+  {
+    "start_date": "2021-08-23T17:33:17Z",
+    "average_watts": 144.6,
+    "average_speed": 5.097,
+    "distance": 6921.3,
+    "moving_time": 1358,
+    "total_elevation_gain": 38.5
+  },
+  {
+    "start_date": "2021-08-26T10:29:30Z",
+    "average_watts": 147.2,
+    "average_speed": 8.04,
+    "distance": 23572.9,
+    "moving_time": 2932,
+    "total_elevation_gain": 342.7
+  },
+  {
+    "start_date": "2021-08-28T10:27:18Z",
+    "average_watts": 139.9,
+    "average_speed": 5.912,
+    "distance": 28828.7,
+    "moving_time": 4876,
+    "total_elevation_gain": 303.1
+  },
+  {
+    "start_date": "2021-08-29T09:36:09Z",
+    "average_watts": 170.9,
+    "average_speed": 5.313,
+    "distance": 63969.1,
+    "moving_time": 12041,
+    "total_elevation_gain": 716.6
+  },
+  {
+    "start_date": "2021-08-31T14:34:14Z",
+    "average_watts": 171.6,
+    "average_speed": 9.019,
+    "distance": 22086.6,
+    "moving_time": 2449,
+    "total_elevation_gain": 208.3
+  },
+  {
+    "start_date": "2021-09-02T13:21:26Z",
+    "average_watts": 148.1,
+    "average_speed": 7.604,
+    "distance": 10676.5,
+    "moving_time": 1404,
+    "total_elevation_gain": 88.2
+  },
+  {
+    "start_date": "2021-09-06T17:19:45Z",
+    "average_watts": 167.6,
+    "average_speed": 7.35,
+    "distance": 11605.3,
+    "moving_time": 1579,
+    "total_elevation_gain": 78.6
+  },
+  {
+    "start_date": "2021-09-07T12:50:01Z",
+    "average_watts": 171.2,
+    "average_speed": 8.937,
+    "distance": 22995.2,
+    "moving_time": 2573,
+    "total_elevation_gain": 240.9
+  },
+  {
+    "start_date": "2021-09-09T11:42:53Z",
+    "average_watts": 167.5,
+    "average_speed": 6.694,
+    "distance": 77470.5,
+    "moving_time": 11573,
+    "total_elevation_gain": 1059.4
+  },
+  {
+    "start_date": "2021-09-12T06:06:40Z",
+    "average_watts": 164.7,
+    "average_speed": 7.763,
+    "distance": 20285.5,
+    "moving_time": 2613,
+    "total_elevation_gain": 304.0
+  },
+  {
+    "start_date": "2021-09-14T18:36:18Z",
+    "average_watts": 170.7,
+    "average_speed": 6.63,
+    "distance": 56641.9,
+    "moving_time": 8543,
+    "total_elevation_gain": 739.6
+  },
+  {
+    "start_date": "2021-09-15T09:30:50Z",
+    "average_watts": 142.3,
+    "average_speed": 8.53,
+    "distance": 19338.6,
+    "moving_time": 2267,
+    "total_elevation_gain": 138.7
+  },
+  {
+    "start_date": "2021-09-16T19:35:06Z",
+    "average_watts": 169.6,
+    "average_speed": 9.191,
+    "distance": 23456.1,
+    "moving_time": 2552,
+    "total_elevation_gain": 250.3
+  },
+  {
+    "start_date": "2021-09-18T16:48:48Z",
+    "average_watts": 142.4,
+    "average_speed": 5.707,
+    "distance": 32308.8,
+    "moving_time": 5661,
+    "total_elevation_gain": 370.2
+  },
+  {
+    "start_date": "2021-09-19T08:08:39Z",
+    "average_watts": 154.4,
+    "average_speed": 5.3,
+    "distance": 51953.1,
+    "moving_time": 9803,
+    "total_elevation_gain": 624.8
+  },
+  {
+    "start_date": "2021-09-21T19:18:27Z",
+    "average_watts": 175.3,
+    "average_speed": 6.164,
+    "distance": 90191.0,
+    "moving_time": 14633,
+    "total_elevation_gain": 1159.5
+  },
+  {
+    "start_date": "2021-09-22T14:03:43Z",
+    "average_watts": 150.0,
+    "average_speed": 6.616,
+    "distance": 79468.9,
+    "moving_time": 12011,
+    "total_elevation_gain": 561.5
+  },
+  {
+    "start_date": "2021-09-28T14:29:45Z",
+    "average_watts": 168.8,
+    "average_speed": 5.015,
+    "distance": 96841.8,
+    "moving_time": 19309,
+    "total_elevation_gain": 1039.8
+  },
+  {
+    "start_date": "2021-09-30T13:05:09Z",
+    "average_watts": 138.8,
+    "average_speed": 7.243,
+    "distance": 24786.3,
+    "moving_time": 3422,
+    "total_elevation_gain": 172.6
+  },
+  {
+    "start_date": "2021-10-03T11:51:20Z",
+    "average_watts": 168.8,
+    "average_speed": 6.686,
+    "distance": 35716.5,
+    "moving_time": 5342,
+    "total_elevation_gain": 459.6
+  },
+  {
+    "start_date": "2021-10-04T10:22:47Z",
+    "average_watts": 163.3,
+    "average_speed": 9.77,
+    "distance": 21298.3,
+    "moving_time": 2180,
+    "total_elevation_gain": 112.1
+  },
+  {
+    "start_date": "2021-10-05T06:30:10Z",
+    "average_watts": 157.9,
+    "average_speed": 3.793,
+    "distance": 4024.8,
+    "moving_time": 1061,
+    "total_elevation_gain": 50.0
+  },
+  {
+    "start_date": "2021-10-07T17:03:59Z",
+    "average_watts": 175.1,
+    "average_speed": 5.612,
+    "distance": 25577.2,
+    "moving_time": 4558,
+    "total_elevation_gain": 181.1
+  },
+  {
+    "start_date": "2021-10-08T07:41:28Z",
+    "average_watts": 149.3,
+    "average_speed": 5.444,
+    "distance": 5661.9,
+    "moving_time": 1040,
+    "total_elevation_gain": 53.4
+  },
+  {
+    "start_date": "2021-10-12T16:17:06Z",
+    "average_watts": 175.0,
+    "average_speed": 5.543,
+    "distance": 34355.6,
+    "moving_time": 6198,
+    "total_elevation_gain": 392.0
+  },
+  {
+    "start_date": "2021-10-15T15:48:01Z",
+    "average_watts": 148.2,
+    "average_speed": 4.431,
+    "distance": 6509.2,
+    "moving_time": 1469,
+    "total_elevation_gain": 83.3
+  },
+  {
+    "start_date": "2021-10-16T13:31:46Z",
+    "average_watts": 168.9,
+    "average_speed": 6.085,
+    "distance": 82508.4,
+    "moving_time": 13559,
+    "total_elevation_gain": 732.6
+  },
+  {
+    "start_date": "2021-10-18T11:12:22Z",
+    "average_watts": 159.0,
+    "average_speed": 6.412,
+    "distance": 39906.3,
+    "moving_time": 6224,
+    "total_elevation_gain": 384.6
+  },
+  {
+    "start_date": "2021-10-19T18:14:22Z",
+    "average_watts": 152.4,
+    "average_speed": 3.951,
+    "distance": 6839.5,
+    "moving_time": 1731,
+    "total_elevation_gain": 99.1
+  },
+  {
+    "start_date": "2021-10-24T13:14:39Z",
+    "average_watts": 145.8,
+    "average_speed": 6.386,
+    "distance": 35069.3,
+    "moving_time": 5492,
+    "total_elevation_gain": 309.0
+  },
+  {
+    "start_date": "2021-10-25T10:34:54Z",
+    "average_watts": 141.6,
+    "average_speed": 4.062,
+    "distance": 7997.8,
+    "moving_time": 1969,
+    "total_elevation_gain": 82.3
+  },
+  {
+    "start_date": "2021-10-26T10:44:03Z",
+    "average_watts": 149.1,
+    "average_speed": 6.489,
+    "distance": 32093.9,
+    "moving_time": 4946,
+    "total_elevation_gain": 395.3
+  },
+  {
+    "start_date": "2021-10-30T13:33:56Z",
+    "average_watts": 152.0,
+    "average_speed": 4.187,
+    "distance": 7021.3,
+    "moving_time": 1677,
+    "total_elevation_gain": 69.1
+  },
+  {
+    "start_date": "2021-10-31T12:50:05Z",
+    "average_watts": 138.5,
+    "average_speed": 7.691,
+    "distance": 15435.2,
+    "moving_time": 2007,
+    "total_elevation_gain": 227.1
+  },
+  {
+    "start_date": "2021-11-01T12:31:45Z",
+    "average_watts": 141.3,
+    "average_speed": 5.862,
+    "distance": 26945.3,
+    "moving_time": 4597,
+    "total_elevation_gain": 202.9
+  },
+  {
+    "start_date": "2021-11-06T13:35:45Z",
+    "average_watts": 144.8,
+    "average_speed": 7.356,
+    "distance": 13954.6,
+    "moving_time": 1897,
+    "total_elevation_gain": 114.4
+  },
+  {
+    "start_date": "2021-11-08T06:29:06Z",
+    "average_watts": 156.6,
+    "average_speed": 5.735,
+    "distance": 7765.2,
+    "moving_time": 1354,
+    "total_elevation_gain": 68.2
+  },
+  {
+    "start_date": "2021-11-09T13:43:38Z",
+    "average_watts": 169.0,
+    "average_speed": 6.201,
+    "distance": 83320.2,
+    "moving_time": 13436,
+    "total_elevation_gain": 784.9
+  },
+  {
+    "start_date": "2021-11-10T15:04:42Z",
+    "average_watts": 176.5,
+    "average_speed": 8.13,
+    "distance": 19519.0,
+    "moving_time": 2401,
+    "total_elevation_gain": 200.6
+  },
+  {
+    "start_date": "2021-11-12T17:42:01Z",
+    "average_watts": 153.6,
+    "average_speed": 7.061,
+    "distance": 28991.1,
+    "moving_time": 4106,
+    "total_elevation_gain": 255.0
+  },
+  {
+    "start_date": "2021-11-13T17:25:15Z",
+    "average_watts": 141.1,
+    "average_speed": 6.027,
+    "distance": 53721.3,
+    "moving_time": 8913,
+    "total_elevation_gain": 650.1
+  },
+  {
+    "start_date": "2021-11-17T16:32:16Z",
+    "average_watts": 165.8,
+    "average_speed": 5.235,
+    "distance": 61714.5,
+    "moving_time": 11788,
+    "total_elevation_gain": 895.1
+  },
+  {
+    "start_date": "2021-11-19T17:52:43Z",
+    "average_watts": 177.3,
+    "average_speed": 5.913,
+    "distance": 7918.0,
+    "moving_time": 1339,
+    "total_elevation_gain": 56.4
+  },
+  {
+    "start_date": "2021-11-22T18:06:54Z",
+    "average_watts": 166.2,
+    "average_speed": 5.964,
+    "distance": 36419.8,
+    "moving_time": 6107,
+    "total_elevation_gain": 452.9
+  },
+  {
+    "start_date": "2021-11-23T08:32:18Z",
+    "average_watts": 159.6,
+    "average_speed": 7.232,
+    "distance": 11296.0,
+    "moving_time": 1562,
+    "total_elevation_gain": 102.4
+  },
+  {
+    "start_date": "2021-11-27T18:30:24Z",
+    "average_watts": 168.8,
+    "average_speed": 7.838,
+    "distance": 36711.8,
+    "moving_time": 4684,
+    "total_elevation_gain": 245.6
+  },
+  {
+    "start_date": "2021-11-28T18:44:00Z",
+    "average_watts": 139.9,
+    "average_speed": 5.95,
+    "distance": 50707.1,
+    "moving_time": 8522,
+    "total_elevation_gain": 539.5
+  },
+  {
+    "start_date": "2021-12-05T06:01:59Z",
+    "average_watts": 163.3,
+    "average_speed": 8.822,
+    "distance": 23546.8,
+    "moving_time": 2669,
+    "total_elevation_gain": 151.5
+  },
+  {
+    "start_date": "2021-12-08T08:49:03Z",
+    "average_watts": 155.9,
+    "average_speed": 9.214,
+    "distance": 19708.3,
+    "moving_time": 2139,
+    "total_elevation_gain": 128.7
+  },
+  {
+    "start_date": "2021-12-10T09:50:00Z",
+    "average_watts": 151.6,
+    "average_speed": 6.757,
+    "distance": 27259.7,
+    "moving_time": 4034,
+    "total_elevation_gain": 329.2
+  },
+  {
+    "start_date": "2021-12-12T16:20:33Z",
+    "average_watts": 142.6,
+    "average_speed": 7.76,
+    "distance": 21650.6,
+    "moving_time": 2790,
+    "total_elevation_gain": 222.3
+  },
+  {
+    "start_date": "2021-12-14T08:38:30Z",
+    "average_watts": 156.5,
+    "average_speed": 5.606,
+    "distance": 3469.8,
+    "moving_time": 619,
+    "total_elevation_gain": 36.2
+  },
+  {
+    "start_date": "2021-12-18T18:31:25Z",
+    "average_watts": 147.8,
+    "average_speed": 5.339,
+    "distance": 64554.2,
+    "moving_time": 12091,
+    "total_elevation_gain": 386.8
+  },
+  {
+    "start_date": "2021-12-19T07:44:45Z",
+    "average_watts": 161.3,
+    "average_speed": 6.174,
+    "distance": 59488.3,
+    "moving_time": 9636,
+    "total_elevation_gain": 743.7
+  },
+  {
+    "start_date": "2021-12-20T14:34:26Z",
+    "average_watts": 165.6,
+    "average_speed": 5.623,
+    "distance": 28445.8,
+    "moving_time": 5059,
+    "total_elevation_gain": 234.5
+  },
+  {
+    "start_date": "2021-12-21T13:51:56Z",
+    "average_watts": 158.4,
+    "average_speed": 6.209,
+    "distance": 82611.3,
+    "moving_time": 13306,
+    "total_elevation_gain": 810.9
+  },
+  {
+    "start_date": "2021-12-23T09:40:14Z",
+    "average_watts": 148.0,
+    "average_speed": 4.265,
+    "distance": 4708.3,
+    "moving_time": 1104,
+    "total_elevation_gain": 34.3
+  },
+  {
+    "start_date": "2021-12-24T18:44:17Z",
+    "average_watts": 157.0,
+    "average_speed": 8.102,
+    "distance": 24930.3,
+    "moving_time": 3077,
+    "total_elevation_gain": 214.4
+  },
+  {
+    "start_date": "2021-12-25T13:34:37Z",
+    "average_watts": 139.5,
+    "average_speed": 4.452,
+    "distance": 6833.9,
+    "moving_time": 1535,
+    "total_elevation_gain": 38.8
+  },
+  {
+    "start_date": "2021-12-26T14:23:25Z",
+    "average_watts": 141.6,
+    "average_speed": 6.898,
+    "distance": 27076.2,
+    "moving_time": 3925,
+    "total_elevation_gain": 167.7
+  },
+  {
+    "start_date": "2021-12-27T12:40:40Z",
+    "average_watts": 140.2,
+    "average_speed": 6.759,
+    "distance": 27855.7,
+    "moving_time": 4121,
+    "total_elevation_gain": 200.3
+  },
+  {
+    "start_date": "2021-12-29T15:41:30Z",
+    "average_watts": 143.1,
+    "average_speed": 9.13,
+    "distance": 18889.4,
+    "moving_time": 2069,
+    "total_elevation_gain": 209.6
+  },
+  {
+    "start_date": "2021-12-30T07:07:02Z",
+    "average_watts": 168.3,
+    "average_speed": 5.56,
+    "distance": 29647.9,
+    "moving_time": 5332,
+    "total_elevation_gain": 366.7
+  },
+  {
+    "start_date": "2022-01-01T18:11:13Z",
+    "average_watts": 141.4,
+    "average_speed": 9.667,
+    "distance": 16269.9,
+    "moving_time": 1683,
+    "total_elevation_gain": 111.5
+  },
+  {
+    "start_date": "2022-01-03T08:01:03Z",
+    "average_watts": 157.2,
+    "average_speed": 6.153,
+    "distance": 89360.3,
+    "moving_time": 14524,
+    "total_elevation_gain": 863.2
+  },
+  {
+    "start_date": "2022-01-04T06:50:33Z",
+    "average_watts": 149.4,
+    "average_speed": 8.414,
+    "distance": 19679.4,
+    "moving_time": 2339,
+    "total_elevation_gain": 223.1
+  },
+  {
+    "start_date": "2022-01-08T07:10:15Z",
+    "average_watts": 173.8,
+    "average_speed": 3.963,
+    "distance": 7379.3,
+    "moving_time": 1862,
+    "total_elevation_gain": 106.5
+  },
+  {
+    "start_date": "2022-01-09T06:57:56Z",
+    "average_watts": 160.0,
+    "average_speed": 8.538,
+    "distance": 17119.2,
+    "moving_time": 2005,
+    "total_elevation_gain": 153.6
+  },
+  {
+    "start_date": "2022-01-14T15:06:18Z",
+    "average_watts": 152.8,
+    "average_speed": 5.133,
+    "distance": 93391.3,
+    "moving_time": 18194,
+    "total_elevation_gain": 486.3
+  },
+  {
+    "start_date": "2022-01-17T06:33:50Z",
+    "average_watts": 153.8,
+    "average_speed": 9.403,
+    "distance": 17734.0,
+    "moving_time": 1886,
+    "total_elevation_gain": 216.0
+  },
+  {
+    "start_date": "2022-01-18T08:19:32Z",
+    "average_watts": 140.9,
+    "average_speed": 6.377,
+    "distance": 93037.5,
+    "moving_time": 14590,
+    "total_elevation_gain": 1148.4
+  },
+  {
+    "start_date": "2022-01-19T11:43:13Z",
+    "average_watts": 172.1,
+    "average_speed": 5.889,
+    "distance": 4145.9,
+    "moving_time": 704,
+    "total_elevation_gain": 30.5
+  },
+  {
+    "start_date": "2022-01-20T11:26:36Z",
+    "average_watts": 163.5,
+    "average_speed": 5.704,
+    "distance": 37592.1,
+    "moving_time": 6591,
+    "total_elevation_gain": 215.5
+  },
+  {
+    "start_date": "2022-01-22T06:03:43Z",
+    "average_watts": 160.4,
+    "average_speed": 7.858,
+    "distance": 39252.9,
+    "moving_time": 4995,
+    "total_elevation_gain": 202.7
+  },
+  {
+    "start_date": "2022-01-23T13:03:09Z",
+    "average_watts": 143.1,
+    "average_speed": 5.657,
+    "distance": 66884.0,
+    "moving_time": 11824,
+    "total_elevation_gain": 996.4
+  },
+  {
+    "start_date": "2022-01-24T08:51:15Z",
+    "average_watts": 144.7,
+    "average_speed": 5.986,
+    "distance": 6794.5,
+    "moving_time": 1135,
+    "total_elevation_gain": 57.0
+  },
+  {
+    "start_date": "2022-01-25T10:30:13Z",
+    "average_watts": 166.7,
+    "average_speed": 5.907,
+    "distance": 39433.5,
+    "moving_time": 6676,
+    "total_elevation_gain": 244.3
+  },
+  {
+    "start_date": "2022-01-26T10:41:56Z",
+    "average_watts": 159.0,
+    "average_speed": 9.689,
+    "distance": 22323.4,
+    "moving_time": 2304,
+    "total_elevation_gain": 283.3
+  },
+  {
+    "start_date": "2022-01-27T19:41:42Z",
+    "average_watts": 153.7,
+    "average_speed": 6.671,
+    "distance": 22902.7,
+    "moving_time": 3433,
+    "total_elevation_gain": 292.6
+  },
+  {
+    "start_date": "2022-01-28T09:14:46Z",
+    "average_watts": 144.8,
+    "average_speed": 6.485,
+    "distance": 55547.2,
+    "moving_time": 8566,
+    "total_elevation_gain": 486.7
+  },
+  {
+    "start_date": "2022-01-30T18:33:19Z",
+    "average_watts": 157.2,
+    "average_speed": 5.457,
+    "distance": 4747.7,
+    "moving_time": 870,
+    "total_elevation_gain": 28.2
+  },
+  {
+    "start_date": "2022-02-04T07:11:28Z",
+    "average_watts": 175.2,
+    "average_speed": 6.306,
+    "distance": 68440.6,
+    "moving_time": 10853,
+    "total_elevation_gain": 936.0
+  },
+  {
+    "start_date": "2022-02-05T12:23:35Z",
+    "average_watts": 142.1,
+    "average_speed": 7.476,
+    "distance": 38730.6,
+    "moving_time": 5181,
+    "total_elevation_gain": 390.3
+  },
+  {
+    "start_date": "2022-02-06T12:47:38Z",
+    "average_watts": 156.8,
+    "average_speed": 3.695,
+    "distance": 4374.6,
+    "moving_time": 1184,
+    "total_elevation_gain": 45.9
+  },
+  {
+    "start_date": "2022-02-10T11:23:33Z",
+    "average_watts": 154.3,
+    "average_speed": 6.854,
+    "distance": 99050.4,
+    "moving_time": 14451,
+    "total_elevation_gain": 742.4
+  },
+  {
+    "start_date": "2022-02-13T12:36:45Z",
+    "average_watts": 143.4,
+    "average_speed": 6.155,
+    "distance": 30090.3,
+    "moving_time": 4889,
+    "total_elevation_gain": 366.2
+  },
+  {
+    "start_date": "2022-02-15T07:39:11Z",
+    "average_watts": 170.4,
+    "average_speed": 5.87,
+    "distance": 83686.1,
+    "moving_time": 14257,
+    "total_elevation_gain": 581.7
+  },
+  {
+    "start_date": "2022-02-17T07:43:42Z",
+    "average_watts": 157.4,
+    "average_speed": 7.971,
+    "distance": 37455.9,
+    "moving_time": 4699,
+    "total_elevation_gain": 208.3
+  },
+  {
+    "start_date": "2022-02-18T14:59:52Z",
+    "average_watts": 157.0,
+    "average_speed": 5.771,
+    "distance": 95143.3,
+    "moving_time": 16487,
+    "total_elevation_gain": 1060.2
+  },
+  {
+    "start_date": "2022-02-19T08:22:28Z",
+    "average_watts": 163.0,
+    "average_speed": 7.033,
+    "distance": 20199.0,
+    "moving_time": 2872,
+    "total_elevation_gain": 201.8
+  },
+  {
+    "start_date": "2022-02-22T08:24:33Z",
+    "average_watts": 151.2,
+    "average_speed": 7.784,
+    "distance": 11698.8,
+    "moving_time": 1503,
+    "total_elevation_gain": 172.6
+  },
+  {
+    "start_date": "2022-02-23T19:23:12Z",
+    "average_watts": 140.8,
+    "average_speed": 5.023,
+    "distance": 23521.5,
+    "moving_time": 4683,
+    "total_elevation_gain": 205.8
+  },
+  {
+    "start_date": "2022-02-25T10:05:52Z",
+    "average_watts": 166.0,
+    "average_speed": 4.016,
+    "distance": 4654.0,
+    "moving_time": 1159,
+    "total_elevation_gain": 31.8
+  },
+  {
+    "start_date": "2022-02-26T11:05:17Z",
+    "average_watts": 140.5,
+    "average_speed": 5.557,
+    "distance": 3901.3,
+    "moving_time": 702,
+    "total_elevation_gain": 40.8
+  },
+  {
+    "start_date": "2022-02-28T06:17:51Z",
+    "average_watts": 142.4,
+    "average_speed": 5.909,
+    "distance": 26743.2,
+    "moving_time": 4526,
+    "total_elevation_gain": 381.8
+  },
+  {
+    "start_date": "2022-03-02T07:01:07Z",
+    "average_watts": 154.0,
+    "average_speed": 7.663,
+    "distance": 31079.5,
+    "moving_time": 4056,
+    "total_elevation_gain": 320.8
+  },
+  {
+    "start_date": "2022-03-03T09:21:15Z",
+    "average_watts": 171.5,
+    "average_speed": 6.554,
+    "distance": 81029.9,
+    "moving_time": 12363,
+    "total_elevation_gain": 616.2
+  },
+  {
+    "start_date": "2022-03-04T15:23:54Z",
+    "average_watts": 139.9,
+    "average_speed": 5.596,
+    "distance": 97849.9,
+    "moving_time": 17486,
+    "total_elevation_gain": 840.5
+  },
+  {
+    "start_date": "2022-03-06T11:22:43Z",
+    "average_watts": 176.3,
+    "average_speed": 8.294,
+    "distance": 23481.6,
+    "moving_time": 2831,
+    "total_elevation_gain": 125.6
+  },
+  {
+    "start_date": "2022-03-09T16:50:45Z",
+    "average_watts": 147.5,
+    "average_speed": 5.227,
+    "distance": 25628.0,
+    "moving_time": 4903,
+    "total_elevation_gain": 282.9
+  },
+  {
+    "start_date": "2022-03-10T13:07:39Z",
+    "average_watts": 161.8,
+    "average_speed": 5.032,
+    "distance": 56406.1,
+    "moving_time": 11210,
+    "total_elevation_gain": 325.0
+  },
+  {
+    "start_date": "2022-03-12T17:40:13Z",
+    "average_watts": 145.2,
+    "average_speed": 5.219,
+    "distance": 4869.0,
+    "moving_time": 933,
+    "total_elevation_gain": 26.6
+  },
+  {
+    "start_date": "2022-03-15T16:18:52Z",
+    "average_watts": 158.5,
+    "average_speed": 5.148,
+    "distance": 6481.3,
+    "moving_time": 1259,
+    "total_elevation_gain": 42.2
+  },
+  {
+    "start_date": "2022-03-18T18:17:26Z",
+    "average_watts": 178.8,
+    "average_speed": 5.917,
+    "distance": 34252.6,
+    "moving_time": 5789,
+    "total_elevation_gain": 273.1
+  },
+  {
+    "start_date": "2022-03-19T14:51:29Z",
+    "average_watts": 145.3,
+    "average_speed": 9.168,
+    "distance": 13936.0,
+    "moving_time": 1520,
+    "total_elevation_gain": 192.2
+  },
+  {
+    "start_date": "2022-03-20T16:59:20Z",
+    "average_watts": 166.4,
+    "average_speed": 5.079,
+    "distance": 90221.0,
+    "moving_time": 17762,
+    "total_elevation_gain": 479.1
+  },
+  {
+    "start_date": "2022-03-21T13:41:50Z",
+    "average_watts": 142.5,
+    "average_speed": 3.974,
+    "distance": 5186.2,
+    "moving_time": 1305,
+    "total_elevation_gain": 62.2
+  },
+  {
+    "start_date": "2022-03-22T17:41:57Z",
+    "average_watts": 159.6,
+    "average_speed": 6.405,
+    "distance": 53978.5,
+    "moving_time": 8427,
+    "total_elevation_gain": 357.9
+  },
+  {
+    "start_date": "2022-03-26T18:37:43Z",
+    "average_watts": 149.0,
+    "average_speed": 9.178,
+    "distance": 16272.5,
+    "moving_time": 1773,
+    "total_elevation_gain": 165.7
+  },
+  {
+    "start_date": "2022-03-28T14:27:58Z",
+    "average_watts": 170.3,
+    "average_speed": 6.695,
+    "distance": 38498.5,
+    "moving_time": 5750,
+    "total_elevation_gain": 521.1
+  },
+  {
+    "start_date": "2022-03-30T18:42:36Z",
+    "average_watts": 144.3,
+    "average_speed": 6.026,
+    "distance": 51356.6,
+    "moving_time": 8522,
+    "total_elevation_gain": 700.3
+  },
+  {
+    "start_date": "2022-03-31T11:59:40Z",
+    "average_watts": 174.4,
+    "average_speed": 7.172,
+    "distance": 39314.7,
+    "moving_time": 5482,
+    "total_elevation_gain": 348.3
+  },
+  {
+    "start_date": "2022-04-03T10:43:27Z",
+    "average_watts": 143.3,
+    "average_speed": 9.652,
+    "distance": 14101.2,
+    "moving_time": 1461,
+    "total_elevation_gain": 97.1
+  },
+  {
+    "start_date": "2022-04-05T16:41:08Z",
+    "average_watts": 159.8,
+    "average_speed": 5.384,
+    "distance": 87445.2,
+    "moving_time": 16241,
+    "total_elevation_gain": 479.1
+  },
+  {
+    "start_date": "2022-04-07T07:24:37Z",
+    "average_watts": 164.1,
+    "average_speed": 6.74,
+    "distance": 57947.6,
+    "moving_time": 8598,
+    "total_elevation_gain": 372.4
+  },
+  {
+    "start_date": "2022-04-10T15:27:25Z",
+    "average_watts": 169.7,
+    "average_speed": 9.345,
+    "distance": 11914.9,
+    "moving_time": 1275,
+    "total_elevation_gain": 95.4
+  },
+  {
+    "start_date": "2022-04-11T16:39:43Z",
+    "average_watts": 158.9,
+    "average_speed": 3.297,
+    "distance": 6291.4,
+    "moving_time": 1908,
+    "total_elevation_gain": 69.7
+  },
+  {
+    "start_date": "2022-04-12T18:24:44Z",
+    "average_watts": 147.9,
+    "average_speed": 8.436,
+    "distance": 22710.9,
+    "moving_time": 2692,
+    "total_elevation_gain": 236.0
+  },
+  {
+    "start_date": "2022-04-13T19:43:56Z",
+    "average_watts": 144.3,
+    "average_speed": 7.435,
+    "distance": 24446.9,
+    "moving_time": 3288,
+    "total_elevation_gain": 170.4
+  },
+  {
+    "start_date": "2022-04-16T07:14:53Z",
+    "average_watts": 169.7,
+    "average_speed": 3.576,
+    "distance": 4612.5,
+    "moving_time": 1290,
+    "total_elevation_gain": 49.4
+  },
+  {
+    "start_date": "2022-04-18T15:17:01Z",
+    "average_watts": 160.3,
+    "average_speed": 5.593,
+    "distance": 5352.3,
+    "moving_time": 957,
+    "total_elevation_gain": 73.1
+  },
+  {
+    "start_date": "2022-04-19T09:53:12Z",
+    "average_watts": 179.5,
+    "average_speed": 3.319,
+    "distance": 7275.6,
+    "moving_time": 2192,
+    "total_elevation_gain": 76.6
+  },
+  {
+    "start_date": "2022-04-20T15:54:22Z",
+    "average_watts": 167.0,
+    "average_speed": 8.167,
+    "distance": 23307.6,
+    "moving_time": 2854,
+    "total_elevation_gain": 149.0
+  },
+  {
+    "start_date": "2022-04-21T16:37:37Z",
+    "average_watts": 168.2,
+    "average_speed": 5.17,
+    "distance": 95936.2,
+    "moving_time": 18558,
+    "total_elevation_gain": 537.1
+  },
+  {
+    "start_date": "2022-04-22T06:02:44Z",
+    "average_watts": 178.3,
+    "average_speed": 6.659,
+    "distance": 23314.8,
+    "moving_time": 3501,
+    "total_elevation_gain": 192.4
+  },
+  {
+    "start_date": "2022-04-24T16:20:28Z",
+    "average_watts": 178.4,
+    "average_speed": 4.391,
+    "distance": 6613.0,
+    "moving_time": 1506,
+    "total_elevation_gain": 39.1
+  },
+  {
+    "start_date": "2022-04-27T07:42:30Z",
+    "average_watts": 169.0,
+    "average_speed": 9.522,
+    "distance": 13711.9,
+    "moving_time": 1440,
+    "total_elevation_gain": 140.3
+  },
+  {
+    "start_date": "2022-04-28T10:00:02Z",
+    "average_watts": 152.5,
+    "average_speed": 7.671,
+    "distance": 17252.1,
+    "moving_time": 2249,
+    "total_elevation_gain": 250.3
+  },
+  {
+    "start_date": "2022-04-30T19:34:18Z",
+    "average_watts": 150.9,
+    "average_speed": 5.618,
+    "distance": 5573.2,
+    "moving_time": 992,
+    "total_elevation_gain": 59.4
+  },
+  {
+    "start_date": "2022-05-01T13:48:30Z",
+    "average_watts": 149.7,
+    "average_speed": 8.533,
+    "distance": 19131.6,
+    "moving_time": 2242,
+    "total_elevation_gain": 182.4
+  },
+  {
+    "start_date": "2022-05-02T13:13:49Z",
+    "average_watts": 165.6,
+    "average_speed": 7.109,
+    "distance": 36527.1,
+    "moving_time": 5138,
+    "total_elevation_gain": 189.0
+  },
+  {
+    "start_date": "2022-05-03T10:26:32Z",
+    "average_watts": 179.4,
+    "average_speed": 8.107,
+    "distance": 18856.4,
+    "moving_time": 2326,
+    "total_elevation_gain": 97.4
+  },
+  {
+    "start_date": "2022-05-05T12:04:42Z",
+    "average_watts": 163.6,
+    "average_speed": 4.321,
+    "distance": 6957.6,
+    "moving_time": 1610,
+    "total_elevation_gain": 48.7
+  },
+  {
+    "start_date": "2022-05-07T14:51:15Z",
+    "average_watts": 140.8,
+    "average_speed": 5.352,
+    "distance": 7423.2,
+    "moving_time": 1387,
+    "total_elevation_gain": 98.6
+  },
+  {
+    "start_date": "2022-05-09T19:05:19Z",
+    "average_watts": 140.7,
+    "average_speed": 8.412,
+    "distance": 13972.0,
+    "moving_time": 1661,
+    "total_elevation_gain": 195.0
+  },
+  {
+    "start_date": "2022-05-10T06:53:53Z",
+    "average_watts": 160.2,
+    "average_speed": 7.17,
+    "distance": 12167.9,
+    "moving_time": 1697,
+    "total_elevation_gain": 178.6
+  },
+  {
+    "start_date": "2022-05-13T08:47:07Z",
+    "average_watts": 164.9,
+    "average_speed": 9.614,
+    "distance": 15871.9,
+    "moving_time": 1651,
+    "total_elevation_gain": 236.9
+  },
+  {
+    "start_date": "2022-05-17T15:48:23Z",
+    "average_watts": 156.6,
+    "average_speed": 5.711,
+    "distance": 57740.7,
+    "moving_time": 10111,
+    "total_elevation_gain": 313.2
+  },
+  {
+    "start_date": "2022-05-18T19:07:55Z",
+    "average_watts": 145.4,
+    "average_speed": 3.773,
+    "distance": 7036.4,
+    "moving_time": 1865,
+    "total_elevation_gain": 87.8
+  },
+  {
+    "start_date": "2022-05-19T06:29:14Z",
+    "average_watts": 174.7,
+    "average_speed": 6.221,
+    "distance": 78775.1,
+    "moving_time": 12663,
+    "total_elevation_gain": 904.9
+  },
+  {
+    "start_date": "2022-05-23T17:49:30Z",
+    "average_watts": 173.3,
+    "average_speed": 5.926,
+    "distance": 35696.2,
+    "moving_time": 6024,
+    "total_elevation_gain": 307.0
+  },
+  {
+    "start_date": "2022-05-24T12:19:19Z",
+    "average_watts": 165.5,
+    "average_speed": 7.464,
+    "distance": 13106.6,
+    "moving_time": 1756,
+    "total_elevation_gain": 82.3
+  },
+  {
+    "start_date": "2022-05-25T14:03:14Z",
+    "average_watts": 148.7,
+    "average_speed": 5.112,
+    "distance": 21511.8,
+    "moving_time": 4208,
+    "total_elevation_gain": 174.1
+  },
+  {
+    "start_date": "2022-05-26T19:03:17Z",
+    "average_watts": 153.7,
+    "average_speed": 6.243,
+    "distance": 20883.5,
+    "moving_time": 3345,
+    "total_elevation_gain": 143.4
+  },
+  {
+    "start_date": "2022-05-28T08:46:31Z",
+    "average_watts": 144.7,
+    "average_speed": 9.743,
+    "distance": 10990.2,
+    "moving_time": 1128,
+    "total_elevation_gain": 80.1
+  },
+  {
+    "start_date": "2022-05-29T15:44:18Z",
+    "average_watts": 175.7,
+    "average_speed": 5.569,
+    "distance": 34357.5,
+    "moving_time": 6169,
+    "total_elevation_gain": 310.5
+  },
+  {
+    "start_date": "2022-05-30T18:55:50Z",
+    "average_watts": 156.7,
+    "average_speed": 5.126,
+    "distance": 71015.7,
+    "moving_time": 13855,
+    "total_elevation_gain": 665.3
+  },
+  {
+    "start_date": "2022-05-31T18:55:50Z",
+    "average_watts": 161.7,
+    "average_speed": 5.567,
+    "distance": 3395.7,
+    "moving_time": 610,
+    "total_elevation_gain": 37.7
+  },
+  {
+    "start_date": "2022-06-02T12:47:12Z",
+    "average_watts": 162.9,
+    "average_speed": 6.886,
+    "distance": 83714.0,
+    "moving_time": 12158,
+    "total_elevation_gain": 1028.4
+  },
+  {
+    "start_date": "2022-06-05T13:17:18Z",
+    "average_watts": 153.2,
+    "average_speed": 5.445,
+    "distance": 25894.5,
+    "moving_time": 4756,
+    "total_elevation_gain": 323.2
+  },
+  {
+    "start_date": "2022-06-06T13:22:20Z",
+    "average_watts": 166.5,
+    "average_speed": 4.978,
+    "distance": 4499.8,
+    "moving_time": 904,
+    "total_elevation_gain": 41.6
+  },
+  {
+    "start_date": "2022-06-07T07:56:13Z",
+    "average_watts": 174.5,
+    "average_speed": 7.767,
+    "distance": 16574.1,
+    "moving_time": 2134,
+    "total_elevation_gain": 194.8
+  },
+  {
+    "start_date": "2022-06-14T08:31:27Z",
+    "average_watts": 160.5,
+    "average_speed": 5.138,
+    "distance": 52751.7,
+    "moving_time": 10267,
+    "total_elevation_gain": 601.6
+  },
+  {
+    "start_date": "2022-06-18T11:35:31Z",
+    "average_watts": 147.8,
+    "average_speed": 5.481,
+    "distance": 63576.8,
+    "moving_time": 11599,
+    "total_elevation_gain": 339.5
+  },
+  {
+    "start_date": "2022-06-19T15:10:13Z",
+    "average_watts": 168.9,
+    "average_speed": 5.173,
+    "distance": 39730.5,
+    "moving_time": 7681,
+    "total_elevation_gain": 523.4
+  },
+  {
+    "start_date": "2022-06-21T07:04:00Z",
+    "average_watts": 149.1,
+    "average_speed": 6.247,
+    "distance": 96686.7,
+    "moving_time": 15477,
+    "total_elevation_gain": 1224.4
+  },
+  {
+    "start_date": "2022-06-25T08:54:12Z",
+    "average_watts": 147.2,
+    "average_speed": 6.397,
+    "distance": 38697.7,
+    "moving_time": 6049,
+    "total_elevation_gain": 306.1
+  },
+  {
+    "start_date": "2022-06-26T07:35:56Z",
+    "average_watts": 174.3,
+    "average_speed": 5.129,
+    "distance": 6836.8,
+    "moving_time": 1333,
+    "total_elevation_gain": 70.9
+  },
+  {
+    "start_date": "2022-06-27T08:25:29Z",
+    "average_watts": 150.0,
+    "average_speed": 5.589,
+    "distance": 21541.3,
+    "moving_time": 3854,
+    "total_elevation_gain": 143.5
+  },
+  {
+    "start_date": "2022-06-28T15:24:28Z",
+    "average_watts": 144.1,
+    "average_speed": 7.753,
+    "distance": 15675.9,
+    "moving_time": 2022,
+    "total_elevation_gain": 117.0
+  },
+  {
+    "start_date": "2022-07-02T06:32:13Z",
+    "average_watts": 163.8,
+    "average_speed": 5.916,
+    "distance": 63915.1,
+    "moving_time": 10803,
+    "total_elevation_gain": 476.0
+  },
+  {
+    "start_date": "2022-07-07T14:24:54Z",
+    "average_watts": 158.4,
+    "average_speed": 3.652,
+    "distance": 5281.2,
+    "moving_time": 1446,
+    "total_elevation_gain": 75.5
+  },
+  {
+    "start_date": "2022-07-11T10:52:40Z",
+    "average_watts": 170.8,
+    "average_speed": 6.276,
+    "distance": 60453.3,
+    "moving_time": 9633,
+    "total_elevation_gain": 554.0
+  },
+  {
+    "start_date": "2022-07-12T12:54:05Z",
+    "average_watts": 155.1,
+    "average_speed": 9.57,
+    "distance": 23332.1,
+    "moving_time": 2438,
+    "total_elevation_gain": 310.1
+  },
+  {
+    "start_date": "2022-07-14T18:31:26Z",
+    "average_watts": 172.7,
+    "average_speed": 5.253,
+    "distance": 88784.3,
+    "moving_time": 16902,
+    "total_elevation_gain": 1036.5
+  },
+  {
+    "start_date": "2022-07-21T13:25:08Z",
+    "average_watts": 158.6,
+    "average_speed": 6.931,
+    "distance": 86199.8,
+    "moving_time": 12436,
+    "total_elevation_gain": 1173.0
+  },
+  {
+    "start_date": "2022-07-22T15:40:45Z",
+    "average_watts": 149.4,
+    "average_speed": 9.273,
+    "distance": 12017.4,
+    "moving_time": 1296,
+    "total_elevation_gain": 117.1
+  },
+  {
+    "start_date": "2022-07-25T11:03:03Z",
+    "average_watts": 171.5,
+    "average_speed": 6.16,
+    "distance": 58580.5,
+    "moving_time": 9510,
+    "total_elevation_gain": 450.5
+  },
+  {
+    "start_date": "2022-07-30T17:41:29Z",
+    "average_watts": 166.7,
+    "average_speed": 7.548,
+    "distance": 29084.0,
+    "moving_time": 3853,
+    "total_elevation_gain": 226.2
+  },
+  {
+    "start_date": "2022-07-31T13:41:44Z",
+    "average_watts": 145.4,
+    "average_speed": 4.348,
+    "distance": 3574.0,
+    "moving_time": 822,
+    "total_elevation_gain": 23.0
+  },
+  {
+    "start_date": "2022-08-01T10:23:49Z",
+    "average_watts": 181.0,
+    "average_speed": 3.795,
+    "distance": 4652.7,
+    "moving_time": 1226,
+    "total_elevation_gain": 67.8
+  },
+  {
+    "start_date": "2022-08-05T14:04:33Z",
+    "average_watts": 171.1,
+    "average_speed": 5.882,
+    "distance": 75353.3,
+    "moving_time": 12810,
+    "total_elevation_gain": 938.7
+  },
+  {
+    "start_date": "2022-08-09T17:25:26Z",
+    "average_watts": 149.2,
+    "average_speed": 6.373,
+    "distance": 87055.0,
+    "moving_time": 13661,
+    "total_elevation_gain": 1251.3
+  },
+  {
+    "start_date": "2022-08-10T08:58:35Z",
+    "average_watts": 142.9,
+    "average_speed": 4.809,
+    "distance": 3395.4,
+    "moving_time": 706,
+    "total_elevation_gain": 18.1
+  },
+  {
+    "start_date": "2022-08-11T10:57:22Z",
+    "average_watts": 163.8,
+    "average_speed": 7.886,
+    "distance": 16947.6,
+    "moving_time": 2149,
+    "total_elevation_gain": 235.0
+  },
+  {
+    "start_date": "2022-08-12T06:48:05Z",
+    "average_watts": 152.9,
+    "average_speed": 6.767,
+    "distance": 62448.2,
+    "moving_time": 9228,
+    "total_elevation_gain": 766.0
+  },
+  {
+    "start_date": "2022-08-13T11:14:19Z",
+    "average_watts": 164.3,
+    "average_speed": 7.592,
+    "distance": 22358.9,
+    "moving_time": 2945,
+    "total_elevation_gain": 292.3
+  },
+  {
+    "start_date": "2022-08-15T10:39:40Z",
+    "average_watts": 156.7,
+    "average_speed": 9.717,
+    "distance": 23894.2,
+    "moving_time": 2459,
+    "total_elevation_gain": 234.9
+  },
+  {
+    "start_date": "2022-08-16T17:04:27Z",
+    "average_watts": 164.5,
+    "average_speed": 5.397,
+    "distance": 30991.9,
+    "moving_time": 5742,
+    "total_elevation_gain": 209.6
+  },
+  {
+    "start_date": "2022-08-17T19:56:12Z",
+    "average_watts": 142.3,
+    "average_speed": 9.322,
+    "distance": 18820.9,
+    "moving_time": 2019,
+    "total_elevation_gain": 201.7
+  },
+  {
+    "start_date": "2022-08-19T09:55:32Z",
+    "average_watts": 151.5,
+    "average_speed": 8.177,
+    "distance": 24826.9,
+    "moving_time": 3036,
+    "total_elevation_gain": 172.9
+  },
+  {
+    "start_date": "2022-08-23T09:25:15Z",
+    "average_watts": 179.5,
+    "average_speed": 5.899,
+    "distance": 62413.5,
+    "moving_time": 10581,
+    "total_elevation_gain": 924.5
+  },
+  {
+    "start_date": "2022-08-24T16:17:52Z",
+    "average_watts": 166.6,
+    "average_speed": 5.906,
+    "distance": 83379.1,
+    "moving_time": 14117,
+    "total_elevation_gain": 701.0
+  },
+  {
+    "start_date": "2022-08-27T17:40:07Z",
+    "average_watts": 162.1,
+    "average_speed": 5.362,
+    "distance": 31710.1,
+    "moving_time": 5914,
+    "total_elevation_gain": 374.1
+  },
+  {
+    "start_date": "2022-08-31T19:11:50Z",
+    "average_watts": 148.2,
+    "average_speed": 5.159,
+    "distance": 3802.5,
+    "moving_time": 737,
+    "total_elevation_gain": 46.6
+  },
+  {
+    "start_date": "2022-09-01T11:25:10Z",
+    "average_watts": 181.6,
+    "average_speed": 7.187,
+    "distance": 35556.4,
+    "moving_time": 4947,
+    "total_elevation_gain": 494.6
+  },
+  {
+    "start_date": "2022-09-02T07:11:18Z",
+    "average_watts": 166.6,
+    "average_speed": 9.596,
+    "distance": 14604.7,
+    "moving_time": 1522,
+    "total_elevation_gain": 168.7
+  },
+  {
+    "start_date": "2022-09-03T12:55:39Z",
+    "average_watts": 169.4,
+    "average_speed": 7.757,
+    "distance": 24596.8,
+    "moving_time": 3171,
+    "total_elevation_gain": 179.5
+  },
+  {
+    "start_date": "2022-09-04T14:53:08Z",
+    "average_watts": 179.9,
+    "average_speed": 5.115,
+    "distance": 27647.0,
+    "moving_time": 5405,
+    "total_elevation_gain": 228.5
+  },
+  {
+    "start_date": "2022-09-05T08:01:11Z",
+    "average_watts": 143.2,
+    "average_speed": 5.827,
+    "distance": 91531.5,
+    "moving_time": 15709,
+    "total_elevation_gain": 591.6
+  },
+  {
+    "start_date": "2022-09-06T17:20:41Z",
+    "average_watts": 174.0,
+    "average_speed": 4.337,
+    "distance": 3487.3,
+    "moving_time": 804,
+    "total_elevation_gain": 50.7
+  },
+  {
+    "start_date": "2022-09-13T18:24:40Z",
+    "average_watts": 170.7,
+    "average_speed": 4.807,
+    "distance": 6820.7,
+    "moving_time": 1419,
+    "total_elevation_gain": 84.5
+  },
+  {
+    "start_date": "2022-09-14T15:09:02Z",
+    "average_watts": 162.5,
+    "average_speed": 6.591,
+    "distance": 28163.0,
+    "moving_time": 4273,
+    "total_elevation_gain": 328.2
+  },
+  {
+    "start_date": "2022-09-15T16:48:08Z",
+    "average_watts": 149.9,
+    "average_speed": 9.728,
+    "distance": 19698.7,
+    "moving_time": 2025,
+    "total_elevation_gain": 252.2
+  },
+  {
+    "start_date": "2022-09-16T13:35:16Z",
+    "average_watts": 173.7,
+    "average_speed": 4.566,
+    "distance": 5684.9,
+    "moving_time": 1245,
+    "total_elevation_gain": 51.2
+  },
+  {
+    "start_date": "2022-09-17T15:52:07Z",
+    "average_watts": 145.1,
+    "average_speed": 6.354,
+    "distance": 58808.2,
+    "moving_time": 9255,
+    "total_elevation_gain": 524.0
+  },
+  {
+    "start_date": "2022-09-22T07:22:51Z",
+    "average_watts": 167.0,
+    "average_speed": 7.943,
+    "distance": 27148.8,
+    "moving_time": 3418,
+    "total_elevation_gain": 327.5
+  },
+  {
+    "start_date": "2022-09-23T14:19:48Z",
+    "average_watts": 173.9,
+    "average_speed": 6.504,
+    "distance": 22718.3,
+    "moving_time": 3493,
+    "total_elevation_gain": 258.3
+  },
+  {
+    "start_date": "2022-09-25T17:56:25Z",
+    "average_watts": 152.4,
+    "average_speed": 9.511,
+    "distance": 10918.7,
+    "moving_time": 1148,
+    "total_elevation_gain": 103.2
+  },
+  {
+    "start_date": "2022-09-28T07:46:07Z",
+    "average_watts": 181.1,
+    "average_speed": 5.134,
+    "distance": 70272.9,
+    "moving_time": 13687,
+    "total_elevation_gain": 447.9
+  },
+  {
+    "start_date": "2022-09-29T11:40:23Z",
+    "average_watts": 172.5,
+    "average_speed": 5.32,
+    "distance": 24241.8,
+    "moving_time": 4557,
+    "total_elevation_gain": 150.2
+  },
+  {
+    "start_date": "2022-09-30T15:05:51Z",
+    "average_watts": 167.2,
+    "average_speed": 3.006,
+    "distance": 6838.5,
+    "moving_time": 2275,
+    "total_elevation_gain": 94.4
+  },
+  {
+    "start_date": "2022-10-01T13:54:47Z",
+    "average_watts": 178.7,
+    "average_speed": 5.308,
+    "distance": 78441.7,
+    "moving_time": 14778,
+    "total_elevation_gain": 1063.7
+  },
+  {
+    "start_date": "2022-10-05T16:11:25Z",
+    "average_watts": 164.9,
+    "average_speed": 3.734,
+    "distance": 4724.1,
+    "moving_time": 1265,
+    "total_elevation_gain": 38.1
+  },
+  {
+    "start_date": "2022-10-06T10:35:19Z",
+    "average_watts": 157.7,
+    "average_speed": 9.496,
+    "distance": 15439.8,
+    "moving_time": 1626,
+    "total_elevation_gain": 90.6
+  },
+  {
+    "start_date": "2022-10-08T13:52:03Z",
+    "average_watts": 157.4,
+    "average_speed": 7.205,
+    "distance": 28358.0,
+    "moving_time": 3936,
+    "total_elevation_gain": 323.7
+  },
+  {
+    "start_date": "2022-10-10T10:31:54Z",
+    "average_watts": 157.2,
+    "average_speed": 5.78,
+    "distance": 39190.4,
+    "moving_time": 6780,
+    "total_elevation_gain": 275.3
+  },
+  {
+    "start_date": "2022-10-14T19:59:54Z",
+    "average_watts": 166.7,
+    "average_speed": 5.459,
+    "distance": 3117.3,
+    "moving_time": 571,
+    "total_elevation_gain": 40.9
+  },
+  {
+    "start_date": "2022-10-17T06:42:22Z",
+    "average_watts": 182.1,
+    "average_speed": 5.628,
+    "distance": 62058.6,
+    "moving_time": 11027,
+    "total_elevation_gain": 429.4
+  },
+  {
+    "start_date": "2022-10-27T11:52:29Z",
+    "average_watts": 174.9,
+    "average_speed": 4.716,
+    "distance": 7805.8,
+    "moving_time": 1655,
+    "total_elevation_gain": 81.2
+  },
+  {
+    "start_date": "2022-10-29T09:52:47Z",
+    "average_watts": 168.2,
+    "average_speed": 9.866,
+    "distance": 23441.5,
+    "moving_time": 2376,
+    "total_elevation_gain": 149.9
+  },
+  {
+    "start_date": "2022-10-31T16:07:13Z",
+    "average_watts": 159.6,
+    "average_speed": 7.308,
+    "distance": 18183.4,
+    "moving_time": 2488,
+    "total_elevation_gain": 264.5
+  },
+  {
+    "start_date": "2022-11-05T16:17:34Z",
+    "average_watts": 158.8,
+    "average_speed": 3.515,
+    "distance": 5359.7,
+    "moving_time": 1525,
+    "total_elevation_gain": 48.3
+  },
+  {
+    "start_date": "2022-11-09T17:04:18Z",
+    "average_watts": 161.7,
+    "average_speed": 4.101,
+    "distance": 6946.4,
+    "moving_time": 1694,
+    "total_elevation_gain": 101.5
+  },
+  {
+    "start_date": "2022-11-10T19:32:12Z",
+    "average_watts": 174.0,
+    "average_speed": 5.016,
+    "distance": 66899.3,
+    "moving_time": 13336,
+    "total_elevation_gain": 929.5
+  },
+  {
+    "start_date": "2022-11-12T06:42:01Z",
+    "average_watts": 146.4,
+    "average_speed": 5.47,
+    "distance": 7750.5,
+    "moving_time": 1417,
+    "total_elevation_gain": 48.6
+  },
+  {
+    "start_date": "2022-11-14T14:02:09Z",
+    "average_watts": 173.0,
+    "average_speed": 7.961,
+    "distance": 22703.9,
+    "moving_time": 2852,
+    "total_elevation_gain": 314.4
+  },
+  {
+    "start_date": "2022-11-15T09:38:35Z",
+    "average_watts": 172.8,
+    "average_speed": 7.68,
+    "distance": 28615.1,
+    "moving_time": 3726,
+    "total_elevation_gain": 190.9
+  },
+  {
+    "start_date": "2022-11-16T13:58:26Z",
+    "average_watts": 167.1,
+    "average_speed": 5.255,
+    "distance": 78000.7,
+    "moving_time": 14842,
+    "total_elevation_gain": 455.8
+  },
+  {
+    "start_date": "2022-11-17T09:50:13Z",
+    "average_watts": 143.1,
+    "average_speed": 9.694,
+    "distance": 24001.7,
+    "moving_time": 2476,
+    "total_elevation_gain": 290.4
+  },
+  {
+    "start_date": "2022-11-19T12:02:47Z",
+    "average_watts": 168.2,
+    "average_speed": 6.227,
+    "distance": 39691.6,
+    "moving_time": 6374,
+    "total_elevation_gain": 474.0
+  },
+  {
+    "start_date": "2022-11-21T07:05:43Z",
+    "average_watts": 176.3,
+    "average_speed": 8.035,
+    "distance": 19669.3,
+    "moving_time": 2448,
+    "total_elevation_gain": 145.5
+  },
+  {
+    "start_date": "2022-11-22T09:58:22Z",
+    "average_watts": 164.8,
+    "average_speed": 6.754,
+    "distance": 98806.6,
+    "moving_time": 14630,
+    "total_elevation_gain": 958.9
+  },
+  {
+    "start_date": "2022-11-24T14:18:19Z",
+    "average_watts": 165.7,
+    "average_speed": 7.648,
+    "distance": 25399.1,
+    "moving_time": 3321,
+    "total_elevation_gain": 273.0
+  },
+  {
+    "start_date": "2022-11-30T18:51:53Z",
+    "average_watts": 169.7,
+    "average_speed": 6.839,
+    "distance": 50256.3,
+    "moving_time": 7349,
+    "total_elevation_gain": 442.5
+  },
+  {
+    "start_date": "2022-12-01T11:54:50Z",
+    "average_watts": 161.7,
+    "average_speed": 5.965,
+    "distance": 27068.9,
+    "moving_time": 4538,
+    "total_elevation_gain": 263.0
+  },
+  {
+    "start_date": "2022-12-02T08:41:32Z",
+    "average_watts": 169.9,
+    "average_speed": 3.807,
+    "distance": 7822.7,
+    "moving_time": 2055,
+    "total_elevation_gain": 46.4
+  },
+  {
+    "start_date": "2022-12-09T10:59:47Z",
+    "average_watts": 147.6,
+    "average_speed": 6.796,
+    "distance": 36665.2,
+    "moving_time": 5395,
+    "total_elevation_gain": 209.9
+  },
+  {
+    "start_date": "2022-12-12T15:55:52Z",
+    "average_watts": 162.4,
+    "average_speed": 4.062,
+    "distance": 6247.6,
+    "moving_time": 1538,
+    "total_elevation_gain": 84.2
+  },
+  {
+    "start_date": "2022-12-18T14:42:43Z",
+    "average_watts": 158.2,
+    "average_speed": 4.859,
+    "distance": 7002.1,
+    "moving_time": 1441,
+    "total_elevation_gain": 38.3
+  },
+  {
+    "start_date": "2022-12-19T15:54:04Z",
+    "average_watts": 159.1,
+    "average_speed": 5.239,
+    "distance": 24171.3,
+    "moving_time": 4614,
+    "total_elevation_gain": 334.9
+  },
+  {
+    "start_date": "2022-12-20T06:50:24Z",
+    "average_watts": 160.4,
+    "average_speed": 6.275,
+    "distance": 55807.2,
+    "moving_time": 8893,
+    "total_elevation_gain": 676.2
+  },
+  {
+    "start_date": "2022-12-21T12:59:55Z",
+    "average_watts": 167.8,
+    "average_speed": 4.98,
+    "distance": 7430.3,
+    "moving_time": 1492,
+    "total_elevation_gain": 88.1
+  },
+  {
+    "start_date": "2022-12-26T13:51:07Z",
+    "average_watts": 160.5,
+    "average_speed": 9.847,
+    "distance": 19822.9,
+    "moving_time": 2013,
+    "total_elevation_gain": 173.5
+  },
+  {
+    "start_date": "2022-12-27T12:00:58Z",
+    "average_watts": 181.2,
+    "average_speed": 3.273,
+    "distance": 4012.2,
+    "moving_time": 1226,
+    "total_elevation_gain": 55.2
+  },
+  {
+    "start_date": "2022-12-29T09:27:31Z",
+    "average_watts": 178.1,
+    "average_speed": 7.886,
+    "distance": 22229.9,
+    "moving_time": 2819,
+    "total_elevation_gain": 149.3
+  },
+  {
+    "start_date": "2023-01-03T06:49:58Z",
+    "average_watts": 157.7,
+    "average_speed": 4.923,
+    "distance": 4992.3,
+    "moving_time": 1014,
+    "total_elevation_gain": 27.7
+  },
+  {
+    "start_date": "2023-01-04T12:08:00Z",
+    "average_watts": 176.0,
+    "average_speed": 7.79,
+    "distance": 26003.9,
+    "moving_time": 3338,
+    "total_elevation_gain": 366.1
+  },
+  {
+    "start_date": "2023-01-05T16:28:01Z",
+    "average_watts": 146.1,
+    "average_speed": 8.315,
+    "distance": 12747.1,
+    "moving_time": 1533,
+    "total_elevation_gain": 159.3
+  },
+  {
+    "start_date": "2023-01-06T18:17:43Z",
+    "average_watts": 167.6,
+    "average_speed": 8.252,
+    "distance": 19466.4,
+    "moving_time": 2359,
+    "total_elevation_gain": 291.7
+  },
+  {
+    "start_date": "2023-01-07T08:14:27Z",
+    "average_watts": 148.0,
+    "average_speed": 3.132,
+    "distance": 7099.9,
+    "moving_time": 2267,
+    "total_elevation_gain": 73.5
+  },
+  {
+    "start_date": "2023-01-08T13:21:16Z",
+    "average_watts": 154.3,
+    "average_speed": 6.213,
+    "distance": 89993.9,
+    "moving_time": 14484,
+    "total_elevation_gain": 806.1
+  },
+  {
+    "start_date": "2023-01-11T10:41:21Z",
+    "average_watts": 178.3,
+    "average_speed": 6.362,
+    "distance": 24250.8,
+    "moving_time": 3812,
+    "total_elevation_gain": 165.5
+  },
+  {
+    "start_date": "2023-01-12T11:42:36Z",
+    "average_watts": 170.9,
+    "average_speed": 6.583,
+    "distance": 84436.3,
+    "moving_time": 12827,
+    "total_elevation_gain": 433.7
+  },
+  {
+    "start_date": "2023-01-13T18:32:41Z",
+    "average_watts": 182.8,
+    "average_speed": 3.479,
+    "distance": 7821.6,
+    "moving_time": 2248,
+    "total_elevation_gain": 58.2
+  },
+  {
+    "start_date": "2023-01-14T19:22:18Z",
+    "average_watts": 152.5,
+    "average_speed": 6.924,
+    "distance": 38003.4,
+    "moving_time": 5489,
+    "total_elevation_gain": 561.9
+  },
+  {
+    "start_date": "2023-01-15T19:33:03Z",
+    "average_watts": 179.8,
+    "average_speed": 6.997,
+    "distance": 97027.7,
+    "moving_time": 13868,
+    "total_elevation_gain": 1289.3
+  },
+  {
+    "start_date": "2023-01-19T13:42:40Z",
+    "average_watts": 153.9,
+    "average_speed": 4.477,
+    "distance": 6192.1,
+    "moving_time": 1383,
+    "total_elevation_gain": 49.3
+  },
+  {
+    "start_date": "2023-01-20T06:29:39Z",
+    "average_watts": 167.8,
+    "average_speed": 6.464,
+    "distance": 33543.8,
+    "moving_time": 5189,
+    "total_elevation_gain": 214.0
+  },
+  {
+    "start_date": "2023-01-21T17:04:25Z",
+    "average_watts": 173.3,
+    "average_speed": 7.701,
+    "distance": 22787.5,
+    "moving_time": 2959,
+    "total_elevation_gain": 233.1
+  },
+  {
+    "start_date": "2023-01-23T12:53:29Z",
+    "average_watts": 153.2,
+    "average_speed": 5.66,
+    "distance": 39936.8,
+    "moving_time": 7056,
+    "total_elevation_gain": 236.3
+  },
+  {
+    "start_date": "2023-01-27T13:27:53Z",
+    "average_watts": 152.0,
+    "average_speed": 7.844,
+    "distance": 35166.3,
+    "moving_time": 4483,
+    "total_elevation_gain": 254.9
+  },
+  {
+    "start_date": "2023-01-28T19:51:08Z",
+    "average_watts": 178.2,
+    "average_speed": 3.295,
+    "distance": 5805.9,
+    "moving_time": 1762,
+    "total_elevation_gain": 45.3
+  },
+  {
+    "start_date": "2023-01-30T10:52:40Z",
+    "average_watts": 158.1,
+    "average_speed": 3.35,
+    "distance": 6647.0,
+    "moving_time": 1984,
+    "total_elevation_gain": 89.8
+  },
+  {
+    "start_date": "2023-01-31T14:15:55Z",
+    "average_watts": 146.7,
+    "average_speed": 9.658,
+    "distance": 16621.5,
+    "moving_time": 1721,
+    "total_elevation_gain": 130.8
+  },
+  {
+    "start_date": "2023-02-01T14:28:41Z",
+    "average_watts": 173.1,
+    "average_speed": 5.208,
+    "distance": 68525.0,
+    "moving_time": 13158,
+    "total_elevation_gain": 988.3
+  },
+  {
+    "start_date": "2023-02-02T06:43:55Z",
+    "average_watts": 162.5,
+    "average_speed": 5.889,
+    "distance": 3315.6,
+    "moving_time": 563,
+    "total_elevation_gain": 27.9
+  },
+  {
+    "start_date": "2023-02-04T15:13:36Z",
+    "average_watts": 158.4,
+    "average_speed": 7.359,
+    "distance": 32990.6,
+    "moving_time": 4483,
+    "total_elevation_gain": 415.1
+  },
+  {
+    "start_date": "2023-02-05T18:25:56Z",
+    "average_watts": 162.8,
+    "average_speed": 7.323,
+    "distance": 24787.6,
+    "moving_time": 3385,
+    "total_elevation_gain": 174.3
+  },
+  {
+    "start_date": "2023-02-06T14:46:02Z",
+    "average_watts": 181.7,
+    "average_speed": 6.999,
+    "distance": 51731.0,
+    "moving_time": 7391,
+    "total_elevation_gain": 574.7
+  },
+  {
+    "start_date": "2023-02-08T14:09:46Z",
+    "average_watts": 149.0,
+    "average_speed": 5.288,
+    "distance": 83041.4,
+    "moving_time": 15704,
+    "total_elevation_gain": 571.7
+  },
+  {
+    "start_date": "2023-02-09T17:28:11Z",
+    "average_watts": 157.4,
+    "average_speed": 6.828,
+    "distance": 70183.8,
+    "moving_time": 10279,
+    "total_elevation_gain": 779.6
+  },
+  {
+    "start_date": "2023-02-10T17:46:36Z",
+    "average_watts": 153.1,
+    "average_speed": 5.152,
+    "distance": 69160.9,
+    "moving_time": 13423,
+    "total_elevation_gain": 975.0
+  },
+  {
+    "start_date": "2023-02-11T16:58:16Z",
+    "average_watts": 172.2,
+    "average_speed": 4.312,
+    "distance": 5489.2,
+    "moving_time": 1273,
+    "total_elevation_gain": 39.8
+  },
+  {
+    "start_date": "2023-02-12T06:03:58Z",
+    "average_watts": 164.9,
+    "average_speed": 5.603,
+    "distance": 7821.2,
+    "moving_time": 1396,
+    "total_elevation_gain": 80.5
+  },
+  {
+    "start_date": "2023-02-15T18:26:47Z",
+    "average_watts": 157.2,
+    "average_speed": 5.764,
+    "distance": 6536.1,
+    "moving_time": 1134,
+    "total_elevation_gain": 52.3
+  },
+  {
+    "start_date": "2023-02-18T14:20:51Z",
+    "average_watts": 147.3,
+    "average_speed": 5.402,
+    "distance": 5261.6,
+    "moving_time": 974,
+    "total_elevation_gain": 64.6
+  },
+  {
+    "start_date": "2023-02-20T11:03:46Z",
+    "average_watts": 183.9,
+    "average_speed": 5.137,
+    "distance": 39697.6,
+    "moving_time": 7728,
+    "total_elevation_gain": 252.7
+  },
+  {
+    "start_date": "2023-02-27T13:28:40Z",
+    "average_watts": 144.9,
+    "average_speed": 5.686,
+    "distance": 53113.5,
+    "moving_time": 9341,
+    "total_elevation_gain": 711.3
+  },
+  {
+    "start_date": "2023-03-03T06:37:05Z",
+    "average_watts": 168.0,
+    "average_speed": 7.051,
+    "distance": 34077.2,
+    "moving_time": 4833,
+    "total_elevation_gain": 265.3
+  },
+  {
+    "start_date": "2023-03-06T18:46:44Z",
+    "average_watts": 178.4,
+    "average_speed": 7.102,
+    "distance": 33988.3,
+    "moving_time": 4786,
+    "total_elevation_gain": 409.8
+  },
+  {
+    "start_date": "2023-03-09T09:39:31Z",
+    "average_watts": 181.6,
+    "average_speed": 6.925,
+    "distance": 89612.5,
+    "moving_time": 12940,
+    "total_elevation_gain": 502.1
+  },
+  {
+    "start_date": "2023-03-11T12:40:47Z",
+    "average_watts": 173.3,
+    "average_speed": 7.063,
+    "distance": 10460.7,
+    "moving_time": 1481,
+    "total_elevation_gain": 87.9
+  },
+  {
+    "start_date": "2023-03-12T13:00:31Z",
+    "average_watts": 177.3,
+    "average_speed": 7.863,
+    "distance": 23958.8,
+    "moving_time": 3047,
+    "total_elevation_gain": 343.7
+  },
+  {
+    "start_date": "2023-03-17T18:09:33Z",
+    "average_watts": 152.1,
+    "average_speed": 5.267,
+    "distance": 25464.7,
+    "moving_time": 4835,
+    "total_elevation_gain": 334.9
+  },
+  {
+    "start_date": "2023-03-18T18:05:02Z",
+    "average_watts": 151.6,
+    "average_speed": 5.426,
+    "distance": 21173.3,
+    "moving_time": 3902,
+    "total_elevation_gain": 266.6
+  },
+  {
+    "start_date": "2023-03-19T13:19:29Z",
+    "average_watts": 161.6,
+    "average_speed": 3.189,
+    "distance": 5000.6,
+    "moving_time": 1568,
+    "total_elevation_gain": 73.9
+  },
+  {
+    "start_date": "2023-03-21T09:47:07Z",
+    "average_watts": 148.9,
+    "average_speed": 5.138,
+    "distance": 51596.4,
+    "moving_time": 10042,
+    "total_elevation_gain": 568.2
+  },
+  {
+    "start_date": "2023-03-22T06:52:25Z",
+    "average_watts": 168.4,
+    "average_speed": 5.238,
+    "distance": 31789.9,
+    "moving_time": 6069,
+    "total_elevation_gain": 358.2
+  },
+  {
+    "start_date": "2023-03-23T13:08:46Z",
+    "average_watts": 173.2,
+    "average_speed": 6.374,
+    "distance": 90019.7,
+    "moving_time": 14124,
+    "total_elevation_gain": 534.7
+  },
+  {
+    "start_date": "2023-03-27T10:00:46Z",
+    "average_watts": 177.0,
+    "average_speed": 6.058,
+    "distance": 20039.2,
+    "moving_time": 3308,
+    "total_elevation_gain": 256.5
+  },
+  {
+    "start_date": "2023-03-28T13:14:38Z",
+    "average_watts": 176.5,
+    "average_speed": 7.029,
+    "distance": 37274.0,
+    "moving_time": 5303,
+    "total_elevation_gain": 341.0
+  },
+  {
+    "start_date": "2023-04-03T07:46:43Z",
+    "average_watts": 161.1,
+    "average_speed": 4.699,
+    "distance": 3637.0,
+    "moving_time": 774,
+    "total_elevation_gain": 29.5
+  },
+  {
+    "start_date": "2023-04-04T07:49:12Z",
+    "average_watts": 177.0,
+    "average_speed": 7.645,
+    "distance": 11941.8,
+    "moving_time": 1562,
+    "total_elevation_gain": 107.2
+  },
+  {
+    "start_date": "2023-04-05T10:59:29Z",
+    "average_watts": 182.8,
+    "average_speed": 6.67,
+    "distance": 61341.6,
+    "moving_time": 9197,
+    "total_elevation_gain": 667.4
+  },
+  {
+    "start_date": "2023-04-10T09:47:46Z",
+    "average_watts": 180.1,
+    "average_speed": 5.892,
+    "distance": 62191.8,
+    "moving_time": 10556,
+    "total_elevation_gain": 814.5
+  },
+  {
+    "start_date": "2023-04-12T12:08:06Z",
+    "average_watts": 154.2,
+    "average_speed": 7.204,
+    "distance": 12116.4,
+    "moving_time": 1682,
+    "total_elevation_gain": 138.9
+  },
+  {
+    "start_date": "2023-04-14T09:59:28Z",
+    "average_watts": 178.0,
+    "average_speed": 6.552,
+    "distance": 67488.2,
+    "moving_time": 10300,
+    "total_elevation_gain": 596.1
+  },
+  {
+    "start_date": "2023-04-20T11:39:45Z",
+    "average_watts": 170.3,
+    "average_speed": 9.66,
+    "distance": 20237.4,
+    "moving_time": 2095,
+    "total_elevation_gain": 234.9
+  },
+  {
+    "start_date": "2023-04-21T06:52:45Z",
+    "average_watts": 145.2,
+    "average_speed": 5.336,
+    "distance": 5858.9,
+    "moving_time": 1098,
+    "total_elevation_gain": 58.8
+  },
+  {
+    "start_date": "2023-04-22T19:16:28Z",
+    "average_watts": 162.7,
+    "average_speed": 9.834,
+    "distance": 20907.0,
+    "moving_time": 2126,
+    "total_elevation_gain": 259.7
+  },
+  {
+    "start_date": "2023-04-26T07:45:10Z",
+    "average_watts": 159.9,
+    "average_speed": 6.66,
+    "distance": 65802.5,
+    "moving_time": 9881,
+    "total_elevation_gain": 609.4
+  },
+  {
+    "start_date": "2023-04-30T13:40:37Z",
+    "average_watts": 182.2,
+    "average_speed": 7.281,
+    "distance": 27427.2,
+    "moving_time": 3767,
+    "total_elevation_gain": 263.7
+  },
+  {
+    "start_date": "2023-05-02T14:14:18Z",
+    "average_watts": 181.8,
+    "average_speed": 4.955,
+    "distance": 3225.8,
+    "moving_time": 651,
+    "total_elevation_gain": 47.9
+  },
+  {
+    "start_date": "2023-05-03T10:19:37Z",
+    "average_watts": 166.3,
+    "average_speed": 7.514,
+    "distance": 20649.6,
+    "moving_time": 2748,
+    "total_elevation_gain": 205.8
+  },
+  {
+    "start_date": "2023-05-06T13:56:51Z",
+    "average_watts": 181.0,
+    "average_speed": 8.914,
+    "distance": 11650.1,
+    "moving_time": 1307,
+    "total_elevation_gain": 166.9
+  },
+  {
+    "start_date": "2023-05-09T13:44:30Z",
+    "average_watts": 145.7,
+    "average_speed": 5.735,
+    "distance": 97766.3,
+    "moving_time": 17048,
+    "total_elevation_gain": 667.1
+  },
+  {
+    "start_date": "2023-05-11T16:23:12Z",
+    "average_watts": 168.0,
+    "average_speed": 7.811,
+    "distance": 27136.1,
+    "moving_time": 3474,
+    "total_elevation_gain": 268.8
+  },
+  {
+    "start_date": "2023-05-12T16:09:13Z",
+    "average_watts": 156.4,
+    "average_speed": 5.431,
+    "distance": 69640.6,
+    "moving_time": 12822,
+    "total_elevation_gain": 375.6
+  },
+  {
+    "start_date": "2023-05-14T11:53:38Z",
+    "average_watts": 149.5,
+    "average_speed": 5.615,
+    "distance": 23093.5,
+    "moving_time": 4113,
+    "total_elevation_gain": 264.1
+  },
+  {
+    "start_date": "2023-05-16T18:28:30Z",
+    "average_watts": 154.0,
+    "average_speed": 3.067,
+    "distance": 6026.5,
+    "moving_time": 1965,
+    "total_elevation_gain": 55.4
+  },
+  {
+    "start_date": "2023-05-18T18:36:06Z",
+    "average_watts": 183.1,
+    "average_speed": 6.467,
+    "distance": 38128.5,
+    "moving_time": 5896,
+    "total_elevation_gain": 364.7
+  },
+  {
+    "start_date": "2023-05-19T19:23:46Z",
+    "average_watts": 160.3,
+    "average_speed": 5.915,
+    "distance": 34664.1,
+    "moving_time": 5860,
+    "total_elevation_gain": 230.2
+  },
+  {
+    "start_date": "2023-05-21T08:58:14Z",
+    "average_watts": 159.6,
+    "average_speed": 5.594,
+    "distance": 75363.1,
+    "moving_time": 13472,
+    "total_elevation_gain": 1068.0
+  },
+  {
+    "start_date": "2023-05-22T17:19:41Z",
+    "average_watts": 175.0,
+    "average_speed": 6.665,
+    "distance": 28733.8,
+    "moving_time": 4311,
+    "total_elevation_gain": 344.2
+  },
+  {
+    "start_date": "2023-05-24T10:05:32Z",
+    "average_watts": 152.9,
+    "average_speed": 5.364,
+    "distance": 92976.3,
+    "moving_time": 17334,
+    "total_elevation_gain": 1239.9
+  },
+  {
+    "start_date": "2023-05-27T14:14:11Z",
+    "average_watts": 157.3,
+    "average_speed": 5.794,
+    "distance": 6656.8,
+    "moving_time": 1149,
+    "total_elevation_gain": 76.5
+  },
+  {
+    "start_date": "2023-05-31T07:07:02Z",
+    "average_watts": 162.6,
+    "average_speed": 7.12,
+    "distance": 18925.4,
+    "moving_time": 2658,
+    "total_elevation_gain": 97.7
+  },
+  {
+    "start_date": "2023-06-01T19:56:45Z",
+    "average_watts": 153.5,
+    "average_speed": 7.185,
+    "distance": 24796.8,
+    "moving_time": 3451,
+    "total_elevation_gain": 213.5
+  },
+  {
+    "start_date": "2023-06-02T08:46:05Z",
+    "average_watts": 175.1,
+    "average_speed": 8.294,
+    "distance": 14157.7,
+    "moving_time": 1707,
+    "total_elevation_gain": 127.8
+  },
+  {
+    "start_date": "2023-06-03T18:26:40Z",
+    "average_watts": 176.8,
+    "average_speed": 5.453,
+    "distance": 22999.3,
+    "moving_time": 4218,
+    "total_elevation_gain": 160.9
+  },
+  {
+    "start_date": "2023-06-05T06:31:24Z",
+    "average_watts": 179.4,
+    "average_speed": 6.063,
+    "distance": 79608.9,
+    "moving_time": 13130,
+    "total_elevation_gain": 880.4
+  },
+  {
+    "start_date": "2023-06-06T12:51:32Z",
+    "average_watts": 163.8,
+    "average_speed": 3.167,
+    "distance": 7036.6,
+    "moving_time": 2222,
+    "total_elevation_gain": 51.2
+  },
+  {
+    "start_date": "2023-06-10T14:44:17Z",
+    "average_watts": 167.0,
+    "average_speed": 9.186,
+    "distance": 19842.1,
+    "moving_time": 2160,
+    "total_elevation_gain": 271.9
+  },
+  {
+    "start_date": "2023-06-12T18:30:10Z",
+    "average_watts": 171.7,
+    "average_speed": 6.189,
+    "distance": 52738.5,
+    "moving_time": 8521,
+    "total_elevation_gain": 354.0
+  },
+  {
+    "start_date": "2023-06-14T08:03:11Z",
+    "average_watts": 154.3,
+    "average_speed": 9.695,
+    "distance": 13941.2,
+    "moving_time": 1438,
+    "total_elevation_gain": 104.0
+  },
+  {
+    "start_date": "2023-06-18T08:43:28Z",
+    "average_watts": 148.7,
+    "average_speed": 6.938,
+    "distance": 86331.4,
+    "moving_time": 12443,
+    "total_elevation_gain": 1283.0
+  },
+  {
+    "start_date": "2023-06-19T12:07:10Z",
+    "average_watts": 182.5,
+    "average_speed": 5.164,
+    "distance": 6486.4,
+    "moving_time": 1256,
+    "total_elevation_gain": 69.9
+  },
+  {
+    "start_date": "2023-06-20T08:17:17Z",
+    "average_watts": 150.9,
+    "average_speed": 5.585,
+    "distance": 90337.8,
+    "moving_time": 16176,
+    "total_elevation_gain": 1174.9
+  },
+  {
+    "start_date": "2023-06-21T12:41:15Z",
+    "average_watts": 160.2,
+    "average_speed": 6.873,
+    "distance": 28048.3,
+    "moving_time": 4081,
+    "total_elevation_gain": 165.3
+  },
+  {
+    "start_date": "2023-06-23T17:35:24Z",
+    "average_watts": 181.5,
+    "average_speed": 6.286,
+    "distance": 35583.6,
+    "moving_time": 5661,
+    "total_elevation_gain": 475.6
+  },
+  {
+    "start_date": "2023-06-25T17:00:22Z",
+    "average_watts": 156.9,
+    "average_speed": 8.954,
+    "distance": 20181.9,
+    "moving_time": 2254,
+    "total_elevation_gain": 292.4
+  },
+  {
+    "start_date": "2023-06-26T06:12:01Z",
+    "average_watts": 149.8,
+    "average_speed": 7.247,
+    "distance": 19472.2,
+    "moving_time": 2687,
+    "total_elevation_gain": 224.1
+  },
+  {
+    "start_date": "2023-06-28T14:10:51Z",
+    "average_watts": 148.3,
+    "average_speed": 6.504,
+    "distance": 23057.2,
+    "moving_time": 3545,
+    "total_elevation_gain": 310.4
+  },
+  {
+    "start_date": "2023-07-01T11:20:36Z",
+    "average_watts": 169.9,
+    "average_speed": 3.555,
+    "distance": 6686.4,
+    "moving_time": 1881,
+    "total_elevation_gain": 87.7
+  },
+  {
+    "start_date": "2023-07-05T16:17:11Z",
+    "average_watts": 151.2,
+    "average_speed": 5.558,
+    "distance": 34135.8,
+    "moving_time": 6142,
+    "total_elevation_gain": 310.3
+  },
+  {
+    "start_date": "2023-07-06T18:34:48Z",
+    "average_watts": 162.1,
+    "average_speed": 8.654,
+    "distance": 18537.5,
+    "moving_time": 2142,
+    "total_elevation_gain": 207.1
+  },
+  {
+    "start_date": "2023-07-09T19:40:33Z",
+    "average_watts": 169.7,
+    "average_speed": 8.148,
+    "distance": 10608.8,
+    "moving_time": 1302,
+    "total_elevation_gain": 67.5
+  },
+  {
+    "start_date": "2023-07-10T17:50:58Z",
+    "average_watts": 156.4,
+    "average_speed": 5.127,
+    "distance": 82065.2,
+    "moving_time": 16008,
+    "total_elevation_gain": 983.4
+  },
+  {
+    "start_date": "2023-07-12T18:55:16Z",
+    "average_watts": 167.0,
+    "average_speed": 7.664,
+    "distance": 26747.2,
+    "moving_time": 3490,
+    "total_elevation_gain": 284.2
+  },
+  {
+    "start_date": "2023-07-14T07:35:09Z",
+    "average_watts": 148.2,
+    "average_speed": 6.532,
+    "distance": 53285.4,
+    "moving_time": 8158,
+    "total_elevation_gain": 552.4
+  },
+  {
+    "start_date": "2023-07-15T17:40:04Z",
+    "average_watts": 185.6,
+    "average_speed": 5.618,
+    "distance": 94658.0,
+    "moving_time": 16848,
+    "total_elevation_gain": 483.7
+  },
+  {
+    "start_date": "2023-07-16T07:56:04Z",
+    "average_watts": 184.5,
+    "average_speed": 5.929,
+    "distance": 6509.5,
+    "moving_time": 1098,
+    "total_elevation_gain": 46.7
+  },
+  {
+    "start_date": "2023-07-17T07:16:17Z",
+    "average_watts": 167.7,
+    "average_speed": 6.535,
+    "distance": 87849.3,
+    "moving_time": 13442,
+    "total_elevation_gain": 778.5
+  },
+  {
+    "start_date": "2023-07-18T10:25:56Z",
+    "average_watts": 162.3,
+    "average_speed": 5.608,
+    "distance": 5809.6,
+    "moving_time": 1036,
+    "total_elevation_gain": 35.6
+  },
+  {
+    "start_date": "2023-07-21T09:38:10Z",
+    "average_watts": 152.5,
+    "average_speed": 3.197,
+    "distance": 5821.1,
+    "moving_time": 1821,
+    "total_elevation_gain": 78.1
+  },
+  {
+    "start_date": "2023-07-22T16:47:31Z",
+    "average_watts": 150.3,
+    "average_speed": 6.481,
+    "distance": 79949.7,
+    "moving_time": 12336,
+    "total_elevation_gain": 869.9
+  },
+  {
+    "start_date": "2023-07-23T09:53:44Z",
+    "average_watts": 152.2,
+    "average_speed": 5.899,
+    "distance": 24010.5,
+    "moving_time": 4070,
+    "total_elevation_gain": 218.1
+  },
+  {
+    "start_date": "2023-07-24T06:06:15Z",
+    "average_watts": 153.5,
+    "average_speed": 6.764,
+    "distance": 53901.5,
+    "moving_time": 7969,
+    "total_elevation_gain": 501.1
+  },
+  {
+    "start_date": "2023-07-30T19:09:19Z",
+    "average_watts": 154.1,
+    "average_speed": 5.983,
+    "distance": 53623.9,
+    "moving_time": 8963,
+    "total_elevation_gain": 624.3
+  },
+  {
+    "start_date": "2023-08-01T15:36:09Z",
+    "average_watts": 182.0,
+    "average_speed": 5.527,
+    "distance": 5709.5,
+    "moving_time": 1033,
+    "total_elevation_gain": 76.3
+  },
+  {
+    "start_date": "2023-08-02T18:06:34Z",
+    "average_watts": 178.9,
+    "average_speed": 5.005,
+    "distance": 5415.3,
+    "moving_time": 1082,
+    "total_elevation_gain": 79.4
+  },
+  {
+    "start_date": "2023-08-04T19:21:24Z",
+    "average_watts": 154.5,
+    "average_speed": 6.151,
+    "distance": 74376.5,
+    "moving_time": 12092,
+    "total_elevation_gain": 632.7
+  },
+  {
+    "start_date": "2023-08-07T11:30:53Z",
+    "average_watts": 147.7,
+    "average_speed": 5.828,
+    "distance": 5303.6,
+    "moving_time": 910,
+    "total_elevation_gain": 39.4
+  },
+  {
+    "start_date": "2023-08-08T18:44:26Z",
+    "average_watts": 180.4,
+    "average_speed": 5.443,
+    "distance": 34153.3,
+    "moving_time": 6275,
+    "total_elevation_gain": 387.4
+  },
+  {
+    "start_date": "2023-08-10T12:51:46Z",
+    "average_watts": 150.7,
+    "average_speed": 9.865,
+    "distance": 10496.8,
+    "moving_time": 1064,
+    "total_elevation_gain": 115.3
+  },
+  {
+    "start_date": "2023-08-15T06:02:45Z",
+    "average_watts": 178.3,
+    "average_speed": 9.075,
+    "distance": 20464.3,
+    "moving_time": 2255,
+    "total_elevation_gain": 144.8
+  },
+  {
+    "start_date": "2023-08-16T13:35:19Z",
+    "average_watts": 151.2,
+    "average_speed": 9.521,
+    "distance": 21831.0,
+    "moving_time": 2293,
+    "total_elevation_gain": 306.7
+  },
+  {
+    "start_date": "2023-08-17T16:55:37Z",
+    "average_watts": 158.7,
+    "average_speed": 7.147,
+    "distance": 36886.5,
+    "moving_time": 5161,
+    "total_elevation_gain": 536.3
+  },
+  {
+    "start_date": "2023-08-18T11:34:00Z",
+    "average_watts": 174.6,
+    "average_speed": 5.14,
+    "distance": 24672.5,
+    "moving_time": 4800,
+    "total_elevation_gain": 147.3
+  },
+  {
+    "start_date": "2023-08-21T19:30:04Z",
+    "average_watts": 173.3,
+    "average_speed": 8.257,
+    "distance": 15614.5,
+    "moving_time": 1891,
+    "total_elevation_gain": 164.7
+  },
+  {
+    "start_date": "2023-08-22T16:42:35Z",
+    "average_watts": 169.4,
+    "average_speed": 7.004,
+    "distance": 21843.9,
+    "moving_time": 3119,
+    "total_elevation_gain": 268.3
+  },
+  {
+    "start_date": "2023-08-23T06:35:04Z",
+    "average_watts": 159.3,
+    "average_speed": 7.836,
+    "distance": 34798.6,
+    "moving_time": 4441,
+    "total_elevation_gain": 188.0
+  },
+  {
+    "start_date": "2023-08-25T11:49:33Z",
+    "average_watts": 183.8,
+    "average_speed": 3.148,
+    "distance": 3390.7,
+    "moving_time": 1077,
+    "total_elevation_gain": 48.2
+  },
+  {
+    "start_date": "2023-08-26T15:00:58Z",
+    "average_watts": 161.5,
+    "average_speed": 4.426,
+    "distance": 6838.5,
+    "moving_time": 1545,
+    "total_elevation_gain": 64.5
+  },
+  {
+    "start_date": "2023-08-28T08:05:58Z",
+    "average_watts": 156.8,
+    "average_speed": 7.496,
+    "distance": 21632.8,
+    "moving_time": 2886,
+    "total_elevation_gain": 200.3
+  },
+  {
+    "start_date": "2023-08-30T08:00:57Z",
+    "average_watts": 173.1,
+    "average_speed": 9.74,
+    "distance": 15388.9,
+    "moving_time": 1580,
+    "total_elevation_gain": 130.1
+  },
+  {
+    "start_date": "2023-09-01T06:25:31Z",
+    "average_watts": 174.7,
+    "average_speed": 4.956,
+    "distance": 4782.3,
+    "moving_time": 965,
+    "total_elevation_gain": 61.1
+  },
+  {
+    "start_date": "2023-09-04T18:15:09Z",
+    "average_watts": 167.4,
+    "average_speed": 5.312,
+    "distance": 99742.4,
+    "moving_time": 18776,
+    "total_elevation_gain": 646.8
+  },
+  {
+    "start_date": "2023-09-05T16:20:21Z",
+    "average_watts": 162.3,
+    "average_speed": 5.97,
+    "distance": 34240.5,
+    "moving_time": 5735,
+    "total_elevation_gain": 473.5
+  },
+  {
+    "start_date": "2023-09-07T18:43:48Z",
+    "average_watts": 163.8,
+    "average_speed": 5.061,
+    "distance": 23955.1,
+    "moving_time": 4733,
+    "total_elevation_gain": 225.4
+  },
+  {
+    "start_date": "2023-09-09T12:10:30Z",
+    "average_watts": 164.6,
+    "average_speed": 3.17,
+    "distance": 7081.1,
+    "moving_time": 2234,
+    "total_elevation_gain": 75.0
+  },
+  {
+    "start_date": "2023-09-11T13:48:06Z",
+    "average_watts": 174.7,
+    "average_speed": 5.338,
+    "distance": 80531.4,
+    "moving_time": 15086,
+    "total_elevation_gain": 547.3
+  },
+  {
+    "start_date": "2023-09-12T08:17:36Z",
+    "average_watts": 181.0,
+    "average_speed": 7.494,
+    "distance": 13085.1,
+    "moving_time": 1746,
+    "total_elevation_gain": 130.6
+  },
+  {
+    "start_date": "2023-09-14T06:13:20Z",
+    "average_watts": 166.3,
+    "average_speed": 8.026,
+    "distance": 19759.4,
+    "moving_time": 2462,
+    "total_elevation_gain": 244.2
+  },
+  {
+    "start_date": "2023-09-16T11:24:27Z",
+    "average_watts": 159.6,
+    "average_speed": 6.817,
+    "distance": 25913.0,
+    "moving_time": 3801,
+    "total_elevation_gain": 385.8
+  },
+  {
+    "start_date": "2023-09-17T11:37:21Z",
+    "average_watts": 179.4,
+    "average_speed": 3.541,
+    "distance": 3615.4,
+    "moving_time": 1021,
+    "total_elevation_gain": 32.5
+  },
+  {
+    "start_date": "2023-09-21T10:47:06Z",
+    "average_watts": 165.3,
+    "average_speed": 4.949,
+    "distance": 6844.7,
+    "moving_time": 1383,
+    "total_elevation_gain": 34.8
+  },
+  {
+    "start_date": "2023-09-22T12:40:47Z",
+    "average_watts": 166.9,
+    "average_speed": 6.496,
+    "distance": 22858.7,
+    "moving_time": 3519,
+    "total_elevation_gain": 187.2
+  },
+  {
+    "start_date": "2023-09-23T13:15:12Z",
+    "average_watts": 154.1,
+    "average_speed": 4.584,
+    "distance": 4144.3,
+    "moving_time": 904,
+    "total_elevation_gain": 47.0
+  },
+  {
+    "start_date": "2023-09-27T14:43:04Z",
+    "average_watts": 149.0,
+    "average_speed": 7.093,
+    "distance": 21817.9,
+    "moving_time": 3076,
+    "total_elevation_gain": 160.3
+  },
+  {
+    "start_date": "2023-10-01T18:33:13Z",
+    "average_watts": 177.6,
+    "average_speed": 9.747,
+    "distance": 15693.5,
+    "moving_time": 1610,
+    "total_elevation_gain": 111.7
+  },
+  {
+    "start_date": "2023-10-03T12:06:47Z",
+    "average_watts": 163.9,
+    "average_speed": 7.232,
+    "distance": 37373.1,
+    "moving_time": 5168,
+    "total_elevation_gain": 239.2
+  },
+  {
+    "start_date": "2023-10-05T06:15:42Z",
+    "average_watts": 186.0,
+    "average_speed": 7.75,
+    "distance": 39571.2,
+    "moving_time": 5106,
+    "total_elevation_gain": 410.0
+  },
+  {
+    "start_date": "2023-10-08T15:01:34Z",
+    "average_watts": 151.1,
+    "average_speed": 5.765,
+    "distance": 62415.6,
+    "moving_time": 10826,
+    "total_elevation_gain": 501.6
+  },
+  {
+    "start_date": "2023-10-09T08:44:18Z",
+    "average_watts": 174.5,
+    "average_speed": 6.027,
+    "distance": 34386.8,
+    "moving_time": 5705,
+    "total_elevation_gain": 283.6
+  },
+  {
+    "start_date": "2023-10-14T15:01:57Z",
+    "average_watts": 164.7,
+    "average_speed": 9.094,
+    "distance": 17197.3,
+    "moving_time": 1891,
+    "total_elevation_gain": 92.3
+  },
+  {
+    "start_date": "2023-10-17T18:05:08Z",
+    "average_watts": 162.4,
+    "average_speed": 7.538,
+    "distance": 32798.7,
+    "moving_time": 4351,
+    "total_elevation_gain": 194.3
+  },
+  {
+    "start_date": "2023-10-18T06:56:46Z",
+    "average_watts": 171.4,
+    "average_speed": 7.816,
+    "distance": 32414.0,
+    "moving_time": 4147,
+    "total_elevation_gain": 482.5
+  },
+  {
+    "start_date": "2023-10-20T17:56:36Z",
+    "average_watts": 181.4,
+    "average_speed": 4.725,
+    "distance": 4970.9,
+    "moving_time": 1052,
+    "total_elevation_gain": 70.2
+  },
+  {
+    "start_date": "2023-10-21T08:05:23Z",
+    "average_watts": 153.7,
+    "average_speed": 5.031,
+    "distance": 4140.4,
+    "moving_time": 823,
+    "total_elevation_gain": 61.0
+  },
+  {
+    "start_date": "2023-10-22T15:53:35Z",
+    "average_watts": 178.9,
+    "average_speed": 8.327,
+    "distance": 14621.5,
+    "moving_time": 1756,
+    "total_elevation_gain": 148.6
+  },
+  {
+    "start_date": "2023-10-24T18:46:24Z",
+    "average_watts": 168.6,
+    "average_speed": 5.097,
+    "distance": 5489.9,
+    "moving_time": 1077,
+    "total_elevation_gain": 35.8
+  },
+  {
+    "start_date": "2023-10-25T09:43:29Z",
+    "average_watts": 184.5,
+    "average_speed": 8.935,
+    "distance": 14305.3,
+    "moving_time": 1601,
+    "total_elevation_gain": 150.1
+  },
+  {
+    "start_date": "2023-10-26T16:53:08Z",
+    "average_watts": 175.7,
+    "average_speed": 5.065,
+    "distance": 4898.3,
+    "moving_time": 967,
+    "total_elevation_gain": 61.3
+  },
+  {
+    "start_date": "2023-10-27T19:58:50Z",
+    "average_watts": 160.2,
+    "average_speed": 3.468,
+    "distance": 4341.9,
+    "moving_time": 1252,
+    "total_elevation_gain": 34.5
+  },
+  {
+    "start_date": "2023-10-28T15:56:02Z",
+    "average_watts": 187.3,
+    "average_speed": 5.086,
+    "distance": 78992.3,
+    "moving_time": 15530,
+    "total_elevation_gain": 418.5
+  },
+  {
+    "start_date": "2023-10-29T14:52:37Z",
+    "average_watts": 168.5,
+    "average_speed": 5.841,
+    "distance": 24285.8,
+    "moving_time": 4158,
+    "total_elevation_gain": 137.0
+  },
+  {
+    "start_date": "2023-10-30T18:49:18Z",
+    "average_watts": 157.1,
+    "average_speed": 5.915,
+    "distance": 76592.1,
+    "moving_time": 12948,
+    "total_elevation_gain": 862.2
+  },
+  {
+    "start_date": "2023-11-02T13:17:26Z",
+    "average_watts": 149.5,
+    "average_speed": 9.354,
+    "distance": 22122.7,
+    "moving_time": 2365,
+    "total_elevation_gain": 136.2
+  },
+  {
+    "start_date": "2023-11-03T14:18:52Z",
+    "average_watts": 159.5,
+    "average_speed": 5.803,
+    "distance": 7148.7,
+    "moving_time": 1232,
+    "total_elevation_gain": 104.2
+  },
+  {
+    "start_date": "2023-11-05T13:35:09Z",
+    "average_watts": 176.3,
+    "average_speed": 3.252,
+    "distance": 5571.1,
+    "moving_time": 1713,
+    "total_elevation_gain": 51.9
+  },
+  {
+    "start_date": "2023-11-06T07:37:20Z",
+    "average_watts": 156.2,
+    "average_speed": 7.115,
+    "distance": 36002.7,
+    "moving_time": 5060,
+    "total_elevation_gain": 369.3
+  },
+  {
+    "start_date": "2023-11-09T18:35:18Z",
+    "average_watts": 152.1,
+    "average_speed": 7.794,
+    "distance": 23708.8,
+    "moving_time": 3042,
+    "total_elevation_gain": 249.7
+  },
+  {
+    "start_date": "2023-11-10T17:29:46Z",
+    "average_watts": 164.9,
+    "average_speed": 6.36,
+    "distance": 32288.2,
+    "moving_time": 5077,
+    "total_elevation_gain": 165.3
+  },
+  {
+    "start_date": "2023-11-11T07:53:41Z",
+    "average_watts": 169.3,
+    "average_speed": 3.658,
+    "distance": 6123.3,
+    "moving_time": 1674,
+    "total_elevation_gain": 56.4
+  },
+  {
+    "start_date": "2023-11-15T12:33:46Z",
+    "average_watts": 148.2,
+    "average_speed": 5.428,
+    "distance": 31522.8,
+    "moving_time": 5807,
+    "total_elevation_gain": 464.1
+  },
+  {
+    "start_date": "2023-11-19T10:17:44Z",
+    "average_watts": 161.3,
+    "average_speed": 8.074,
+    "distance": 15075.1,
+    "moving_time": 1867,
+    "total_elevation_gain": 144.4
+  },
+  {
+    "start_date": "2023-11-20T12:04:11Z",
+    "average_watts": 187.1,
+    "average_speed": 5.457,
+    "distance": 32985.1,
+    "moving_time": 6044,
+    "total_elevation_gain": 288.9
+  },
+  {
+    "start_date": "2023-11-21T11:42:12Z",
+    "average_watts": 151.0,
+    "average_speed": 5.083,
+    "distance": 38215.6,
+    "moving_time": 7518,
+    "total_elevation_gain": 197.3
+  },
+  {
+    "start_date": "2023-11-24T08:17:46Z",
+    "average_watts": 164.5,
+    "average_speed": 6.485,
+    "distance": 99526.3,
+    "moving_time": 15348,
+    "total_elevation_gain": 1217.1
+  },
+  {
+    "start_date": "2023-11-26T07:46:02Z",
+    "average_watts": 157.5,
+    "average_speed": 9.149,
+    "distance": 21409.1,
+    "moving_time": 2340,
+    "total_elevation_gain": 185.8
+  },
+  {
+    "start_date": "2023-11-27T16:43:57Z",
+    "average_watts": 182.8,
+    "average_speed": 5.568,
+    "distance": 95555.5,
+    "moving_time": 17162,
+    "total_elevation_gain": 767.5
+  },
+  {
+    "start_date": "2023-11-28T15:29:39Z",
+    "average_watts": 171.9,
+    "average_speed": 9.739,
+    "distance": 14734.9,
+    "moving_time": 1513,
+    "total_elevation_gain": 206.0
+  },
+  {
+    "start_date": "2023-11-29T06:50:08Z",
+    "average_watts": 156.1,
+    "average_speed": 5.416,
+    "distance": 3325.1,
+    "moving_time": 614,
+    "total_elevation_gain": 42.3
+  },
+  {
+    "start_date": "2023-11-30T14:21:32Z",
+    "average_watts": 149.1,
+    "average_speed": 8.902,
+    "distance": 14609.0,
+    "moving_time": 1641,
+    "total_elevation_gain": 202.1
+  },
+  {
+    "start_date": "2023-12-03T09:14:01Z",
+    "average_watts": 148.2,
+    "average_speed": 8.003,
+    "distance": 17366.5,
+    "moving_time": 2170,
+    "total_elevation_gain": 111.6
+  },
+  {
+    "start_date": "2023-12-05T18:22:07Z",
+    "average_watts": 169.4,
+    "average_speed": 7.589,
+    "distance": 15542.4,
+    "moving_time": 2048,
+    "total_elevation_gain": 153.7
+  },
+  {
+    "start_date": "2023-12-06T17:28:32Z",
+    "average_watts": 161.8,
+    "average_speed": 6.306,
+    "distance": 89735.6,
+    "moving_time": 14230,
+    "total_elevation_gain": 548.1
+  },
+  {
+    "start_date": "2023-12-07T14:09:02Z",
+    "average_watts": 156.1,
+    "average_speed": 7.638,
+    "distance": 19897.4,
+    "moving_time": 2605,
+    "total_elevation_gain": 228.9
+  },
+  {
+    "start_date": "2023-12-08T17:03:15Z",
+    "average_watts": 172.1,
+    "average_speed": 4.719,
+    "distance": 4369.7,
+    "moving_time": 926,
+    "total_elevation_gain": 56.5
+  },
+  {
+    "start_date": "2023-12-16T14:03:21Z",
+    "average_watts": 182.8,
+    "average_speed": 8.316,
+    "distance": 24815.3,
+    "moving_time": 2984,
+    "total_elevation_gain": 290.1
+  },
+  {
+    "start_date": "2023-12-17T06:46:41Z",
+    "average_watts": 156.8,
+    "average_speed": 3.094,
+    "distance": 4328.3,
+    "moving_time": 1399,
+    "total_elevation_gain": 30.1
+  },
+  {
+    "start_date": "2023-12-18T18:22:36Z",
+    "average_watts": 176.7,
+    "average_speed": 5.004,
+    "distance": 21477.6,
+    "moving_time": 4292,
+    "total_elevation_gain": 156.4
+  },
+  {
+    "start_date": "2023-12-20T10:31:46Z",
+    "average_watts": 177.6,
+    "average_speed": 4.704,
+    "distance": 3908.8,
+    "moving_time": 831,
+    "total_elevation_gain": 27.5
+  },
+  {
+    "start_date": "2023-12-21T12:43:49Z",
+    "average_watts": 170.7,
+    "average_speed": 7.802,
+    "distance": 21010.0,
+    "moving_time": 2693,
+    "total_elevation_gain": 236.0
+  },
+  {
+    "start_date": "2023-12-28T11:21:04Z",
+    "average_watts": 162.7,
+    "average_speed": 7.116,
+    "distance": 39065.7,
+    "moving_time": 5490,
+    "total_elevation_gain": 491.5
+  },
+  {
+    "start_date": "2023-12-30T15:26:49Z",
+    "average_watts": 156.2,
+    "average_speed": 5.278,
+    "distance": 66250.7,
+    "moving_time": 12552,
+    "total_elevation_gain": 401.6
+  },
+  {
+    "start_date": "2024-01-01T16:08:58Z",
+    "average_watts": 156.2,
+    "average_speed": 7.288,
+    "distance": 17789.7,
+    "moving_time": 2441,
+    "total_elevation_gain": 118.6
+  },
+  {
+    "start_date": "2024-01-03T10:15:16Z",
+    "average_watts": 170.3,
+    "average_speed": 3.805,
+    "distance": 3923.3,
+    "moving_time": 1031,
+    "total_elevation_gain": 24.7
+  },
+  {
+    "start_date": "2024-01-04T18:50:03Z",
+    "average_watts": 186.6,
+    "average_speed": 7.04,
+    "distance": 25194.6,
+    "moving_time": 3579,
+    "total_elevation_gain": 142.1
+  },
+  {
+    "start_date": "2024-01-06T10:19:27Z",
+    "average_watts": 156.3,
+    "average_speed": 7.471,
+    "distance": 10870.4,
+    "moving_time": 1455,
+    "total_elevation_gain": 95.8
+  },
+  {
+    "start_date": "2024-01-09T17:44:39Z",
+    "average_watts": 176.8,
+    "average_speed": 7.468,
+    "distance": 22673.1,
+    "moving_time": 3036,
+    "total_elevation_gain": 168.8
+  },
+  {
+    "start_date": "2024-01-10T09:28:49Z",
+    "average_watts": 152.3,
+    "average_speed": 6.496,
+    "distance": 61773.1,
+    "moving_time": 9509,
+    "total_elevation_gain": 768.0
+  },
+  {
+    "start_date": "2024-01-11T07:57:26Z",
+    "average_watts": 156.6,
+    "average_speed": 4.168,
+    "distance": 6381.6,
+    "moving_time": 1531,
+    "total_elevation_gain": 36.1
+  },
+  {
+    "start_date": "2024-01-12T18:42:49Z",
+    "average_watts": 181.2,
+    "average_speed": 7.641,
+    "distance": 23504.2,
+    "moving_time": 3076,
+    "total_elevation_gain": 309.6
+  },
+  {
+    "start_date": "2024-01-14T08:48:46Z",
+    "average_watts": 165.5,
+    "average_speed": 6.391,
+    "distance": 64337.9,
+    "moving_time": 10067,
+    "total_elevation_gain": 419.4
+  },
+  {
+    "start_date": "2024-01-15T08:34:26Z",
+    "average_watts": 180.3,
+    "average_speed": 6.221,
+    "distance": 38273.9,
+    "moving_time": 6152,
+    "total_elevation_gain": 236.3
+  },
+  {
+    "start_date": "2024-01-16T07:45:35Z",
+    "average_watts": 152.0,
+    "average_speed": 7.42,
+    "distance": 26926.6,
+    "moving_time": 3629,
+    "total_elevation_gain": 379.0
+  },
+  {
+    "start_date": "2024-01-18T13:42:11Z",
+    "average_watts": 181.8,
+    "average_speed": 6.03,
+    "distance": 92343.2,
+    "moving_time": 15313,
+    "total_elevation_gain": 838.2
+  },
+  {
+    "start_date": "2024-01-19T16:02:55Z",
+    "average_watts": 168.4,
+    "average_speed": 7.173,
+    "distance": 10622.8,
+    "moving_time": 1481,
+    "total_elevation_gain": 155.0
+  },
+  {
+    "start_date": "2024-01-23T08:44:22Z",
+    "average_watts": 186.5,
+    "average_speed": 4.139,
+    "distance": 5840.4,
+    "moving_time": 1411,
+    "total_elevation_gain": 34.6
+  },
+  {
+    "start_date": "2024-01-25T17:22:17Z",
+    "average_watts": 176.5,
+    "average_speed": 7.111,
+    "distance": 22184.9,
+    "moving_time": 3120,
+    "total_elevation_gain": 220.3
+  },
+  {
+    "start_date": "2024-01-27T16:03:23Z",
+    "average_watts": 182.1,
+    "average_speed": 3.19,
+    "distance": 4153.1,
+    "moving_time": 1302,
+    "total_elevation_gain": 57.6
+  },
+  {
+    "start_date": "2024-01-28T07:53:46Z",
+    "average_watts": 170.7,
+    "average_speed": 6.166,
+    "distance": 74981.9,
+    "moving_time": 12161,
+    "total_elevation_gain": 558.6
+  },
+  {
+    "start_date": "2024-02-03T09:39:12Z",
+    "average_watts": 175.1,
+    "average_speed": 9.143,
+    "distance": 11775.9,
+    "moving_time": 1288,
+    "total_elevation_gain": 94.4
+  },
+  {
+    "start_date": "2024-02-05T10:18:46Z",
+    "average_watts": 150.2,
+    "average_speed": 3.018,
+    "distance": 3772.6,
+    "moving_time": 1250,
+    "total_elevation_gain": 42.0
+  },
+  {
+    "start_date": "2024-02-06T17:52:35Z",
+    "average_watts": 179.3,
+    "average_speed": 3.184,
+    "distance": 4419.5,
+    "moving_time": 1388,
+    "total_elevation_gain": 65.8
+  },
+  {
+    "start_date": "2024-02-08T15:31:33Z",
+    "average_watts": 151.7,
+    "average_speed": 7.775,
+    "distance": 22042.8,
+    "moving_time": 2835,
+    "total_elevation_gain": 305.3
+  },
+  {
+    "start_date": "2024-02-13T10:33:45Z",
+    "average_watts": 179.7,
+    "average_speed": 5.966,
+    "distance": 69076.6,
+    "moving_time": 11579,
+    "total_elevation_gain": 424.8
+  },
+  {
+    "start_date": "2024-02-15T18:17:34Z",
+    "average_watts": 160.8,
+    "average_speed": 6.67,
+    "distance": 83781.8,
+    "moving_time": 12561,
+    "total_elevation_gain": 1023.2
+  },
+  {
+    "start_date": "2024-02-16T13:45:33Z",
+    "average_watts": 166.8,
+    "average_speed": 4.635,
+    "distance": 7407.2,
+    "moving_time": 1598,
+    "total_elevation_gain": 90.1
+  },
+  {
+    "start_date": "2024-02-17T10:20:32Z",
+    "average_watts": 168.5,
+    "average_speed": 7.271,
+    "distance": 24839.1,
+    "moving_time": 3416,
+    "total_elevation_gain": 192.1
+  },
+  {
+    "start_date": "2024-02-20T07:47:42Z",
+    "average_watts": 174.2,
+    "average_speed": 8.25,
+    "distance": 11509.2,
+    "moving_time": 1395,
+    "total_elevation_gain": 128.3
+  },
+  {
+    "start_date": "2024-02-21T19:49:04Z",
+    "average_watts": 173.7,
+    "average_speed": 3.691,
+    "distance": 4476.6,
+    "moving_time": 1213,
+    "total_elevation_gain": 30.9
+  },
+  {
+    "start_date": "2024-02-22T06:13:51Z",
+    "average_watts": 160.1,
+    "average_speed": 7.425,
+    "distance": 16527.6,
+    "moving_time": 2226,
+    "total_elevation_gain": 141.4
+  },
+  {
+    "start_date": "2024-02-23T09:54:05Z",
+    "average_watts": 177.2,
+    "average_speed": 8.922,
+    "distance": 18664.6,
+    "moving_time": 2092,
+    "total_elevation_gain": 164.5
+  },
+  {
+    "start_date": "2024-02-24T18:47:12Z",
+    "average_watts": 158.1,
+    "average_speed": 7.568,
+    "distance": 22031.8,
+    "moving_time": 2911,
+    "total_elevation_gain": 245.6
+  },
+  {
+    "start_date": "2024-02-26T10:30:03Z",
+    "average_watts": 167.4,
+    "average_speed": 7.651,
+    "distance": 29791.5,
+    "moving_time": 3894,
+    "total_elevation_gain": 175.7
+  },
+  {
+    "start_date": "2024-02-27T06:41:34Z",
+    "average_watts": 165.3,
+    "average_speed": 5.2,
+    "distance": 75106.0,
+    "moving_time": 14443,
+    "total_elevation_gain": 632.4
+  },
+  {
+    "start_date": "2024-02-28T13:59:53Z",
+    "average_watts": 161.7,
+    "average_speed": 4.074,
+    "distance": 7256.6,
+    "moving_time": 1781,
+    "total_elevation_gain": 84.6
+  },
+  {
+    "start_date": "2024-03-01T10:21:00Z",
+    "average_watts": 162.6,
+    "average_speed": 6.859,
+    "distance": 26022.4,
+    "moving_time": 3794,
+    "total_elevation_gain": 173.4
+  },
+  {
+    "start_date": "2024-03-03T10:35:54Z",
+    "average_watts": 179.2,
+    "average_speed": 6.706,
+    "distance": 76924.2,
+    "moving_time": 11471,
+    "total_elevation_gain": 422.6
+  },
+  {
+    "start_date": "2024-03-04T19:06:35Z",
+    "average_watts": 155.8,
+    "average_speed": 5.482,
+    "distance": 87284.6,
+    "moving_time": 15921,
+    "total_elevation_gain": 583.9
+  },
+  {
+    "start_date": "2024-03-07T18:51:20Z",
+    "average_watts": 168.7,
+    "average_speed": 8.028,
+    "distance": 13856.0,
+    "moving_time": 1726,
+    "total_elevation_gain": 147.7
+  },
+  {
+    "start_date": "2024-03-09T07:45:58Z",
+    "average_watts": 182.6,
+    "average_speed": 7.04,
+    "distance": 14087.2,
+    "moving_time": 2001,
+    "total_elevation_gain": 166.6
+  },
+  {
+    "start_date": "2024-03-11T11:06:18Z",
+    "average_watts": 159.9,
+    "average_speed": 9.883,
+    "distance": 22502.7,
+    "moving_time": 2277,
+    "total_elevation_gain": 199.4
+  },
+  {
+    "start_date": "2024-03-14T11:34:39Z",
+    "average_watts": 174.7,
+    "average_speed": 6.687,
+    "distance": 53224.6,
+    "moving_time": 7960,
+    "total_elevation_gain": 734.0
+  },
+  {
+    "start_date": "2024-03-16T18:39:48Z",
+    "average_watts": 162.0,
+    "average_speed": 6.334,
+    "distance": 61690.3,
+    "moving_time": 9739,
+    "total_elevation_gain": 495.2
+  },
+  {
+    "start_date": "2024-03-18T12:03:53Z",
+    "average_watts": 169.9,
+    "average_speed": 7.673,
+    "distance": 29495.8,
+    "moving_time": 3844,
+    "total_elevation_gain": 359.3
+  },
+  {
+    "start_date": "2024-03-19T07:08:45Z",
+    "average_watts": 160.7,
+    "average_speed": 5.615,
+    "distance": 54593.8,
+    "moving_time": 9722,
+    "total_elevation_gain": 722.2
+  },
+  {
+    "start_date": "2024-03-20T13:27:09Z",
+    "average_watts": 158.8,
+    "average_speed": 6.556,
+    "distance": 69123.1,
+    "moving_time": 10544,
+    "total_elevation_gain": 839.9
+  },
+  {
+    "start_date": "2024-03-24T12:01:18Z",
+    "average_watts": 182.0,
+    "average_speed": 8.535,
+    "distance": 16438.5,
+    "moving_time": 1926,
+    "total_elevation_gain": 104.5
+  },
+  {
+    "start_date": "2024-03-28T09:37:09Z",
+    "average_watts": 173.5,
+    "average_speed": 7.134,
+    "distance": 32508.8,
+    "moving_time": 4557,
+    "total_elevation_gain": 349.1
+  },
+  {
+    "start_date": "2024-03-29T06:26:18Z",
+    "average_watts": 152.4,
+    "average_speed": 5.082,
+    "distance": 26010.1,
+    "moving_time": 5118,
+    "total_elevation_gain": 373.9
+  },
+  {
+    "start_date": "2024-03-30T18:07:58Z",
+    "average_watts": 161.9,
+    "average_speed": 4.012,
+    "distance": 4661.8,
+    "moving_time": 1162,
+    "total_elevation_gain": 42.3
+  },
+  {
+    "start_date": "2024-03-31T14:18:21Z",
+    "average_watts": 176.4,
+    "average_speed": 6.712,
+    "distance": 82476.4,
+    "moving_time": 12288,
+    "total_elevation_gain": 1190.2
+  },
+  {
+    "start_date": "2024-04-01T09:09:26Z",
+    "average_watts": 151.0,
+    "average_speed": 4.599,
+    "distance": 3095.0,
+    "moving_time": 673,
+    "total_elevation_gain": 30.9
+  },
+  {
+    "start_date": "2024-04-02T10:42:19Z",
+    "average_watts": 182.9,
+    "average_speed": 6.306,
+    "distance": 52245.7,
+    "moving_time": 8285,
+    "total_elevation_gain": 365.6
+  },
+  {
+    "start_date": "2024-04-06T12:47:28Z",
+    "average_watts": 162.6,
+    "average_speed": 6.812,
+    "distance": 63804.5,
+    "moving_time": 9366,
+    "total_elevation_gain": 741.0
+  },
+  {
+    "start_date": "2024-04-08T13:00:13Z",
+    "average_watts": 184.9,
+    "average_speed": 6.957,
+    "distance": 25937.2,
+    "moving_time": 3728,
+    "total_elevation_gain": 345.5
+  },
+  {
+    "start_date": "2024-04-09T07:02:54Z",
+    "average_watts": 179.6,
+    "average_speed": 5.117,
+    "distance": 6160.3,
+    "moving_time": 1204,
+    "total_elevation_gain": 44.5
+  },
+  {
+    "start_date": "2024-04-12T11:02:13Z",
+    "average_watts": 167.7,
+    "average_speed": 6.035,
+    "distance": 64939.0,
+    "moving_time": 10761,
+    "total_elevation_gain": 685.3
+  },
+  {
+    "start_date": "2024-04-15T11:43:10Z",
+    "average_watts": 171.6,
+    "average_speed": 7.442,
+    "distance": 35957.3,
+    "moving_time": 4832,
+    "total_elevation_gain": 358.9
+  },
+  {
+    "start_date": "2024-04-17T17:22:04Z",
+    "average_watts": 179.2,
+    "average_speed": 9.949,
+    "distance": 11163.3,
+    "moving_time": 1122,
+    "total_elevation_gain": 69.5
+  },
+  {
+    "start_date": "2024-04-18T15:54:49Z",
+    "average_watts": 180.1,
+    "average_speed": 5.062,
+    "distance": 91723.1,
+    "moving_time": 18121,
+    "total_elevation_gain": 1347.9
+  },
+  {
+    "start_date": "2024-04-20T13:22:11Z",
+    "average_watts": 181.6,
+    "average_speed": 6.991,
+    "distance": 65012.1,
+    "moving_time": 9300,
+    "total_elevation_gain": 575.7
+  },
+  {
+    "start_date": "2024-04-21T19:47:26Z",
+    "average_watts": 153.5,
+    "average_speed": 3.271,
+    "distance": 3019.0,
+    "moving_time": 923,
+    "total_elevation_gain": 27.0
+  },
+  {
+    "start_date": "2024-04-22T06:27:06Z",
+    "average_watts": 167.5,
+    "average_speed": 9.257,
+    "distance": 13450.1,
+    "moving_time": 1453,
+    "total_elevation_gain": 172.4
+  },
+  {
+    "start_date": "2024-04-26T17:26:38Z",
+    "average_watts": 165.6,
+    "average_speed": 5.699,
+    "distance": 61111.3,
+    "moving_time": 10723,
+    "total_elevation_gain": 805.0
+  },
+  {
+    "start_date": "2024-04-27T07:08:48Z",
+    "average_watts": 173.7,
+    "average_speed": 6.956,
+    "distance": 35306.3,
+    "moving_time": 5076,
+    "total_elevation_gain": 449.2
+  },
+  {
+    "start_date": "2024-04-30T11:51:29Z",
+    "average_watts": 157.7,
+    "average_speed": 3.671,
+    "distance": 6076.2,
+    "moving_time": 1655,
+    "total_elevation_gain": 37.6
+  },
+  {
+    "start_date": "2024-05-01T10:08:23Z",
+    "average_watts": 158.1,
+    "average_speed": 7.081,
+    "distance": 14063.1,
+    "moving_time": 1986,
+    "total_elevation_gain": 180.4
+  },
+  {
+    "start_date": "2024-05-02T10:15:33Z",
+    "average_watts": 173.5,
+    "average_speed": 4.286,
+    "distance": 6931.0,
+    "moving_time": 1617,
+    "total_elevation_gain": 40.2
+  },
+  {
+    "start_date": "2024-05-03T17:48:03Z",
+    "average_watts": 167.2,
+    "average_speed": 3.361,
+    "distance": 7022.2,
+    "moving_time": 2089,
+    "total_elevation_gain": 51.9
+  },
+  {
+    "start_date": "2024-05-04T13:28:40Z",
+    "average_watts": 178.8,
+    "average_speed": 7.515,
+    "distance": 24002.6,
+    "moving_time": 3194,
+    "total_elevation_gain": 210.9
+  },
+  {
+    "start_date": "2024-05-06T08:25:18Z",
+    "average_watts": 162.1,
+    "average_speed": 5.967,
+    "distance": 37925.0,
+    "moving_time": 6356,
+    "total_elevation_gain": 507.5
+  },
+  {
+    "start_date": "2024-05-07T06:00:11Z",
+    "average_watts": 177.2,
+    "average_speed": 6.266,
+    "distance": 57243.7,
+    "moving_time": 9135,
+    "total_elevation_gain": 603.5
+  },
+  {
+    "start_date": "2024-05-09T15:02:38Z",
+    "average_watts": 185.6,
+    "average_speed": 5.088,
+    "distance": 5545.8,
+    "moving_time": 1090,
+    "total_elevation_gain": 69.0
+  },
+  {
+    "start_date": "2024-05-10T16:44:20Z",
+    "average_watts": 155.1,
+    "average_speed": 5.728,
+    "distance": 94911.9,
+    "moving_time": 16571,
+    "total_elevation_gain": 995.4
+  },
+  {
+    "start_date": "2024-05-11T06:16:43Z",
+    "average_watts": 165.8,
+    "average_speed": 8.486,
+    "distance": 17005.1,
+    "moving_time": 2004,
+    "total_elevation_gain": 192.4
+  },
+  {
+    "start_date": "2024-05-12T08:53:37Z",
+    "average_watts": 153.7,
+    "average_speed": 5.228,
+    "distance": 7799.8,
+    "moving_time": 1492,
+    "total_elevation_gain": 41.2
+  },
+  {
+    "start_date": "2024-05-15T18:13:25Z",
+    "average_watts": 166.1,
+    "average_speed": 7.954,
+    "distance": 15630.4,
+    "moving_time": 1965,
+    "total_elevation_gain": 122.4
+  },
+  {
+    "start_date": "2024-05-18T17:16:32Z",
+    "average_watts": 155.9,
+    "average_speed": 3.802,
+    "distance": 5075.2,
+    "moving_time": 1335,
+    "total_elevation_gain": 33.9
+  },
+  {
+    "start_date": "2024-05-19T14:51:01Z",
+    "average_watts": 160.2,
+    "average_speed": 6.781,
+    "distance": 37851.2,
+    "moving_time": 5582,
+    "total_elevation_gain": 511.3
+  },
+  {
+    "start_date": "2024-05-20T06:35:15Z",
+    "average_watts": 175.5,
+    "average_speed": 5.804,
+    "distance": 65745.8,
+    "moving_time": 11328,
+    "total_elevation_gain": 895.2
+  },
+  {
+    "start_date": "2024-05-22T06:33:18Z",
+    "average_watts": 154.6,
+    "average_speed": 6.512,
+    "distance": 24700.3,
+    "moving_time": 3793,
+    "total_elevation_gain": 290.9
+  },
+  {
+    "start_date": "2024-05-24T13:29:26Z",
+    "average_watts": 156.3,
+    "average_speed": 6.785,
+    "distance": 25577.9,
+    "moving_time": 3770,
+    "total_elevation_gain": 326.5
+  },
+  {
+    "start_date": "2024-05-28T13:54:12Z",
+    "average_watts": 151.2,
+    "average_speed": 4.475,
+    "distance": 3844.4,
+    "moving_time": 859,
+    "total_elevation_gain": 43.6
+  },
+  {
+    "start_date": "2024-05-29T15:37:43Z",
+    "average_watts": 162.4,
+    "average_speed": 3.783,
+    "distance": 6620.5,
+    "moving_time": 1750,
+    "total_elevation_gain": 67.2
+  },
+  {
+    "start_date": "2024-06-01T07:26:45Z",
+    "average_watts": 167.3,
+    "average_speed": 8.545,
+    "distance": 14586.3,
+    "moving_time": 1707,
+    "total_elevation_gain": 185.1
+  },
+  {
+    "start_date": "2024-06-02T11:15:41Z",
+    "average_watts": 175.0,
+    "average_speed": 8.69,
+    "distance": 16710.4,
+    "moving_time": 1923,
+    "total_elevation_gain": 137.6
+  },
+  {
+    "start_date": "2024-06-05T14:19:52Z",
+    "average_watts": 151.2,
+    "average_speed": 5.759,
+    "distance": 20166.4,
+    "moving_time": 3502,
+    "total_elevation_gain": 267.0
+  },
+  {
+    "start_date": "2024-06-06T11:57:34Z",
+    "average_watts": 188.4,
+    "average_speed": 5.075,
+    "distance": 21145.6,
+    "moving_time": 4167,
+    "total_elevation_gain": 295.1
+  },
+  {
+    "start_date": "2024-06-07T19:22:49Z",
+    "average_watts": 174.1,
+    "average_speed": 7.588,
+    "distance": 18765.7,
+    "moving_time": 2473,
+    "total_elevation_gain": 154.1
+  },
+  {
+    "start_date": "2024-06-08T09:44:06Z",
+    "average_watts": 163.7,
+    "average_speed": 5.093,
+    "distance": 74871.3,
+    "moving_time": 14700,
+    "total_elevation_gain": 419.5
+  },
+  {
+    "start_date": "2024-06-11T08:18:41Z",
+    "average_watts": 174.9,
+    "average_speed": 7.228,
+    "distance": 24829.0,
+    "moving_time": 3435,
+    "total_elevation_gain": 297.3
+  },
+  {
+    "start_date": "2024-06-12T16:31:58Z",
+    "average_watts": 186.5,
+    "average_speed": 9.302,
+    "distance": 18575.9,
+    "moving_time": 1997,
+    "total_elevation_gain": 261.4
+  },
+  {
+    "start_date": "2024-06-13T19:43:45Z",
+    "average_watts": 165.6,
+    "average_speed": 5.093,
+    "distance": 71376.8,
+    "moving_time": 14014,
+    "total_elevation_gain": 545.7
+  },
+  {
+    "start_date": "2024-06-16T19:42:32Z",
+    "average_watts": 174.9,
+    "average_speed": 5.289,
+    "distance": 32518.8,
+    "moving_time": 6148,
+    "total_elevation_gain": 486.9
+  },
+  {
+    "start_date": "2024-06-17T13:02:29Z",
+    "average_watts": 165.2,
+    "average_speed": 5.623,
+    "distance": 22509.3,
+    "moving_time": 4003,
+    "total_elevation_gain": 120.6
+  },
+  {
+    "start_date": "2024-06-19T11:59:00Z",
+    "average_watts": 159.3,
+    "average_speed": 7.147,
+    "distance": 22449.3,
+    "moving_time": 3141,
+    "total_elevation_gain": 172.8
+  },
+  {
+    "start_date": "2024-06-20T18:25:33Z",
+    "average_watts": 179.7,
+    "average_speed": 6.047,
+    "distance": 83530.1,
+    "moving_time": 13813,
+    "total_elevation_gain": 1162.7
+  },
+  {
+    "start_date": "2024-06-21T06:24:35Z",
+    "average_watts": 182.4,
+    "average_speed": 8.07,
+    "distance": 24389.0,
+    "moving_time": 3022,
+    "total_elevation_gain": 353.0
+  },
+  {
+    "start_date": "2024-06-22T18:06:42Z",
+    "average_watts": 166.5,
+    "average_speed": 4.026,
+    "distance": 7955.2,
+    "moving_time": 1976,
+    "total_elevation_gain": 90.5
+  },
+  {
+    "start_date": "2024-06-23T11:40:10Z",
+    "average_watts": 187.4,
+    "average_speed": 6.133,
+    "distance": 53384.3,
+    "moving_time": 8705,
+    "total_elevation_gain": 282.3
+  },
+  {
+    "start_date": "2024-06-28T17:11:39Z",
+    "average_watts": 151.9,
+    "average_speed": 5.269,
+    "distance": 3319.8,
+    "moving_time": 630,
+    "total_elevation_gain": 25.3
+  },
+  {
+    "start_date": "2024-06-29T07:59:16Z",
+    "average_watts": 169.4,
+    "average_speed": 6.505,
+    "distance": 32826.1,
+    "moving_time": 5046,
+    "total_elevation_gain": 351.0
+  },
+  {
+    "start_date": "2024-07-01T06:32:41Z",
+    "average_watts": 179.3,
+    "average_speed": 3.254,
+    "distance": 6876.1,
+    "moving_time": 2113,
+    "total_elevation_gain": 77.2
+  },
+  {
+    "start_date": "2024-07-06T09:03:44Z",
+    "average_watts": 170.9,
+    "average_speed": 7.738,
+    "distance": 23601.9,
+    "moving_time": 3050,
+    "total_elevation_gain": 335.9
+  },
+  {
+    "start_date": "2024-07-07T11:41:28Z",
+    "average_watts": 184.7,
+    "average_speed": 4.886,
+    "distance": 6875.0,
+    "moving_time": 1407,
+    "total_elevation_gain": 45.0
+  },
+  {
+    "start_date": "2024-07-10T13:57:28Z",
+    "average_watts": 173.3,
+    "average_speed": 8.676,
+    "distance": 21300.0,
+    "moving_time": 2455,
+    "total_elevation_gain": 257.8
+  },
+  {
+    "start_date": "2024-07-11T14:24:03Z",
+    "average_watts": 179.6,
+    "average_speed": 6.351,
+    "distance": 80059.6,
+    "moving_time": 12605,
+    "total_elevation_gain": 943.7
+  },
+  {
+    "start_date": "2024-07-13T07:19:00Z",
+    "average_watts": 179.1,
+    "average_speed": 4.891,
+    "distance": 4455.5,
+    "moving_time": 911,
+    "total_elevation_gain": 66.7
+  },
+  {
+    "start_date": "2024-07-15T15:03:54Z",
+    "average_watts": 187.8,
+    "average_speed": 4.735,
+    "distance": 6884.9,
+    "moving_time": 1454,
+    "total_elevation_gain": 35.0
+  },
+  {
+    "start_date": "2024-07-17T12:16:19Z",
+    "average_watts": 189.2,
+    "average_speed": 6.191,
+    "distance": 98636.0,
+    "moving_time": 15932,
+    "total_elevation_gain": 1301.1
+  },
+  {
+    "start_date": "2024-07-20T06:53:20Z",
+    "average_watts": 164.2,
+    "average_speed": 8.316,
+    "distance": 20973.6,
+    "moving_time": 2522,
+    "total_elevation_gain": 127.6
+  },
+  {
+    "start_date": "2024-07-22T12:44:13Z",
+    "average_watts": 189.7,
+    "average_speed": 5.035,
+    "distance": 84357.4,
+    "moving_time": 16753,
+    "total_elevation_gain": 966.7
+  },
+  {
+    "start_date": "2024-07-23T09:25:43Z",
+    "average_watts": 155.9,
+    "average_speed": 8.449,
+    "distance": 19964.0,
+    "moving_time": 2363,
+    "total_elevation_gain": 245.9
+  },
+  {
+    "start_date": "2024-07-26T11:31:47Z",
+    "average_watts": 171.7,
+    "average_speed": 7.469,
+    "distance": 38786.2,
+    "moving_time": 5193,
+    "total_elevation_gain": 352.3
+  },
+  {
+    "start_date": "2024-07-30T11:13:22Z",
+    "average_watts": 158.7,
+    "average_speed": 6.941,
+    "distance": 84587.0,
+    "moving_time": 12187,
+    "total_elevation_gain": 933.9
+  },
+  {
+    "start_date": "2024-08-03T12:29:18Z",
+    "average_watts": 156.6,
+    "average_speed": 7.551,
+    "distance": 26246.5,
+    "moving_time": 3476,
+    "total_elevation_gain": 226.0
+  },
+  {
+    "start_date": "2024-08-08T19:48:38Z",
+    "average_watts": 177.2,
+    "average_speed": 7.518,
+    "distance": 15065.4,
+    "moving_time": 2004,
+    "total_elevation_gain": 174.2
+  },
+  {
+    "start_date": "2024-08-09T06:24:13Z",
+    "average_watts": 187.2,
+    "average_speed": 8.138,
+    "distance": 23357.4,
+    "moving_time": 2870,
+    "total_elevation_gain": 343.7
+  },
+  {
+    "start_date": "2024-08-11T17:49:52Z",
+    "average_watts": 164.9,
+    "average_speed": 6.589,
+    "distance": 22607.9,
+    "moving_time": 3431,
+    "total_elevation_gain": 150.9
+  },
+  {
+    "start_date": "2024-08-13T13:53:27Z",
+    "average_watts": 176.4,
+    "average_speed": 6.417,
+    "distance": 56227.2,
+    "moving_time": 8762,
+    "total_elevation_gain": 374.1
+  },
+  {
+    "start_date": "2024-08-14T16:37:11Z",
+    "average_watts": 161.6,
+    "average_speed": 6.038,
+    "distance": 83037.1,
+    "moving_time": 13752,
+    "total_elevation_gain": 605.1
+  },
+  {
+    "start_date": "2024-08-19T08:54:46Z",
+    "average_watts": 159.3,
+    "average_speed": 7.744,
+    "distance": 18942.1,
+    "moving_time": 2446,
+    "total_elevation_gain": 202.5
+  },
+  {
+    "start_date": "2024-08-20T11:45:49Z",
+    "average_watts": 188.5,
+    "average_speed": 6.721,
+    "distance": 79948.0,
+    "moving_time": 11896,
+    "total_elevation_gain": 1046.0
+  },
+  {
+    "start_date": "2024-08-21T14:14:58Z",
+    "average_watts": 156.1,
+    "average_speed": 6.676,
+    "distance": 62216.3,
+    "moving_time": 9320,
+    "total_elevation_gain": 848.5
+  },
+  {
+    "start_date": "2024-08-27T10:13:05Z",
+    "average_watts": 161.3,
+    "average_speed": 5.396,
+    "distance": 50724.4,
+    "moving_time": 9401,
+    "total_elevation_gain": 560.8
+  },
+  {
+    "start_date": "2024-08-28T12:12:39Z",
+    "average_watts": 172.6,
+    "average_speed": 3.561,
+    "distance": 6758.6,
+    "moving_time": 1898,
+    "total_elevation_gain": 79.0
+  },
+  {
+    "start_date": "2024-09-01T09:26:54Z",
+    "average_watts": 153.8,
+    "average_speed": 8.413,
+    "distance": 13713.5,
+    "moving_time": 1630,
+    "total_elevation_gain": 167.7
+  },
+  {
+    "start_date": "2024-09-03T14:14:29Z",
+    "average_watts": 176.0,
+    "average_speed": 5.532,
+    "distance": 39037.4,
+    "moving_time": 7057,
+    "total_elevation_gain": 386.6
+  },
+  {
+    "start_date": "2024-09-05T07:30:34Z",
+    "average_watts": 188.4,
+    "average_speed": 7.228,
+    "distance": 22102.4,
+    "moving_time": 3058,
+    "total_elevation_gain": 115.0
+  },
+  {
+    "start_date": "2024-09-06T13:49:32Z",
+    "average_watts": 174.0,
+    "average_speed": 9.714,
+    "distance": 18562.8,
+    "moving_time": 1911,
+    "total_elevation_gain": 94.9
+  },
+  {
+    "start_date": "2024-09-07T17:18:55Z",
+    "average_watts": 164.2,
+    "average_speed": 5.567,
+    "distance": 37835.7,
+    "moving_time": 6796,
+    "total_elevation_gain": 557.8
+  },
+  {
+    "start_date": "2024-09-08T15:34:47Z",
+    "average_watts": 187.7,
+    "average_speed": 9.705,
+    "distance": 15876.7,
+    "moving_time": 1636,
+    "total_elevation_gain": 95.1
+  },
+  {
+    "start_date": "2024-09-11T11:46:58Z",
+    "average_watts": 179.6,
+    "average_speed": 3.424,
+    "distance": 7192.8,
+    "moving_time": 2101,
+    "total_elevation_gain": 42.5
+  },
+  {
+    "start_date": "2024-09-13T07:40:13Z",
+    "average_watts": 164.7,
+    "average_speed": 7.381,
+    "distance": 10149.0,
+    "moving_time": 1375,
+    "total_elevation_gain": 103.1
+  },
+  {
+    "start_date": "2024-09-14T11:56:52Z",
+    "average_watts": 166.0,
+    "average_speed": 6.93,
+    "distance": 52074.5,
+    "moving_time": 7514,
+    "total_elevation_gain": 755.7
+  },
+  {
+    "start_date": "2024-09-15T17:47:56Z",
+    "average_watts": 189.7,
+    "average_speed": 7.365,
+    "distance": 10164.2,
+    "moving_time": 1380,
+    "total_elevation_gain": 85.2
+  },
+  {
+    "start_date": "2024-09-17T07:07:18Z",
+    "average_watts": 184.2,
+    "average_speed": 3.278,
+    "distance": 7185.5,
+    "moving_time": 2192,
+    "total_elevation_gain": 52.1
+  },
+  {
+    "start_date": "2024-09-18T16:28:48Z",
+    "average_watts": 154.3,
+    "average_speed": 9.928,
+    "distance": 20849.0,
+    "moving_time": 2100,
+    "total_elevation_gain": 231.6
+  },
+  {
+    "start_date": "2024-09-19T09:54:27Z",
+    "average_watts": 189.2,
+    "average_speed": 7.711,
+    "distance": 15862.1,
+    "moving_time": 2057,
+    "total_elevation_gain": 92.9
+  },
+  {
+    "start_date": "2024-09-22T14:20:05Z",
+    "average_watts": 183.8,
+    "average_speed": 5.756,
+    "distance": 74976.4,
+    "moving_time": 13025,
+    "total_elevation_gain": 1057.9
+  },
+  {
+    "start_date": "2024-09-24T11:05:37Z",
+    "average_watts": 183.7,
+    "average_speed": 5.536,
+    "distance": 3144.2,
+    "moving_time": 568,
+    "total_elevation_gain": 34.1
+  },
+  {
+    "start_date": "2024-09-25T11:50:59Z",
+    "average_watts": 181.0,
+    "average_speed": 3.244,
+    "distance": 5466.7,
+    "moving_time": 1685,
+    "total_elevation_gain": 39.5
+  },
+  {
+    "start_date": "2024-09-28T18:46:49Z",
+    "average_watts": 165.6,
+    "average_speed": 9.815,
+    "distance": 10875.1,
+    "moving_time": 1108,
+    "total_elevation_gain": 141.3
+  },
+  {
+    "start_date": "2024-09-30T06:51:17Z",
+    "average_watts": 179.1,
+    "average_speed": 7.494,
+    "distance": 18503.3,
+    "moving_time": 2469,
+    "total_elevation_gain": 236.2
+  },
+  {
+    "start_date": "2024-10-03T15:38:33Z",
+    "average_watts": 164.3,
+    "average_speed": 5.09,
+    "distance": 84765.5,
+    "moving_time": 16654,
+    "total_elevation_gain": 818.9
+  },
+  {
+    "start_date": "2024-10-07T15:40:05Z",
+    "average_watts": 163.5,
+    "average_speed": 3.854,
+    "distance": 6906.4,
+    "moving_time": 1792,
+    "total_elevation_gain": 79.9
+  },
+  {
+    "start_date": "2024-10-09T12:09:53Z",
+    "average_watts": 160.7,
+    "average_speed": 5.833,
+    "distance": 37981.4,
+    "moving_time": 6511,
+    "total_elevation_gain": 554.8
+  },
+  {
+    "start_date": "2024-10-11T07:46:20Z",
+    "average_watts": 187.8,
+    "average_speed": 5.814,
+    "distance": 23545.0,
+    "moving_time": 4050,
+    "total_elevation_gain": 216.0
+  },
+  {
+    "start_date": "2024-10-14T06:05:49Z",
+    "average_watts": 171.1,
+    "average_speed": 8.375,
+    "distance": 18282.0,
+    "moving_time": 2183,
+    "total_elevation_gain": 97.3
+  },
+  {
+    "start_date": "2024-10-16T19:34:50Z",
+    "average_watts": 177.5,
+    "average_speed": 8.438,
+    "distance": 23169.7,
+    "moving_time": 2746,
+    "total_elevation_gain": 136.2
+  },
+  {
+    "start_date": "2024-10-17T18:39:56Z",
+    "average_watts": 181.3,
+    "average_speed": 3.592,
+    "distance": 5797.4,
+    "moving_time": 1614,
+    "total_elevation_gain": 82.5
+  },
+  {
+    "start_date": "2024-10-18T12:38:19Z",
+    "average_watts": 187.4,
+    "average_speed": 5.272,
+    "distance": 32772.7,
+    "moving_time": 6216,
+    "total_elevation_gain": 446.2
+  },
+  {
+    "start_date": "2024-10-19T15:40:54Z",
+    "average_watts": 167.1,
+    "average_speed": 7.386,
+    "distance": 27048.1,
+    "moving_time": 3662,
+    "total_elevation_gain": 382.2
+  },
+  {
+    "start_date": "2024-10-21T17:51:31Z",
+    "average_watts": 162.2,
+    "average_speed": 7.487,
+    "distance": 24587.4,
+    "moving_time": 3284,
+    "total_elevation_gain": 286.1
+  },
+  {
+    "start_date": "2024-10-23T15:45:29Z",
+    "average_watts": 176.2,
+    "average_speed": 6.146,
+    "distance": 33936.1,
+    "moving_time": 5522,
+    "total_elevation_gain": 485.5
+  },
+  {
+    "start_date": "2024-10-25T09:27:32Z",
+    "average_watts": 157.0,
+    "average_speed": 9.143,
+    "distance": 17526.6,
+    "moving_time": 1917,
+    "total_elevation_gain": 132.2
+  },
+  {
+    "start_date": "2024-10-26T10:24:09Z",
+    "average_watts": 157.7,
+    "average_speed": 6.76,
+    "distance": 91484.2,
+    "moving_time": 13533,
+    "total_elevation_gain": 1188.9
+  },
+  {
+    "start_date": "2024-10-27T14:04:41Z",
+    "average_watts": 168.2,
+    "average_speed": 7.129,
+    "distance": 16490.0,
+    "moving_time": 2313,
+    "total_elevation_gain": 173.0
+  },
+  {
+    "start_date": "2024-10-28T07:04:28Z",
+    "average_watts": 159.6,
+    "average_speed": 8.836,
+    "distance": 20374.8,
+    "moving_time": 2306,
+    "total_elevation_gain": 163.4
+  },
+  {
+    "start_date": "2024-10-31T19:11:20Z",
+    "average_watts": 173.2,
+    "average_speed": 5.746,
+    "distance": 4711.7,
+    "moving_time": 820,
+    "total_elevation_gain": 35.5
+  },
+  {
+    "start_date": "2024-11-04T16:32:06Z",
+    "average_watts": 191.7,
+    "average_speed": 8.868,
+    "distance": 16325.1,
+    "moving_time": 1841,
+    "total_elevation_gain": 196.0
+  },
+  {
+    "start_date": "2024-11-07T19:57:03Z",
+    "average_watts": 170.2,
+    "average_speed": 5.77,
+    "distance": 6485.0,
+    "moving_time": 1124,
+    "total_elevation_gain": 87.6
+  },
+  {
+    "start_date": "2024-11-11T12:06:41Z",
+    "average_watts": 166.0,
+    "average_speed": 5.507,
+    "distance": 31467.9,
+    "moving_time": 5714,
+    "total_elevation_gain": 292.3
+  },
+  {
+    "start_date": "2024-11-14T12:58:59Z",
+    "average_watts": 179.1,
+    "average_speed": 6.889,
+    "distance": 86035.9,
+    "moving_time": 12489,
+    "total_elevation_gain": 966.5
+  },
+  {
+    "start_date": "2024-11-15T10:29:51Z",
+    "average_watts": 160.8,
+    "average_speed": 5.814,
+    "distance": 27930.0,
+    "moving_time": 4804,
+    "total_elevation_gain": 224.0
+  },
+  {
+    "start_date": "2024-11-16T13:13:45Z",
+    "average_watts": 183.5,
+    "average_speed": 5.776,
+    "distance": 35561.1,
+    "moving_time": 6157,
+    "total_elevation_gain": 516.9
+  },
+  {
+    "start_date": "2024-11-17T08:39:38Z",
+    "average_watts": 182.6,
+    "average_speed": 7.377,
+    "distance": 37165.4,
+    "moving_time": 5038,
+    "total_elevation_gain": 489.3
+  },
+  {
+    "start_date": "2024-11-18T12:11:27Z",
+    "average_watts": 175.7,
+    "average_speed": 6.578,
+    "distance": 74637.4,
+    "moving_time": 11346,
+    "total_elevation_gain": 704.3
+  },
+  {
+    "start_date": "2024-11-22T10:00:48Z",
+    "average_watts": 167.6,
+    "average_speed": 5.496,
+    "distance": 3847.2,
+    "moving_time": 700,
+    "total_elevation_gain": 40.6
+  },
+  {
+    "start_date": "2024-11-24T07:56:39Z",
+    "average_watts": 168.9,
+    "average_speed": 6.578,
+    "distance": 26305.2,
+    "moving_time": 3999,
+    "total_elevation_gain": 132.9
+  },
+  {
+    "start_date": "2024-11-25T18:18:27Z",
+    "average_watts": 173.7,
+    "average_speed": 7.151,
+    "distance": 21187.9,
+    "moving_time": 2963,
+    "total_elevation_gain": 310.2
+  },
+  {
+    "start_date": "2024-11-26T13:04:29Z",
+    "average_watts": 186.2,
+    "average_speed": 6.144,
+    "distance": 25462.0,
+    "moving_time": 4144,
+    "total_elevation_gain": 251.2
+  },
+  {
+    "start_date": "2024-11-29T11:57:17Z",
+    "average_watts": 166.6,
+    "average_speed": 8.078,
+    "distance": 24370.9,
+    "moving_time": 3017,
+    "total_elevation_gain": 195.1
+  },
+  {
+    "start_date": "2024-11-30T15:43:45Z",
+    "average_watts": 175.5,
+    "average_speed": 9.385,
+    "distance": 17813.4,
+    "moving_time": 1898,
+    "total_elevation_gain": 177.3
+  },
+  {
+    "start_date": "2024-12-01T10:12:00Z",
+    "average_watts": 153.3,
+    "average_speed": 6.235,
+    "distance": 70266.6,
+    "moving_time": 11270,
+    "total_elevation_gain": 775.8
+  },
+  {
+    "start_date": "2024-12-02T07:57:12Z",
+    "average_watts": 157.1,
+    "average_speed": 7.457,
+    "distance": 18857.8,
+    "moving_time": 2529,
+    "total_elevation_gain": 103.9
+  },
+  {
+    "start_date": "2024-12-08T16:57:20Z",
+    "average_watts": 176.3,
+    "average_speed": 9.727,
+    "distance": 15446.4,
+    "moving_time": 1588,
+    "total_elevation_gain": 147.6
+  },
+  {
+    "start_date": "2024-12-09T12:55:00Z",
+    "average_watts": 170.1,
+    "average_speed": 6.022,
+    "distance": 96022.7,
+    "moving_time": 15945,
+    "total_elevation_gain": 1245.7
+  },
+  {
+    "start_date": "2024-12-11T08:21:29Z",
+    "average_watts": 161.6,
+    "average_speed": 4.772,
+    "distance": 7253.9,
+    "moving_time": 1520,
+    "total_elevation_gain": 42.1
+  },
+  {
+    "start_date": "2024-12-13T18:12:30Z",
+    "average_watts": 155.8,
+    "average_speed": 5.221,
+    "distance": 3988.9,
+    "moving_time": 764,
+    "total_elevation_gain": 36.1
+  },
+  {
+    "start_date": "2024-12-24T11:35:30Z",
+    "average_watts": 159.3,
+    "average_speed": 7.518,
+    "distance": 20012.7,
+    "moving_time": 2662,
+    "total_elevation_gain": 115.8
+  },
+  {
+    "start_date": "2024-12-27T06:58:27Z",
+    "average_watts": 191.3,
+    "average_speed": 6.52,
+    "distance": 31601.3,
+    "moving_time": 4847,
+    "total_elevation_gain": 302.5
+  },
+  {
+    "start_date": "2024-12-30T19:51:45Z",
+    "average_watts": 157.8,
+    "average_speed": 5.448,
+    "distance": 98272.2,
+    "moving_time": 18039,
+    "total_elevation_gain": 1012.8
+  },
+  {
+    "start_date": "2025-01-02T09:16:50Z",
+    "average_watts": 157.1,
+    "average_speed": 6.382,
+    "distance": 56063.0,
+    "moving_time": 8784,
+    "total_elevation_gain": 297.1
+  },
+  {
+    "start_date": "2025-01-03T17:13:14Z",
+    "average_watts": 160.6,
+    "average_speed": 5.224,
+    "distance": 4090.6,
+    "moving_time": 783,
+    "total_elevation_gain": 35.1
+  },
+  {
+    "start_date": "2025-01-05T19:43:50Z",
+    "average_watts": 189.6,
+    "average_speed": 5.515,
+    "distance": 22364.3,
+    "moving_time": 4055,
+    "total_elevation_gain": 193.9
+  },
+  {
+    "start_date": "2025-01-06T15:43:04Z",
+    "average_watts": 171.2,
+    "average_speed": 5.646,
+    "distance": 5064.0,
+    "moving_time": 897,
+    "total_elevation_gain": 53.1
+  },
+  {
+    "start_date": "2025-01-09T10:42:12Z",
+    "average_watts": 154.0,
+    "average_speed": 7.027,
+    "distance": 25017.7,
+    "moving_time": 3560,
+    "total_elevation_gain": 300.5
+  },
+  {
+    "start_date": "2025-01-10T11:16:23Z",
+    "average_watts": 177.1,
+    "average_speed": 7.173,
+    "distance": 30587.2,
+    "moving_time": 4264,
+    "total_elevation_gain": 423.0
+  },
+  {
+    "start_date": "2025-01-12T11:25:51Z",
+    "average_watts": 177.0,
+    "average_speed": 3.02,
+    "distance": 5255.1,
+    "moving_time": 1740,
+    "total_elevation_gain": 55.6
+  },
+  {
+    "start_date": "2025-01-14T19:37:51Z",
+    "average_watts": 173.1,
+    "average_speed": 4.066,
+    "distance": 6423.8,
+    "moving_time": 1580,
+    "total_elevation_gain": 41.7
+  },
+  {
+    "start_date": "2025-01-17T06:19:15Z",
+    "average_watts": 188.4,
+    "average_speed": 6.3,
+    "distance": 59316.8,
+    "moving_time": 9416,
+    "total_elevation_gain": 508.7
+  },
+  {
+    "start_date": "2025-01-18T15:28:26Z",
+    "average_watts": 179.6,
+    "average_speed": 9.876,
+    "distance": 17400.7,
+    "moving_time": 1762,
+    "total_elevation_gain": 242.5
+  },
+  {
+    "start_date": "2025-01-20T11:09:26Z",
+    "average_watts": 180.6,
+    "average_speed": 6.364,
+    "distance": 99917.0,
+    "moving_time": 15701,
+    "total_elevation_gain": 1374.4
+  },
+  {
+    "start_date": "2025-01-21T14:55:12Z",
+    "average_watts": 182.3,
+    "average_speed": 6.454,
+    "distance": 60846.3,
+    "moving_time": 9427,
+    "total_elevation_gain": 810.3
+  },
+  {
+    "start_date": "2025-01-22T15:58:00Z",
+    "average_watts": 175.7,
+    "average_speed": 6.174,
+    "distance": 85229.1,
+    "moving_time": 13804,
+    "total_elevation_gain": 641.7
+  },
+  {
+    "start_date": "2025-01-24T16:11:45Z",
+    "average_watts": 189.9,
+    "average_speed": 9.006,
+    "distance": 15292.3,
+    "moving_time": 1698,
+    "total_elevation_gain": 223.5
+  },
+  {
+    "start_date": "2025-01-30T17:00:30Z",
+    "average_watts": 162.0,
+    "average_speed": 7.784,
+    "distance": 23702.7,
+    "moving_time": 3045,
+    "total_elevation_gain": 304.2
+  },
+  {
+    "start_date": "2025-02-02T08:58:40Z",
+    "average_watts": 185.3,
+    "average_speed": 6.491,
+    "distance": 51646.2,
+    "moving_time": 7957,
+    "total_elevation_gain": 373.7
+  },
+  {
+    "start_date": "2025-02-03T19:09:43Z",
+    "average_watts": 174.3,
+    "average_speed": 4.452,
+    "distance": 6126.0,
+    "moving_time": 1376,
+    "total_elevation_gain": 44.6
+  },
+  {
+    "start_date": "2025-02-04T07:44:55Z",
+    "average_watts": 184.1,
+    "average_speed": 9.474,
+    "distance": 10279.8,
+    "moving_time": 1085,
+    "total_elevation_gain": 70.1
+  },
+  {
+    "start_date": "2025-02-05T07:23:18Z",
+    "average_watts": 179.9,
+    "average_speed": 3.331,
+    "distance": 6256.2,
+    "moving_time": 1878,
+    "total_elevation_gain": 66.4
+  },
+  {
+    "start_date": "2025-02-07T06:48:11Z",
+    "average_watts": 168.1,
+    "average_speed": 5.213,
+    "distance": 37174.3,
+    "moving_time": 7131,
+    "total_elevation_gain": 515.1
+  },
+  {
+    "start_date": "2025-02-08T10:52:58Z",
+    "average_watts": 179.7,
+    "average_speed": 7.289,
+    "distance": 13055.3,
+    "moving_time": 1791,
+    "total_elevation_gain": 154.1
+  },
+  {
+    "start_date": "2025-02-09T14:15:46Z",
+    "average_watts": 184.6,
+    "average_speed": 9.928,
+    "distance": 22774.2,
+    "moving_time": 2294,
+    "total_elevation_gain": 284.7
+  },
+  {
+    "start_date": "2025-02-11T13:02:39Z",
+    "average_watts": 183.4,
+    "average_speed": 7.856,
+    "distance": 15948.5,
+    "moving_time": 2030,
+    "total_elevation_gain": 103.1
+  },
+  {
+    "start_date": "2025-02-13T16:42:41Z",
+    "average_watts": 175.1,
+    "average_speed": 4.103,
+    "distance": 3738.2,
+    "moving_time": 911,
+    "total_elevation_gain": 22.2
+  },
+  {
+    "start_date": "2025-02-15T14:30:10Z",
+    "average_watts": 163.9,
+    "average_speed": 7.671,
+    "distance": 39297.7,
+    "moving_time": 5123,
+    "total_elevation_gain": 471.8
+  },
+  {
+    "start_date": "2025-02-17T18:43:37Z",
+    "average_watts": 164.7,
+    "average_speed": 6.815,
+    "distance": 38677.6,
+    "moving_time": 5675,
+    "total_elevation_gain": 550.1
+  },
+  {
+    "start_date": "2025-02-20T15:26:50Z",
+    "average_watts": 182.3,
+    "average_speed": 6.616,
+    "distance": 32539.8,
+    "moving_time": 4918,
+    "total_elevation_gain": 453.8
+  },
+  {
+    "start_date": "2025-02-24T08:36:39Z",
+    "average_watts": 165.7,
+    "average_speed": 8.026,
+    "distance": 14406.8,
+    "moving_time": 1795,
+    "total_elevation_gain": 199.2
+  },
+  {
+    "start_date": "2025-02-26T14:42:42Z",
+    "average_watts": 180.7,
+    "average_speed": 7.43,
+    "distance": 18336.3,
+    "moving_time": 2468,
+    "total_elevation_gain": 228.3
+  },
+  {
+    "start_date": "2025-03-01T07:32:34Z",
+    "average_watts": 167.4,
+    "average_speed": 6.475,
+    "distance": 26626.2,
+    "moving_time": 4112,
+    "total_elevation_gain": 206.0
+  },
+  {
+    "start_date": "2025-03-02T11:30:15Z",
+    "average_watts": 172.4,
+    "average_speed": 7.52,
+    "distance": 21756.4,
+    "moving_time": 2893,
+    "total_elevation_gain": 173.4
+  },
+  {
+    "start_date": "2025-03-04T08:21:44Z",
+    "average_watts": 158.4,
+    "average_speed": 8.206,
+    "distance": 11308.4,
+    "moving_time": 1378,
+    "total_elevation_gain": 134.0
+  },
+  {
+    "start_date": "2025-03-06T06:06:32Z",
+    "average_watts": 158.4,
+    "average_speed": 6.384,
+    "distance": 32235.3,
+    "moving_time": 5049,
+    "total_elevation_gain": 415.1
+  },
+  {
+    "start_date": "2025-03-07T11:02:01Z",
+    "average_watts": 155.7,
+    "average_speed": 5.494,
+    "distance": 3082.0,
+    "moving_time": 561,
+    "total_elevation_gain": 41.9
+  },
+  {
+    "start_date": "2025-03-08T09:03:12Z",
+    "average_watts": 188.1,
+    "average_speed": 7.349,
+    "distance": 14418.4,
+    "moving_time": 1962,
+    "total_elevation_gain": 93.1
+  },
+  {
+    "start_date": "2025-03-09T12:34:07Z",
+    "average_watts": 191.9,
+    "average_speed": 4.971,
+    "distance": 3748.2,
+    "moving_time": 754,
+    "total_elevation_gain": 22.2
+  },
+  {
+    "start_date": "2025-03-10T08:35:44Z",
+    "average_watts": 162.2,
+    "average_speed": 6.991,
+    "distance": 94663.1,
+    "moving_time": 13540,
+    "total_elevation_gain": 726.0
+  },
+  {
+    "start_date": "2025-03-11T15:22:15Z",
+    "average_watts": 157.1,
+    "average_speed": 6.144,
+    "distance": 30258.8,
+    "moving_time": 4925,
+    "total_elevation_gain": 290.2
+  },
+  {
+    "start_date": "2025-03-13T07:29:52Z",
+    "average_watts": 180.3,
+    "average_speed": 5.915,
+    "distance": 6725.1,
+    "moving_time": 1137,
+    "total_elevation_gain": 87.9
+  },
+  {
+    "start_date": "2025-03-14T13:02:43Z",
+    "average_watts": 174.1,
+    "average_speed": 6.075,
+    "distance": 80310.4,
+    "moving_time": 13219,
+    "total_elevation_gain": 1133.0
+  },
+  {
+    "start_date": "2025-03-15T06:42:39Z",
+    "average_watts": 165.9,
+    "average_speed": 4.87,
+    "distance": 7183.6,
+    "moving_time": 1475,
+    "total_elevation_gain": 65.1
+  },
+  {
+    "start_date": "2025-03-16T14:07:00Z",
+    "average_watts": 183.1,
+    "average_speed": 9.402,
+    "distance": 20252.8,
+    "moving_time": 2154,
+    "total_elevation_gain": 173.4
+  },
+  {
+    "start_date": "2025-03-19T11:29:05Z",
+    "average_watts": 158.3,
+    "average_speed": 6.183,
+    "distance": 33238.4,
+    "moving_time": 5376,
+    "total_elevation_gain": 180.1
+  },
+  {
+    "start_date": "2025-03-20T18:08:25Z",
+    "average_watts": 171.7,
+    "average_speed": 8.407,
+    "distance": 11307.6,
+    "moving_time": 1345,
+    "total_elevation_gain": 107.3
+  },
+  {
+    "start_date": "2025-03-22T08:33:03Z",
+    "average_watts": 183.8,
+    "average_speed": 5.348,
+    "distance": 32751.4,
+    "moving_time": 6124,
+    "total_elevation_gain": 487.2
+  },
+  {
+    "start_date": "2025-03-23T14:35:18Z",
+    "average_watts": 155.7,
+    "average_speed": 9.589,
+    "distance": 13031.0,
+    "moving_time": 1359,
+    "total_elevation_gain": 107.7
+  },
+  {
+    "start_date": "2025-03-24T08:14:36Z",
+    "average_watts": 167.0,
+    "average_speed": 5.277,
+    "distance": 61592.7,
+    "moving_time": 11672,
+    "total_elevation_gain": 425.6
+  },
+  {
+    "start_date": "2025-03-25T11:25:18Z",
+    "average_watts": 160.6,
+    "average_speed": 5.541,
+    "distance": 39372.5,
+    "moving_time": 7106,
+    "total_elevation_gain": 323.2
+  },
+  {
+    "start_date": "2025-03-26T19:17:35Z",
+    "average_watts": 168.9,
+    "average_speed": 8.225,
+    "distance": 14961.8,
+    "moving_time": 1819,
+    "total_elevation_gain": 125.5
+  },
+  {
+    "start_date": "2025-03-28T18:18:56Z",
+    "average_watts": 157.4,
+    "average_speed": 7.586,
+    "distance": 20800.8,
+    "moving_time": 2742,
+    "total_elevation_gain": 168.0
+  },
+  {
+    "start_date": "2025-03-30T14:25:34Z",
+    "average_watts": 180.3,
+    "average_speed": 3.529,
+    "distance": 3928.1,
+    "moving_time": 1113,
+    "total_elevation_gain": 30.9
+  },
+  {
+    "start_date": "2025-03-31T12:39:53Z",
+    "average_watts": 169.0,
+    "average_speed": 4.423,
+    "distance": 6828.7,
+    "moving_time": 1544,
+    "total_elevation_gain": 82.8
+  },
+  {
+    "start_date": "2025-04-02T10:13:22Z",
+    "average_watts": 183.5,
+    "average_speed": 6.216,
+    "distance": 29689.6,
+    "moving_time": 4776,
+    "total_elevation_gain": 379.7
+  },
+  {
+    "start_date": "2025-04-03T09:01:38Z",
+    "average_watts": 171.2,
+    "average_speed": 4.407,
+    "distance": 5663.6,
+    "moving_time": 1285,
+    "total_elevation_gain": 50.1
+  },
+  {
+    "start_date": "2025-04-04T07:38:17Z",
+    "average_watts": 162.0,
+    "average_speed": 7.976,
+    "distance": 14429.0,
+    "moving_time": 1809,
+    "total_elevation_gain": 138.0
+  },
+  {
+    "start_date": "2025-04-05T13:11:15Z",
+    "average_watts": 162.0,
+    "average_speed": 9.203,
+    "distance": 22299.3,
+    "moving_time": 2423,
+    "total_elevation_gain": 171.4
+  },
+  {
+    "start_date": "2025-04-08T07:17:52Z",
+    "average_watts": 180.5,
+    "average_speed": 5.117,
+    "distance": 6682.2,
+    "moving_time": 1306,
+    "total_elevation_gain": 67.4
+  },
+  {
+    "start_date": "2025-04-09T14:33:54Z",
+    "average_watts": 157.4,
+    "average_speed": 5.223,
+    "distance": 7809.1,
+    "moving_time": 1495,
+    "total_elevation_gain": 83.0
+  },
+  {
+    "start_date": "2025-04-12T16:25:05Z",
+    "average_watts": 179.5,
+    "average_speed": 9.421,
+    "distance": 12934.7,
+    "moving_time": 1373,
+    "total_elevation_gain": 180.3
+  },
+  {
+    "start_date": "2025-04-13T08:08:25Z",
+    "average_watts": 180.2,
+    "average_speed": 7.188,
+    "distance": 20412.7,
+    "moving_time": 2840,
+    "total_elevation_gain": 300.0
+  },
+  {
+    "start_date": "2025-04-14T17:32:25Z",
+    "average_watts": 156.0,
+    "average_speed": 3.547,
+    "distance": 7750.4,
+    "moving_time": 2185,
+    "total_elevation_gain": 44.1
+  },
+  {
+    "start_date": "2025-04-15T11:39:43Z",
+    "average_watts": 155.3,
+    "average_speed": 8.386,
+    "distance": 20194.3,
+    "moving_time": 2408,
+    "total_elevation_gain": 235.6
+  },
+  {
+    "start_date": "2025-04-16T14:33:29Z",
+    "average_watts": 179.6,
+    "average_speed": 4.085,
+    "distance": 4391.0,
+    "moving_time": 1075,
+    "total_elevation_gain": 24.5
+  },
+  {
+    "start_date": "2025-04-18T06:38:08Z",
+    "average_watts": 157.7,
+    "average_speed": 6.26,
+    "distance": 96838.1,
+    "moving_time": 15469,
+    "total_elevation_gain": 611.3
+  },
+  {
+    "start_date": "2025-04-19T14:18:30Z",
+    "average_watts": 185.1,
+    "average_speed": 8.23,
+    "distance": 18724.3,
+    "moving_time": 2275,
+    "total_elevation_gain": 194.3
+  },
+  {
+    "start_date": "2025-04-24T19:44:23Z",
+    "average_watts": 155.7,
+    "average_speed": 7.063,
+    "distance": 13808.5,
+    "moving_time": 1955,
+    "total_elevation_gain": 197.1
+  },
+  {
+    "start_date": "2025-04-25T07:12:00Z",
+    "average_watts": 161.9,
+    "average_speed": 6.479,
+    "distance": 66817.2,
+    "moving_time": 10313,
+    "total_elevation_gain": 858.5
+  },
+  {
+    "start_date": "2025-04-26T08:19:05Z",
+    "average_watts": 168.5,
+    "average_speed": 6.601,
+    "distance": 30479.0,
+    "moving_time": 4617,
+    "total_elevation_gain": 245.3
+  },
+  {
+    "start_date": "2025-04-27T08:57:53Z",
+    "average_watts": 184.3,
+    "average_speed": 8.425,
+    "distance": 23656.7,
+    "moving_time": 2808,
+    "total_elevation_gain": 169.6
+  },
+  {
+    "start_date": "2025-04-28T17:08:40Z",
+    "average_watts": 180.3,
+    "average_speed": 8.611,
+    "distance": 11659.2,
+    "moving_time": 1354,
+    "total_elevation_gain": 95.6
+  }
+]

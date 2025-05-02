@@ -335,5 +335,70 @@ class Strava:
         return res
 
 
+class StravaDemo(Strava):
+    def __init__(self, debug: bool = False):
+        self.log = logging.getLogger('strava')
+
+        if (debug):
+            self.debug(True)
+            self.log.debug("Debug enabled")
+
+        self.config = Config()
+        self.max_page_size = self.config.get('max_page_size', 100)
+        self.log.debug("Config loaded: %s" % self.config.dump())
+
+    def getActivities(self, num: int, offset: int = 0) -> ActivityList:
+        out = ActivityList()
+
+        activities = self.getActivitiesPage(0, 0)
+
+        for activity in activities:
+            try:
+                out.append(Activity.newFromDict(activity))
+            except ValueError as e:
+                self.log.warning("Activity missing required field: %s" % e)
+
+        out = out.sortByDate(True)
+
+        if (len(out) > num):
+            return ActivityList.slice(out, 0, num)
+
+        return out
+
+    def getAllActivities(self) -> ActivityList:
+        """
+        Get all activities for the user, for all time. Keep walking back
+        page-by-page until it looks like we have everything
+
+        return: ActivityList
+        """
+        out = ActivityList()
+
+        activities = self.getActivitiesPage(0, self.max_page_size)
+
+        for activity in activities:
+            try:
+                out.append(Activity.newFromDict(activity))
+            except ValueError as e:
+                self.log.warning("Activity missing required field: %s" % e)
+
+        return out
+
+    def getActivitiesPage(self, page: int, perPage: int) -> dict:
+        """
+        Fetch a specific page of strava activities
+
+        :param: page the page number to fetch
+        :param: perPage the number of activities per page to fetch
+
+        return: dict
+        """
+        with open('data/demo.json') as demofile:
+            return json.load(demofile)
+
+    def get(self, url: str):
+        pass
+
+
 class AuthenticationException(BaseException):
     pass
