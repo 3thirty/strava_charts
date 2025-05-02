@@ -11,7 +11,9 @@ class Chart(BaseChart):
         class Metric:
             data = []
             _color = Color.JSLinearGradient('ctx', 0, 0, 1000, 0)
-            _color.addColorStop(0, Color.Cyan)
+            _color.addColorStop(0, '#E19A40')
+            _color.addColorStop(1, '#e87722')
+            backgroundColor = '#ffffff'
 
             borderColor = _color.returnGradient()
             fill = False
