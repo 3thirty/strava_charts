@@ -4,7 +4,7 @@ on:
   # trigger if landing page is updated in master
   push:
     branches:
-	  - "master"
+      - "master"
     paths:
       - 'landing/**'
 
