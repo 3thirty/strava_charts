@@ -5,6 +5,7 @@ import math
 import sys
 import time
 
+from requests_cache import RedisCache
 from requests_oauthlib import OAuth2Session, TokenUpdated
 from oauthlib.oauth2.rfc6749.errors import MissingTokenError
 
@@ -194,6 +195,27 @@ class Strava:
 
         token = token_storage.get()
 
+        if (self.config.get('cache_backend') == 'redis'):
+            backend = RedisCache(
+                host=self.config.get('redis_host'),
+                port=self.config.get('redis_port', 6379),
+                username=self.config.get('redis_username', 'default'),
+                password=self.config.get('redis_password'),
+                ssl=self.config.get('redis_ssl', True),
+            )
+
+            cache_kwargs = {
+                'backend': backend,
+                'expire_after': self.config.get('cache_ttl')
+            }
+        else:
+            cache_kwargs = {
+                'backend': self.config.get('cache_backend'),
+                'cache_name': self.config.get('cache_data_dir', '/app')
+                + '/strava_charts.sqlite',
+                'expire_after': self.config.get('cache_ttl')
+            }
+
         self.oauth = OAuth2CachedSession(
             oauth_kwargs={
                 'token': token,
@@ -203,12 +225,7 @@ class Strava:
                     'client_secret': self.config.get('strava_client_secret')
                 },
             },
-            cache_kwargs={
-                'backend': self.config.get('cache_backend', 'sqlite'),
-                'cache_name': self.config.get('cache_data_dir', '/app')
-                + '/strava_charts.sqlite',
-                'expire_after': self.config.get('cache_ttl')
-            }
+            cache_kwargs=cache_kwargs
         )
 
     def getActivities(self, num: int, offset: int = 0) -> ActivityList:
