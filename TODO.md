@@ -10,7 +10,7 @@
 ### Strava:
   * [ ] fetch older data asynchronously
   * [ ] allow filtering of activity types
-  * [ ] switch caching to redis (or other distributed store). without it, we can't have concurrency
+  * [x] switch caching to redis (or other distributed store). without it, we can't have concurrency
 
 ### server
   * [ ] clean up handling/parsing of activities

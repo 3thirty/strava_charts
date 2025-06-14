@@ -7,7 +7,7 @@ This application will first ask to connect to your strava account and will then 
 The application is setup to be built and run within a docker container (tested using orbstack)
 
   * Add strava key and secret to .env
-  * Run `make docker-build` to build the image (currently for dev mode only)
+  * Run `make docker-build-dev` to build the image for dev
   * Run `make docker-run` to start the application in docker, listening on port 8080
   * Run `make open` to open your browser at the charts endpoint of the application
     * Note that this will complain about the self-signed certs

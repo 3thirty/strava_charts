@@ -1,4 +1,10 @@
+strava_client_id: '[ENV]STRAVA_CLIENT_ID'
+strava_client_secret: '[ENV]STRAVA_CLIENT_SECRET'
 strava_redirect_uri: 'https://stravacharts.3thirty.space/verify'
 cache_ttl: 86400
-cache_data_dir: '/tmp'
-cache_backend: 'sqlite'
+cache_backend: 'redis'
+redis_host: '[ENV]REDIS_HOST'
+redis_port: 6379
+redis_username: 'default'
+redis_password: '[ENV]REDIS_PASSWORD'
+redis_ssl: true

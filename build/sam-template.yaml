@@ -9,6 +9,10 @@ Parameters:
     Type: String
   StravaClientSecret:
     Type: String
+  RedisHost:
+    Type: String
+  RedisPassword:
+    Type: String
   Debug:
     Type: String
     Default: 0
@@ -24,6 +28,8 @@ Resources:
         Variables:
           STRAVA_CLIENT_ID: !Ref StravaClientId
           STRAVA_CLIENT_SECRET: !Ref StravaClientSecret
+          REDIS_HOST: !Ref RedisHost
+          REDIS_PASSWORD: !Ref RedisPassword
           DEBUG: !Ref Debug
       Events:
         HttpApiEvent:

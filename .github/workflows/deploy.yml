@@ -44,5 +44,7 @@ jobs:
             --parameter-overrides \
                 StravaClientId=${STRAVA_CLIENT_ID} \
                 StravaClientSecret=${STRAVA_CLIENT_SECRET} \
+                RedisHost=${REDIS_HOST} \
+                RedisPassword=${REDIS_PASSWORD} \
                 EcrImageUri=${IMAGE_URI}:${IMAGE_TAG} \
             --template-file build/sam-template.yaml

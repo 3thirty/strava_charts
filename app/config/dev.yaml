@@ -1,3 +1,6 @@
+strava_client_id: '[ENV]STRAVA_CLIENT_ID'
+strava_client_secret: '[ENV]STRAVA_CLIENT_SECRET'
 strava_redirect_uri: 'https://localhost:8080/verify'
 cache_ttl: 86400
 max_page_size: 100
+cache_backend: 'sqlite'

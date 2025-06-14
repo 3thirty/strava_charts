@@ -274,6 +274,7 @@ if ('dev' in sys.argv):
         certfile='cert.crt',
         keyfile='private.key',
         server='gunicorn',
+        timeout=120
     )
 
 
