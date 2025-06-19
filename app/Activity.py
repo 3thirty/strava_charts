@@ -46,6 +46,9 @@ class Activity:
         if ('total_elevation_gain' in d):
             ret.total_elevation_gain = d['total_elevation_gain']
 
+        if ('type' in d):
+            ret.sport = d['type'].lower()
+
         return ret
 
     def getDateTime(self):
@@ -60,7 +63,7 @@ class Activity:
     def getDateHumanReadable(self):
         date = self.getDateTime()
 
-        return(datetime.strftime(date, "%x"))
+        return (datetime.strftime(date, "%x"))
 
     def dump(self):
         out = {
@@ -69,7 +72,9 @@ class Activity:
             'average_speed': getattr(self, 'average_speed', None),
             'distance': getattr(self, 'distance', None),
             'moving_time': getattr(self, 'moving_time', None),
-            'total_elevation_gain': getattr(self, 'total_elevation_gain', None),
+            'total_elevation_gain': getattr(self, 'total_elevation_gain',
+                                            None),
+            'sport': getattr(self, 'sport', None),
         }
         return out
 
@@ -121,6 +126,8 @@ class ActivityList(list):
                         out_total += value
                         out_count += 1
                 except AttributeError:
+                    pass
+                except TypeError:
                     pass
 
             if (out_count > 0):
@@ -240,3 +247,18 @@ class ActivityList(list):
                 out.append(activity)
 
         return out
+
+    def filter(activities: ActivityList, predicate: callable) -> ActivityList:
+        """
+        Filter the given ActivityList to include only items matching the
+        predicate
+
+        :param activities: the ActivityList to filter
+        :param predicate:  callable (lambda) that defines the condition that\
+                           any returned activities must match
+
+        :return ActivityList including only activities matching the predicate
+        """
+        return ActivityList(
+            [activity for activity in activities if predicate(activity)]
+        )

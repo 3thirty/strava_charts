@@ -185,6 +185,37 @@
       max-width: auto;
       max-height: 25px;
     }
+
+    .activity-toggle {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+
+    .activity-btn {
+      padding: 10px 18px;
+      border: none;
+      border-radius: 20px;
+      background-color: #eee;
+      color: #333;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s ease, transform 0.2s ease;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    .activity-btn:hover {
+      background-color: #ddd;
+      transform: translateY(-1px);
+    }
+
+    .activity-btn.active {
+      background-color: #e87722;
+      color: #fff;
+    }
   </style>
 </head>
 
@@ -194,6 +225,28 @@
     <h1>3thirty Charts for Strava</h1>
     <h2>Turn workouts into trends with time-based performance insights</h2>
   </header>
+
+  <div class="activity-toggle">
+    <button class="activity-btn active" data-activity="run">🏃 Run</button>
+    <button class="activity-btn" data-activity="ride">🚴 Ride</button>
+    <button class="activity-btn" data-activity="walk">🚶 Walk</button>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const activityButtons = document.querySelectorAll('.activity-btn');
+
+      activityButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          activityButtons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const selectedActivity = btn.dataset.activity;
+          // TODO: update metric dropdown based on selectedActivity
+        });
+      });
+    });
+  </script>
 
   <div class="filters">
   <div class="filter-group">
@@ -229,6 +282,16 @@
     document.getElementById("metric").value = currentMetric;
     document.getElementById("period").value = currentPeriod;
 
+    const urlParams = new URLSearchParams(window.location.search);
+    const currentSport = urlParams.get('sport');
+
+    if (currentSport) {
+      const activeBtn = document.querySelector(`.activity-btn[data-activity="${currentSport}"]`);
+      if (activeBtn) {
+        document.querySelectorAll('.activity-btn').forEach(b => b.classList.remove('active'));
+        activeBtn.classList.add('active');
+      }
+    }
 
     // change the view when the button is clicked
     document.getElementById("updateBtn").addEventListener("click", () => {
@@ -236,9 +299,12 @@
       const metric = document.getElementById("metric").value;
       const period = document.getElementById("period").value;
 
+      const sport = document.querySelector('.activity-btn.active')?.dataset.activity;
+      const query_string = sport ? `?sport=${sport}` : ''
+
       const basePath = window.location.pathname.split('/').slice(0, 2).join('/');
   
-      const path = `${basePath}/${type}/${metric}/${period}`;
+      const path = `${basePath}/${type}/${metric}/${period}${query_string}`;
       window.location.href = path;
     });
   </script>
