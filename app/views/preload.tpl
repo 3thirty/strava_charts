@@ -8,6 +8,7 @@
 
     window.location.replace("/preload?page=" + (page + 1));
 
-    const loadingText = document.getElementById('loadingText').trim();
-    loadingText.textContent += '.'.repeat(page);
+    const loadingTextElement = document.getElementById('loadingText');
+    const trimmedText = loadingTextElement.textContent.trim();
+    loadingTextElement.textContent = trimmedText + '.'.repeat(page);
 </script>
