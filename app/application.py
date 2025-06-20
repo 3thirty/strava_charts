@@ -2,7 +2,6 @@ from datetime import datetime
 import logging
 import os
 import sys
-import time
 
 import bottle
 from bottle import route, run, template, request, response, redirect, \
@@ -105,7 +104,7 @@ def verify():
     )
 
     if (token):
-        redirect('/preload')
+        return template('preload', page=0)
     else:
         response.status = 400
         return "Authentication failure"
@@ -114,19 +113,14 @@ def verify():
 @route('/preload')
 def preload():
     """
-    Load all strava data for the loggedin user into the requests cache. Right
-    now, this is done synchronously and will likely time out for users with
-    many activities. In future, we should make these requests offline and use
-    this endpoint to trigger a fetch and query current status
+    Load a single page of strava activity data for the loggedin user, to
+    store in the requests cache. This works in conjunction with the preload
+    template to increment the page number and request preload for the next page
 
-    The current behaviour is to keep redirecting this endpoint until all data
-    is loaded in a timely manner, at which point we redirect to /chart
+    Once all activities have been loaded, we redirect to /chart
     """
-    MAX_EXEC_TIME = 25
-
     force = bool(request.query.force)
     token_store = CookieTokenStorage(request, response)
-    start = time.perf_counter()
 
     try:
         strava = Strava(
@@ -139,27 +133,24 @@ def preload():
 
         return "Not Authorized"
 
-    page = 1
-    done = False
-    while (not done):
-        if ((time.perf_counter() - start) > MAX_EXEC_TIME):
-            break
+    page = int(request.query.get('page', 0))
 
-        activities = strava.getActivitiesPage(page, strava.max_page_size)
+    # for page zero, don't do any work, flush the loading page immediately
+    if (page == 0):
+        return template('preload', page=1)
 
-        page = page + 1
-        if (len(activities) < strava.max_page_size):
-            strava.log.debug(
-                "Asked for %d got %d. Assuming all activities are fetched"
-                % (strava.max_page_size, len(activities))
-            )
+    activities = strava.getActivitiesPage(page, strava.max_page_size)
 
-            done = True
+    # if we got fewer activies than we asked for, assume we're done
+    if (len(activities) < strava.max_page_size):
+        strava.log.debug(
+            "Asked for %d got %d. Assuming all activities are fetched"
+            % (strava.max_page_size, len(activities))
+        )
 
-    if (done):
         redirect('/chart')
-    else:
-        redirect('/preload')
+
+    return template('preload', page=page)
 
 
 @route('/chart')
