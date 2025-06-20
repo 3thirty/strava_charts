@@ -192,6 +192,11 @@ def chart(type: str = 'average', metric: str = 'average_watts',
     else:
         activities = strava.getAllActivities()
 
+    if (request.query.sport):
+        activities = ActivityList.filter(
+            activities, lambda a: a.sport == request.query.sport
+        )
+
     return _renderChart(type, metric, period, activities)
 
 
@@ -213,6 +218,11 @@ def demo(type: str = 'average', metric: str = 'average_watts',
         activities = strava.getActivities(int(request.query.limit))
     else:
         activities = strava.getAllActivities()
+
+    if (request.query.sport):
+        activities = ActivityList.filter(
+            activities, lambda a: a.sport == request.query.sport
+        )
 
     return _renderChart(type, metric, period, activities)
 
