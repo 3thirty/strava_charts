@@ -259,9 +259,11 @@
   <div class="filter-group">
     <label for="metric">Metric</label>
     <select id="metric">
+      <option value="average_speed">Average Speed</option>
       <option value="average_watts">Average Watts</option>
       <option value="distance">Distance</option>
       <option value="total_elevation_gain">Elevation Gain</option>
+      <option value="moving_time">Moving Time</option>
     </select>
   </div>
   <div class="filter-group">

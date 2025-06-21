@@ -23,6 +23,7 @@ Produces a chart (default is average_watts by week), but may be called in the fo
 Also takes optional GET arguments:
   * `after` a date in yyyy-mm-dd format. Only activities after this date will be charted
   * `limit` only chart this many activities
+  * `sport` only include activities for this sport (one of: `run`, `ride`, `walk`
 
 Examples:
 
